@@ -13,7 +13,7 @@ export default function Home() {
         <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <main className='bg-zinc-900 text-white'>Hello, world!</main>
+      <main>Hello, world!</main>
 
       <footer></footer>
     </>
