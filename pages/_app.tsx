@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Evan Walter | Full Stack Engineer</title>
+        <title>Evan Walter | Full Stack Engineering</title>
         <meta
           name='description'
           content='React | Next.js | Node.js | TypeScript | GraphQL'
