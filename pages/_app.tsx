@@ -15,7 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <div className='container relative mx-auto'>
+      <div className='container relative mx-auto px-4'>
         <Navbar />
         <Component {...pageProps} />
       </div>

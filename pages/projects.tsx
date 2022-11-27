@@ -7,7 +7,7 @@ export default function Projects() {
         My latest projects can currently be found on{' '}
         <a
           href='https://github.com/evan-walter'
-          className='font-bold hover:text-zinc-300'
+          className='text-zinc-400 hover:text-white'
         >
           GitHub
         </a>
@@ -19,7 +19,11 @@ export default function Projects() {
       <p className='flex flex-col items-center text-center text-2xl'>
         For older projects, please check out my
         <span>
-          <a href='#' className='font-bold hover:text-zinc-300' target='_blank'>
+          <a
+            href='#'
+            className='text-zinc-400 hover:text-white'
+            target='_blank'
+          >
             previous portofolio
           </a>
           .
