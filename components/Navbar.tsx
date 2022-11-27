@@ -16,7 +16,7 @@ export default function Navbar() {
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange)
     }
-  }, [])
+  }, [router.events])
 
   useEffect(() => {
     if (!isMobileScreen) {
@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [isMenuOpen, isMobileScreen])
 
   return (
-    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 py-8 sm:w-full sm:flex-row sm:items-center'>
+    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 pt-8 pb-4 sm:w-full sm:flex-row sm:items-center sm:pb-8'>
       <MobileMenuButtons
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
@@ -34,14 +34,24 @@ export default function Navbar() {
         <>
           <NavGroup>
             <NavItem link='/' text='Home' />
-            <NavItem link='/resume' text='Resume' />
             <NavItem link='/projects' text='Projects' />
+            <a
+              href='/resume.pdf'
+              className='text-zinc-400 hover:text-white'
+              target='_blank'
+              rel='noreferrer noopener'
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Resume
+            </a>
           </NavGroup>
           <NavGroup>
             <a
               href='https://github.com/evan-walter'
               className='text-zinc-400 hover:text-white'
               target='_blank'
+              rel='noreferrer noopener'
+              onClick={() => setIsMenuOpen(false)}
             >
               GitHub
             </a>
@@ -49,6 +59,8 @@ export default function Navbar() {
               href='https://linkedin.com/in/-evanwalter'
               className='text-zinc-400 hover:text-white'
               target='_blank'
+              rel='noreferrer noopener'
+              onClick={() => setIsMenuOpen(false)}
             >
               LinkedIn
             </a>

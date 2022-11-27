@@ -1,13 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import headShot from 'assets/head-shot.jpg'
 
 export default function Evan() {
   return (
     <div className='flex h-screen w-full flex-col items-center justify-center gap-8 sm:flex-row'>
       <Image
         className='rounded-full'
-        src={headShot}
+        src='/head-shot.jpg'
         alt='Head Shot'
         width={200}
         height={200}
@@ -19,11 +18,12 @@ export default function Evan() {
         <h3 className='text-lg'>
           React | Next.js | Node.js | TypeScript | GraphQL
         </h3>
-        <div className='flex gap-x-4 text-lg'>
+        <div className='flex gap-x-5 text-lg'>
           <a
             href='https://github.com/evan-walter'
             className='text-zinc-400 hover:text-white'
             target='_blank'
+            rel='noreferrer noopener'
           >
             GitHub
           </a>
@@ -31,8 +31,17 @@ export default function Evan() {
             href='https://linkedin.com/in/-evanwalter'
             className='text-zinc-400 hover:text-white'
             target='_blank'
+            rel='noreferrer noopener'
           >
             LinkedIn
+          </a>
+          <a
+            href='/resume.pdf'
+            className='text-zinc-400 hover:text-white'
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Resume
           </a>
         </div>
       </div>
