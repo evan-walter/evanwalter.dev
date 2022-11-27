@@ -10,9 +10,13 @@ export default function Navbar() {
 
   useEffect(() => {
     function handleRouteChange() {
-      console.log('changed route')
+      setIsMenuOpen(false)
     }
-  }, [router])
+    router.events.on('routeChangeComplete', handleRouteChange)
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
 
   useEffect(() => {
     if (!isMobileScreen) {

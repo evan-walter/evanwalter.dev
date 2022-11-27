@@ -13,10 +13,10 @@ export default function Evan() {
         height={200}
         priority
       />
-      <div className='flex flex-col items-center justify-center gap-y-3 sm:items-start'>
+      <div className='flex flex-col items-center justify-center gap-y-3 text-center sm:items-start sm:text-left'>
         <h1 className='text-3xl font-bold'>Evan Walter</h1>
         <h2 className='text-3xl font-bold'>Full Stack Engineering</h2>
-        <h3 className='text-center text-lg sm:text-left'>
+        <h3 className='text-lg'>
           React | Next.js | Node.js | TypeScript | GraphQL
         </h3>
         <div className='flex gap-x-4 text-lg'>
