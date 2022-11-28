@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [isMenuOpen, isMobileScreen])
 
   return (
-    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 px-4 pt-8 pb-4 sm:top-0 sm:left-0 sm:right-0 sm:w-full sm:flex-row sm:items-center sm:pb-8'>
+    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 pt-8 pb-4 sm:top-0 sm:left-0 sm:right-0 sm:w-full sm:flex-row sm:items-center sm:px-4 sm:pb-8'>
       <MobileMenuButtons
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
