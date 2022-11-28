@@ -22,7 +22,7 @@ export default function Projects() {
         For older projects, please check out my
         <span>
           <a
-            href='https://previous-portfolio.vercel.app'
+            href='https://previous.evanwalter.dev'
             className='text-zinc-400 hover:text-white'
             target='_blank'
             rel='noreferrer noopener'
