@@ -25,7 +25,7 @@ export default function Navbar() {
   }, [isMenuOpen, isMobileScreen])
 
   return (
-    <nav className='absolute flex flex-col items-start justify-between pt-8 pb-4 rounded-lg gap-y-3 gap-x-8 bg-zinc-900 sm:w-full sm:flex-row sm:items-center sm:pb-8'>
+    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 pt-8 pb-4 sm:w-full sm:flex-row sm:items-center sm:pb-8'>
       <MobileMenuButtons
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
@@ -119,7 +119,7 @@ export function MobileMenuButtons({
           strokeWidth={1.5}
           stroke='currentColor'
           onClick={handleClick}
-          className='block w-6 h-6 sm:hidden'
+          className='block h-6 w-6 sm:hidden'
         >
           <path
             strokeLinecap='round'
@@ -134,7 +134,7 @@ export function MobileMenuButtons({
           viewBox='0 0 24 24'
           strokeWidth={1.5}
           stroke='currentColor'
-          className='block w-6 h-6 sm:hidden'
+          className='block h-6 w-6 sm:hidden'
           onClick={handleClick}
         >
           <path
