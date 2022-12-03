@@ -19,9 +19,7 @@ export default function Navbar() {
   }, [router.events])
 
   useEffect(() => {
-    if (isMobileScreen) {
-      setIsMenuOpen(false)
-    } else {
+    if (!isMobileScreen) {
       setIsMenuOpen(true)
     }
   }, [isMenuOpen, isMobileScreen])
