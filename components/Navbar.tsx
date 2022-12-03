@@ -18,6 +18,14 @@ export default function Navbar() {
     }
   }, [router.events])
 
+  const handleMediaQueryChange = function (matches: boolean) {
+    if (matches) {
+      setIsMenuOpen(false)
+    }
+  }
+
+  useMediaQuery({ maxWidth: 640 }, undefined, handleMediaQueryChange)
+
   useEffect(() => {
     if (!isMobileScreen) {
       setIsMenuOpen(true)
