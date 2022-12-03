@@ -15,10 +15,14 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <div className='container relative mx-auto px-4'>
+      <div className='container relative mx-auto h-screen min-h-min px-4'>
         <Navbar />
         <Component {...pageProps} />
       </div>
+
+      <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-800 py-10'>
+        <button title='Building software on the web since 2019'>❤️‍🔥</button>
+      </footer>
     </>
   )
 }

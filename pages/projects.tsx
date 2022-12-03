@@ -2,7 +2,7 @@
 
 export default function Projects() {
   return (
-    <div className='flex h-screen w-full flex-col items-center justify-center gap-y-16'>
+    <div className='flex h-full w-full flex-col items-center justify-center gap-y-16'>
       <p className='text-center text-3xl'>
         My latest projects can be found on{' '}
         <a
