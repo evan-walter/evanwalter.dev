@@ -5,7 +5,7 @@ import { useMediaQuery } from 'react-responsive'
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const isMobileScreen = useMediaQuery({ query: `(max-width: 640px)` })
+  const isMobileScreen = useMediaQuery({ query: '(max-width: 640px)' })
   const router = useRouter()
 
   useEffect(() => {
@@ -19,7 +19,9 @@ export default function Navbar() {
   }, [router.events])
 
   useEffect(() => {
-    if (!isMobileScreen) {
+    if (isMobileScreen) {
+      setIsMenuOpen(false)
+    } else {
       setIsMenuOpen(true)
     }
   }, [isMenuOpen, isMobileScreen])
