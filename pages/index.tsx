@@ -8,7 +8,7 @@ export default function Home() {
         <Image
           className='rounded-full'
           src='/head-shot.jpg'
-          alt='Head Shot'
+          alt='Evan Walter | Full Stack Engineering'
           width={200}
           height={200}
           priority

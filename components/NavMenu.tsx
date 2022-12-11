@@ -41,12 +41,25 @@ export default function NavMenu() {
       {isMenuOpen ? (
         <>
           <NavGroup>
-            <NavItem href='/' text='Home' router={router} isPage />
-            <NavItem href='/projects' text='Projects' router={router} isPage />
+            <NavItem
+              href='/'
+              text='Home'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isPage
+            />
+            <NavItem
+              href='/projects'
+              text='Projects'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isPage
+            />
             <NavItem
               href='/resume.pdf'
               text='Resume'
               router={router}
+              isMobileScreen={isMobileScreen}
               handleClick={() => setIsMenuOpen(false)}
             />
           </NavGroup>
@@ -55,12 +68,14 @@ export default function NavMenu() {
               href='https://github.com/evan-walter'
               text='GitHub'
               router={router}
+              isMobileScreen={isMobileScreen}
               handleClick={() => setIsMenuOpen(false)}
             />
             <NavItem
               href='https://linkedin.com/in/-evanwalter'
               text='LinkedIn'
               router={router}
+              isMobileScreen={isMobileScreen}
               handleClick={() => setIsMenuOpen(false)}
             />
           </NavGroup>
@@ -76,7 +91,7 @@ interface NavGroupProps {
 
 function NavGroup({ children }: NavGroupProps) {
   return (
-    <div className='flex flex-col justify-center gap-x-8 gap-y-3 sm:flex-row sm:items-center'>
+    <div className='flex w-full flex-col justify-center gap-x-8 gap-y-3 pr-8 sm:flex-row sm:items-center'>
       {children}
     </div>
   )
@@ -86,15 +101,37 @@ interface NavItemProps {
   href: string
   text: string
   router: any
+  isMobileScreen: Boolean
   isPage?: Boolean
   handleClick?: () => void
 }
 
-function NavItem({ href, text, router, isPage, handleClick }: NavItemProps) {
+function NavItem({
+  href,
+  text,
+  router,
+  isMobileScreen,
+  isPage,
+  handleClick,
+}: NavItemProps) {
   const isActive = router.asPath === href
-  const classNames = `${
-    isActive ? 'text-white' : 'text-zinc-400'
-  } w-20 hover:text-white max-sm:my-2 sm:w-fit`
+  const classNames = `
+    ${
+      isMobileScreen
+        ? 'border-b border-zinc-700'
+        : isActive
+        ? 'text-white'
+        : 'text-zinc-400'
+    }
+    hover:text-white max-sm:py-3 sm:w-fit
+  `
+
+  if (null)
+    return (
+      <div className='border-b border-zinc-400 hover:text-white max-sm:py-3 sm:w-fit'>
+        <div className='border-zinc-400 text-zinc-400'></div>
+      </div>
+    )
 
   return (
     <>
