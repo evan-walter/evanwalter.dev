@@ -33,7 +33,7 @@ export default function NavMenu() {
   }, [isMenuOpen, isMobileScreen])
 
   return (
-    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 pt-8 pb-4 sm:top-0 sm:left-0 sm:right-0 sm:w-full sm:flex-row sm:items-center sm:px-4 sm:pb-8'>
+    <nav className='absolute flex flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 pt-8 pb-4 max-sm:w-full sm:top-0 sm:left-0 sm:right-0 sm:w-full sm:flex-row sm:items-center sm:px-4 sm:pb-8'>
       <MobileMenuButtons
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
@@ -41,37 +41,28 @@ export default function NavMenu() {
       {isMenuOpen ? (
         <>
           <NavGroup>
-            <NavItem link='/' text='Home' />
-            <NavItem link='/projects' text='Projects' />
-            <a
+            <NavItem href='/' text='Home' router={router} isPage />
+            <NavItem href='/projects' text='Projects' router={router} isPage />
+            <NavItem
               href='/resume.pdf'
-              className='text-zinc-400 hover:text-white'
-              target='_blank'
-              rel='noreferrer noopener'
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Resume
-            </a>
+              text='Resume'
+              router={router}
+              handleClick={() => setIsMenuOpen(false)}
+            />
           </NavGroup>
           <NavGroup>
-            <a
+            <NavItem
               href='https://github.com/evan-walter'
-              className='text-zinc-400 hover:text-white'
-              target='_blank'
-              rel='noreferrer noopener'
-              onClick={() => setIsMenuOpen(false)}
-            >
-              GitHub
-            </a>
-            <a
+              text='GitHub'
+              router={router}
+              handleClick={() => setIsMenuOpen(false)}
+            />
+            <NavItem
               href='https://linkedin.com/in/-evanwalter'
-              className='text-zinc-400 hover:text-white'
-              target='_blank'
-              rel='noreferrer noopener'
-              onClick={() => setIsMenuOpen(false)}
-            >
-              LinkedIn
-            </a>
+              text='LinkedIn'
+              router={router}
+              handleClick={() => setIsMenuOpen(false)}
+            />
           </NavGroup>
         </>
       ) : null}
@@ -92,15 +83,37 @@ function NavGroup({ children }: NavGroupProps) {
 }
 
 interface NavItemProps {
-  link: string
+  href: string
   text: string
+  router: any
+  isPage?: Boolean
+  handleClick?: () => void
 }
 
-function NavItem({ link, text }: NavItemProps) {
+function NavItem({ href, text, router, isPage, handleClick }: NavItemProps) {
+  const isActive = router.asPath === href
+  const classNames = `${
+    isActive ? 'text-white' : 'text-zinc-400'
+  } w-20 hover:text-white max-sm:my-2 sm:w-fit`
+
   return (
-    <Link className='w-20 text-zinc-400 hover:text-white sm:w-fit' href={link}>
-      {text}
-    </Link>
+    <>
+      {isPage ? (
+        <Link className={classNames} href={href}>
+          {text}
+        </Link>
+      ) : (
+        <a
+          href={href}
+          className={classNames}
+          target='_blank'
+          rel='noreferrer noopener'
+          onClick={handleClick}
+        >
+          {text}
+        </a>
+      )}
+    </>
   )
 }
 
