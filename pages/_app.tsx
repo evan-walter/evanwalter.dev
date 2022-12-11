@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import Navbar from 'components/Navbar'
+import NavMenu from '@/components/NavMenu'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,8 +15,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <div className='container relative mx-auto h-screen min-h-[35rem] px-4'>
-        <Navbar />
+      <div className='container relative mx-auto h-screen min-h-[35rem] max-w-3xl px-4'>
+        <NavMenu />
         <Component {...pageProps} />
       </div>
 

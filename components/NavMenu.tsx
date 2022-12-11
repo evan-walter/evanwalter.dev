@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 
-export default function Navbar() {
+export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const isMobileScreen = useMediaQuery({ query: '(max-width: 640px)' })
   const router = useRouter()
@@ -83,7 +83,7 @@ interface NavGroupProps {
   children: React.ReactNode
 }
 
-export function NavGroup({ children }: NavGroupProps) {
+function NavGroup({ children }: NavGroupProps) {
   return (
     <div className='flex flex-col justify-center gap-x-8 gap-y-3 sm:flex-row sm:items-center'>
       {children}
@@ -96,7 +96,7 @@ interface NavItemProps {
   text: string
 }
 
-export function NavItem({ link, text }: NavItemProps) {
+function NavItem({ link, text }: NavItemProps) {
   return (
     <Link className='w-20 text-zinc-400 hover:text-white sm:w-fit' href={link}>
       {text}
@@ -109,7 +109,7 @@ interface MobileMenuButtonsProps {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-export function MobileMenuButtons({
+function MobileMenuButtons({
   isMenuOpen,
   setIsMenuOpen,
 }: MobileMenuButtonsProps) {
