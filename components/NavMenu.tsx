@@ -123,15 +123,8 @@ function NavItem({
         ? 'text-white'
         : 'text-zinc-400'
     }
-    hover:text-white max-sm:py-3 sm:w-fit
+    font-semibold hover:text-white max-sm:py-3 sm:w-fit
   `
-
-  if (null)
-    return (
-      <div className='border-b border-zinc-400 hover:text-white max-sm:py-3 sm:w-fit'>
-        <div className='border-zinc-400 text-zinc-400'></div>
-      </div>
-    )
 
   return (
     <>
