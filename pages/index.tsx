@@ -21,6 +21,14 @@ export default function Home() {
           </h3>
           <div className='flex gap-x-5 text-lg'>
             <a
+              href='/resume.pdf'
+              className='text-zinc-400 hover:text-white'
+              target='_blank'
+              rel='noreferrer noopener'
+            >
+              Resume
+            </a>
+            <a
               href='https://github.com/evan-walter'
               className='text-zinc-400 hover:text-white'
               target='_blank'
@@ -37,12 +45,12 @@ export default function Home() {
               LinkedIn
             </a>
             <a
-              href='/resume.pdf'
+              href='https://twitter.com/_evanwalter_'
               className='text-zinc-400 hover:text-white'
               target='_blank'
               rel='noreferrer noopener'
             >
-              Resume
+              Twitter
             </a>
           </div>
         </div>
