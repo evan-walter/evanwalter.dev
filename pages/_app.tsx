@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import 'styles/globals.css'
 import type { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
 import NavMenu from 'components/NavMenu'
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -15,16 +16,18 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel='icon' href='/favicon.svg' />
       </Head>
 
-      <div className='container relative mx-auto h-screen min-h-[45rem] max-w-2xl max-sm:px-6 sm:min-h-[35rem]'>
-        <NavMenu />
-        <Component {...pageProps} />
-      </div>
-
-      <footer className='flex flex-col items-center justify-center gap-y-10 bg-white dark:bg-zinc-800 py-10'>
-        <div className='container mx-auto flex flex-col items-center justify-center px-4'>
-          <button title='Building software on the web since 2019'>❤️‍🔥</button>
+      <ThemeProvider attribute='class'>
+        <div className='container relative mx-auto h-screen min-h-[45rem] max-w-2xl max-sm:px-6 sm:min-h-[35rem]'>
+          <NavMenu />
+          <Component {...pageProps} />
         </div>
-      </footer>
+
+        <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-100 dark:bg-zinc-800 py-10'>
+          <div className='container mx-auto flex flex-col items-center justify-center px-4'>
+            <button title='Building software on the web since 2019'>❤️‍🔥</button>
+          </div>
+        </footer>
+      </ThemeProvider>
     </>
   )
 }
