@@ -17,13 +17,13 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <ThemeProvider attribute='class'>
-        <div className='container relative mx-auto h-screen min-h-[45rem] max-w-2xl max-sm:px-6 sm:min-h-[35rem]'>
+        <div className='container relative h-screen min-h-[45rem] max-w-2xl sm:min-h-[35rem]'>
           <NavMenu />
           <Component {...pageProps} />
         </div>
 
-        <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-100 dark:bg-zinc-800 py-10'>
-          <div className='container mx-auto flex flex-col items-center justify-center px-4'>
+        <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-100 py-10 dark:bg-zinc-800'>
+          <div className='container flex flex-col items-center justify-center'>
             <button title='Building software on the web since 2019'>❤️‍🔥</button>
           </div>
         </footer>

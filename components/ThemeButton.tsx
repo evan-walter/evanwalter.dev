@@ -2,16 +2,17 @@ import { useTheme } from 'next-themes'
 
 export default function ThemeButton() {
   const { resolvedTheme, setTheme } = useTheme()
-
   return (
-    <button className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'>
+    <button
+      className='h-10 w-10 rounded-full text-zinc-500 transition ease-in hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800'
+      onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+    >
       <svg
-        className='h-6 w-6'
+        className='mx-auto h-6 w-6'
         fill='none'
         stroke='currentColor'
         viewBox='0 0 24 24'
         xmlns='http://www.w3.org/2000/svg'
-        onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
       >
         <path
           strokeLinecap='round'
