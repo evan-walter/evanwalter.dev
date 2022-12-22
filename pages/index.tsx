@@ -22,7 +22,7 @@ export default function Home() {
           <div className='flex flex-wrap justify-center gap-x-5 text-lg'>
             <a
               href='/resume.pdf'
-              className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
+              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -30,7 +30,7 @@ export default function Home() {
             </a>
             <a
               href='https://github.com/evan-walter'
-              className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
+              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -38,7 +38,7 @@ export default function Home() {
             </a>
             <a
               href='https://linkedin.com/in/-evanwalter'
-              className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
+              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -46,7 +46,7 @@ export default function Home() {
             </a>
             <a
               href='https://twitter.com/_evanwalter_'
-              className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
+              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
               target='_blank'
               rel='noreferrer noopener'
             >

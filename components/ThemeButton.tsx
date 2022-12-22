@@ -9,7 +9,7 @@ export default function ThemeButton() {
 
   return (
     <button
-      className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
+      className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       {mounted ? (
