@@ -1,5 +1,3 @@
-// import Projects from 'components/Projects'
-
 export default function Projects() {
   return (
     <div className='flex h-full w-full flex-col items-center justify-center gap-y-16'>
@@ -27,7 +25,7 @@ export default function Projects() {
             target='_blank'
             rel='noreferrer noopener'
           >
-            previous portofolio
+            previous portfolio
           </a>
           .
         </span>

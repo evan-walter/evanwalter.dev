@@ -1,7 +1,9 @@
 {
-  "name": "new-portfolio-code",
+  "name": "evanwalter.dev",
+  "description": "Evan Walter | Full Stack Engineering",
   "version": "0.1.0",
   "private": true,
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
