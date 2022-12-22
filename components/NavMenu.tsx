@@ -115,12 +115,12 @@ function NavItem({
   const classNames = `
     ${
       isMobileScreen
-        ? 'w-full border-b border-zinc-700 dark:text-white text-black'
+        ? 'w-full border-b border-zinc-700 text-black dark:text-white'
         : isActive
         ? 'text-black dark:text-white'
-        : 'text-zinc-500 dark:text-zinc-400'
+        : 'text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
     }
-    font-semibold text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white max-sm:py-3 sm:w-fit
+    font-semibold max-sm:py-3 sm:w-fit
   `
 
   return (
