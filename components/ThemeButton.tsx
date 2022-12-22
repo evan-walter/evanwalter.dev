@@ -4,7 +4,7 @@ export default function ThemeButton() {
   const { resolvedTheme, setTheme } = useTheme()
   return (
     <button
-      className='h-10 w-10 rounded-full text-zinc-500 transition ease-in hover:bg-zinc-100 dark:text-zinc-400 dark:hover:bg-zinc-800'
+      className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
     >
       <svg
