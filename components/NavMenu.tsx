@@ -33,8 +33,8 @@ export default function NavMenu() {
   }, [isMenuOpen, isMobileScreen])
 
   return (
-    <nav className='container absolute top-0 left-0 right-0 bg-zinc-900 py-8 max-sm:px-6'>
-      <div className='relative flex w-full flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-zinc-900 sm:flex-row sm:items-center sm:justify-center'>
+    <nav className='container absolute top-0 left-0 right-0 bg-white py-8 dark:bg-zinc-900 max-sm:px-6'>
+      <div className='relative flex w-full flex-col items-start justify-between gap-y-3 gap-x-8 rounded-lg bg-white dark:bg-zinc-900 sm:flex-row sm:items-center sm:justify-center'>
         <MobileMenuButtons
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
@@ -113,10 +113,10 @@ function NavItem({
       isMobileScreen
         ? 'w-full border-b border-zinc-700'
         : isActive
-        ? 'text-white'
-        : 'text-zinc-400'
+        ? 'text-zinc-800 dark:text-white'
+        : 'text-zinc-500 dark:text-zinc-400'
     }
-    font-semibold hover:text-white max-sm:py-3 sm:w-fit
+    font-semibold dark:hover:text-bg-zinc-900 text-zinc-500 hover:text-zinc-800 dark:hover:text-white max-sm:py-3 sm:w-fit
   `
 
   return (

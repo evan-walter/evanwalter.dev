@@ -5,7 +5,7 @@ export default function Projects() {
         My latest projects can be found on{' '}
         <a
           href='https://github.com/evan-walter'
-          className='text-zinc-400 hover:text-white'
+          className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
           target='_blank'
           rel='noreferrer noopener'
         >
@@ -21,7 +21,7 @@ export default function Projects() {
         <span>
           <a
             href='https://previous.evanwalter.dev'
-            className='text-zinc-400 hover:text-white'
+            className='text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-white'
             target='_blank'
             rel='noreferrer noopener'
           >
