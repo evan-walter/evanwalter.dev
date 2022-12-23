@@ -15,7 +15,7 @@ export default function MobileMenuButtons({
         viewBox='0 0 24 24'
         strokeWidth={2}
         stroke='currentColor'
-        className='block h-6 w-6 sm:hidden'
+        className='h-6 w-6 sm:hidden'
       >
         <path
           strokeLinecap='round'
