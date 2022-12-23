@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import { useTextLinkContext } from 'components/TextLinkProvider'
 
 export default function Home() {
+  const textLinkColors = useTextLinkContext()
+
   return (
     <>
       <main className='flex h-full w-full flex-col items-center justify-center gap-8 sm:flex-row'>
@@ -22,7 +25,7 @@ export default function Home() {
           <div className='flex flex-wrap justify-center gap-x-5 text-lg'>
             <a
               href='/resume.pdf'
-              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+              className={textLinkColors}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -30,7 +33,7 @@ export default function Home() {
             </a>
             <a
               href='https://github.com/evan-walter'
-              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+              className={textLinkColors}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -38,7 +41,7 @@ export default function Home() {
             </a>
             <a
               href='https://linkedin.com/in/-evanwalter'
-              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+              className={textLinkColors}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -46,7 +49,7 @@ export default function Home() {
             </a>
             <a
               href='https://twitter.com/_evanwalter_'
-              className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+              className={textLinkColors}
               target='_blank'
               rel='noreferrer noopener'
             >

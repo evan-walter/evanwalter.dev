@@ -4,11 +4,13 @@ import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import MobileMenuButtons from './MobileMenuButtons'
 import ThemeButton from './ThemeButton'
+import { useTextLinkContext } from 'components/TextLinkProvider'
 
 export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const isMobileScreen = useMediaQuery({ query: '(max-width: 640px)' })
   const router = useRouter()
+  const textLinkColors = useTextLinkContext()
 
   useEffect(() => {
     function handleRouteChange() {

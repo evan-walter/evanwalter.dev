@@ -1,11 +1,15 @@
+import { useTextLinkContext } from 'components/TextLinkProvider'
+
 export default function Projects() {
+  const textLinkColors = useTextLinkContext()
+
   return (
     <div className='flex h-full w-full flex-col items-center justify-center gap-y-16'>
       <p className='text-center text-3xl'>
         My latest projects can be found on{' '}
         <a
           href='https://github.com/evan-walter'
-          className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+          className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
@@ -21,7 +25,7 @@ export default function Projects() {
         <span>
           <a
             href='https://previous.evanwalter.dev'
-            className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+            className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >

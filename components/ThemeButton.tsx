@@ -1,9 +1,11 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
+import { useTextLinkContext } from './TextLinkProvider'
 
 export default function ThemeButton() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
+  const textLinkColors = useTextLinkContext()
 
   useEffect(() => setMounted(true), [])
 
@@ -11,7 +13,7 @@ export default function ThemeButton() {
     <>
       {mounted ? (
         <button
-          className='text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+          className={textLinkColors}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           <svg
