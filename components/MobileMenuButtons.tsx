@@ -1,3 +1,5 @@
+import { useTextLinkContext } from './TextLinkProvider'
+
 interface MobileMenuButtonsProps {
   isMenuOpen: Boolean
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>
@@ -7,8 +9,10 @@ export default function MobileMenuButtons({
   isMenuOpen,
   setIsMenuOpen,
 }: MobileMenuButtonsProps) {
+  const textLinkColors = useTextLinkContext()
+
   return (
-    <button onClick={() => setIsMenuOpen((s) => !s)}>
+    <button className={textLinkColors} onClick={() => setIsMenuOpen((s) => !s)}>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
