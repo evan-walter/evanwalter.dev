@@ -36,7 +36,11 @@ export default function NavMenu() {
 
   return (
     <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 dark:bg-zinc-900'>
-      <div className='flex w-full items-center justify-between'>
+      <div
+        className={`${
+          isMenuOpen ? 'pb-3' : ''
+        } flex w-full items-center justify-between`}
+      >
         <MobileMenuButtons
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
