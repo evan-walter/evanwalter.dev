@@ -10,7 +10,6 @@ export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const isMobileScreen = useMediaQuery({ query: '(max-width: 640px)' })
   const router = useRouter()
-  const textLinkColors = useTextLinkContext()
 
   useEffect(() => {
     function handleRouteChange() {
@@ -117,6 +116,7 @@ function NavItem({
   isPage,
   handleClick,
 }: NavItemProps) {
+  const textLinkColors = useTextLinkContext()
   const isActive = router.asPath === href
   const classNames = `
     ${
@@ -124,7 +124,7 @@ function NavItem({
         ? 'w-full border-b border-zinc-700 text-black dark:text-white'
         : isActive
         ? 'text-black dark:text-white'
-        : 'text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
+        : textLinkColors
     }
     font-semibold max-sm:py-3 sm:w-fit
   `
