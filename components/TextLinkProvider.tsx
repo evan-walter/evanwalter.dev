@@ -4,13 +4,11 @@ const TextLinkContext = createContext<string>(
   'text-zinc-500 hover:text-black dark:text-zinc-400 dark:hover:text-white'
 )
 
-interface TextLinkContextProviderProps {
+interface TextLinkProviderProps {
   children: React.ReactNode
 }
 
-export default function TextLinkContextProvider({
-  children,
-}: TextLinkContextProviderProps) {
+export default function TextLinkProvider({ children }: TextLinkProviderProps) {
   const textLinkColors = useContext(TextLinkContext)
 
   return (
