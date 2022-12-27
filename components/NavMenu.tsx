@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import MobileMenuButtons from './MobileMenuButtons'
 import ThemeButton from './ThemeButton'
-import { useTextLinkContext } from 'components/TextLinkProvider'
+import { useTextLinkContext } from './TextLinkProvider'
 
 export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
