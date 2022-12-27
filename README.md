@@ -19,7 +19,7 @@ This application requires Node.js.
 
 ```bash
 git clone git@github.com:evan-walter/evanwalter.dev.git
-cd evanwalter.dev
+cd ./evanwalter.dev
 npm install
 npm run dev
 ```
