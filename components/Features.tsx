@@ -10,7 +10,7 @@ export default function Features() {
         <li>Showing projects here (not just on GitHub)</li>
         <li>Contact form</li>
         <li>Guestbook</li>
-        <li>Blog with RSS feed (using Markdown)</li>
+        <li>Blog with RSS feed (with Markdown)</li>
         <li>Analytics</li>
         <li>Site map</li>
         <li>Footer links (including site map)</li>
