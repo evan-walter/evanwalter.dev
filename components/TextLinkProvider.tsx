@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react'
 
 const TextLinkContext = createContext<string>(
-  'text-red-500 hover:text-red-700 dark:text-red-400 dark:hover:text-red-500'
+  'font-semibold text-zinc-500 underline hover:text-black dark:text-zinc-400 dark:hover:text-white'
 )
 
 export function useTextLinkContext() {

@@ -36,7 +36,7 @@ export default function NavMenu() {
   }, [isMobileScreen, isMenuOpen])
 
   return (
-    <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 dark:bg-zinc-900'>
+    <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
       <div
         className={`${
           isMobileScreen && isMenuOpen ? 'pb-3' : ''
@@ -126,7 +126,7 @@ function NavItem({
         ? 'text-black dark:text-white'
         : navLinkColors
     }
-    font-semibold max-sm:py-3 sm:w-fit
+    max-sm:py-3 sm:w-fit
   `
 
   return (
