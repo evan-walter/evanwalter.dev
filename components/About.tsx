@@ -5,10 +5,8 @@ export default function About() {
 
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='text-4xl font-bold max-sm:text-center'>About</h2>
-      <p>
-        Here&apos;s a little bit about me and what I&apos;m up to these days.
-      </p>
+      <h2 className='mb-1 text-4xl font-bold max-sm:text-center'>About</h2>
+      <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
       <p>
         I&apos;m a full time Web Developer at{' '}
         <a
@@ -22,9 +20,10 @@ export default function About() {
         .
       </p>
       <p>
-        In my spare time, I&apos;m building a full stack social media web app
+        In my spare time, I&apos;ve built a couple full stack social media web
+        apps with Express.js and React. I&apos;m currently building a new one
         with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
-        few interesting features and things I&apos;d like to implement.
+        couple interesting features and things I&apos;d like to implement.
       </p>
       <ul className='list-outside list-disc px-6'>
         <li>
