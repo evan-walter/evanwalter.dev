@@ -13,6 +13,8 @@ export default function ThemeButton() {
     <>
       {mounted ? (
         <button
+          aria-label='Toggle Dark Mode'
+          type='button'
           className={textLinkColors}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >

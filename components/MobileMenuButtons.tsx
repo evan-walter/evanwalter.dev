@@ -12,7 +12,12 @@ export default function MobileMenuButtons({
   const textLinkColors = useTextLinkContext()
 
   return (
-    <button className={textLinkColors} onClick={() => setIsMenuOpen((s) => !s)}>
+    <button
+      aria-label='Toggle Menu'
+      type='button'
+      className={textLinkColors}
+      onClick={() => setIsMenuOpen((s) => !s)}
+    >
       <svg
         xmlns='http://www.w3.org/2000/svg'
         fill='none'
