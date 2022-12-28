@@ -8,11 +8,11 @@ export default function Features() {
       <ul className='list-outside list-disc px-6'>
         <li>Welcome video</li>
         <li>Projects to show here (not just on GitHub)</li>
-        <li>Contact Form</li>
+        <li>Contact form</li>
         <li>Guestbook</li>
         <li>Blog with RSS feed (using Markdown)</li>
         <li>Analytics</li>
-        <li>Site Map</li>
+        <li>Site map</li>
         <li>Footer links (including site map)</li>
       </ul>
     </div>
