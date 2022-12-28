@@ -74,8 +74,8 @@ export default function Home() {
         </p>
         <Features />
         <p>
-          For now, if you have any questions or would like to get in touch,
-          please feel free to reach out to me on{' '}
+          For now, if you have any questions or want to get in touch, please
+          reach out to me on{' '}
           <a
             href='https://linkedin.com/in/-evanwalter/'
             className={textLinkColors}
