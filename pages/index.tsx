@@ -20,10 +20,16 @@ export default function Home() {
             priority
           />
           <div className='flex flex-col items-center justify-center gap-y-3 text-center sm:items-start sm:text-left'>
-            <h1 className='text-4xl font-bold'>Evan Walter</h1>
-            <h2 className='text-4xl font-bold'>Full Stack Engineering</h2>
-            <h3>React | Next.js | Node.js | TypeScript | GraphQL</h3>
-            <div className='flex flex-wrap justify-center gap-x-5'>
+            <h1 className='text-3xl font-bold sm:whitespace-nowrap sm:text-4xl'>
+              Evan Walter
+            </h1>
+            <h2 className='text-3xl font-bold sm:whitespace-nowrap sm:text-4xl'>
+              Full Stack Engineering
+            </h2>
+            <h3 className='sm:whitespace-nowrap'>
+              React | Next.js | Node.js | TypeScript | GraphQL
+            </h3>
+            <div className='flex gap-x-5 max-sm:flex-wrap max-sm:justify-center'>
               <a
                 href='/resume.pdf'
                 className={textLinkColors}

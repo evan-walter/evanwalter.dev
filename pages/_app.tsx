@@ -18,11 +18,13 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <ThemeProvider attribute='class'>
-        <div className='container relative min-h-[45rem] max-w-2xl pb-16 sm:min-h-[35rem]'>
-          <TextLinkProvider>
-            <NavMenu />
-            <Component {...pageProps} />
-          </TextLinkProvider>
+        <div className='container'>
+          <div className='mx-auto min-h-[45rem] max-w-2xl pb-16 sm:min-h-[35rem]'>
+            <TextLinkProvider>
+              <NavMenu />
+              <Component {...pageProps} />
+            </TextLinkProvider>
+          </div>
         </div>
 
         <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-100 py-10 dark:bg-zinc-800'>

@@ -5,7 +5,7 @@ export default function About() {
 
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='mb-1 text-4xl font-bold max-sm:text-center'>About</h2>
+      <h2 className='mb-1 sm:text-3xl font-bold text-2xl'>About</h2>
       <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
       <p>
         I am a Web Developer at{' '}
@@ -42,7 +42,7 @@ export default function About() {
           rel='noreferrer noopener'
         >
           Rust
-        </a>
+        </a>{' '}
         intrigues me, and I'd like to explore learning it sometime.{' '}
       </p>
       <p>
