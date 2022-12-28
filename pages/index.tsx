@@ -9,7 +9,7 @@ export default function Home() {
 
   return (
     <>
-      <main className='flex h-full w-full flex-col gap-y-8 pt-28 text-lg'>
+      <main className='flex h-full w-full flex-col gap-y-8 pt-32 text-lg'>
         <div className='mb-8 flex flex-col items-center justify-center gap-8 sm:flex-row'>
           <Image
             className='rounded-full'
