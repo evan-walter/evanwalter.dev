@@ -79,6 +79,8 @@ export default function Home() {
           <a
             href='https://linkedin.com/in/-evanwalter/'
             className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
           >
             LinkedIn
           </a>{' '}
@@ -86,6 +88,8 @@ export default function Home() {
           <a
             href='https://twitter.com/_evanwalter_/'
             className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
           >
             Twitter
           </a>
