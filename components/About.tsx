@@ -34,14 +34,21 @@ export default function About() {
         <li>Full test coverage</li>
       </ul>
       <p>
-        Aside from this tech stack, I&apos;m intrigued by Rust and interested to
-        explore learning it sometime.{' '}
+        Aside from this tech stack,{' '}
+        <a
+          href='https://www.rust-lang.org/'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          Rust
+        </a>
+        intrigues me, and I'd like to explore learning it sometime.{' '}
       </p>
       <p>
         I also really enjoy rock climbing, traveling, going to the gym, music,
         surfing, paddle boarding, hiking, and pretty much anything outdoors. And
-        of course I enjoy taking it easy and hanging out with family and
-        friends.
+        of course I like to take it easy and hang out with family and friends.
       </p>
     </div>
   )
