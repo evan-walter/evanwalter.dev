@@ -27,13 +27,13 @@ export default function About() {
       </p>
       <ul className='mb-2 list-outside list-disc px-6'>
         <li>
-          Ability for users to sort their own posts and display other users'
-          posts based on number of likes, number of comments, and other
-          parameters.
+          Ability for users to sort their own posts and display other
+          users&apos; posts based on number of likes, number of comments, and
+          other parameters.
         </li>
         <li>Full test coverage</li>
       </ul>
-      <p className=''>
+      <p>
         Aside from this tech stack, I&apos;m intrigued by Rust and interested to
         explore learning it sometime.{' '}
       </p>
