@@ -8,7 +8,7 @@ export default function About() {
       <h2 className='mb-1 text-4xl font-bold max-sm:text-center'>About</h2>
       <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
       <p>
-        I&apos;m a full time Web Developer at{' '}
+        I work as a full-time Web Developer at{' '}
         <a
           href='https://www.ghostbed.com/'
           className={textLinkColors}
@@ -25,13 +25,24 @@ export default function About() {
         with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
         couple interesting features and things I&apos;d like to implement.
       </p>
-      <ul className='list-outside list-disc px-6'>
+      <ul className='mb-2 list-outside list-disc px-6'>
         <li>
-          Ability to sort posts based on number of likes, number of comments,
-          and other parameters.
+          Ability for users to sort their own posts and display other users'
+          posts based on number of likes, number of comments, and other
+          parameters.
         </li>
         <li>Full test coverage</li>
       </ul>
+      <p className=''>
+        Aside from this tech stack, I&apos;m intrigued by Rust and interested to
+        explore learning it sometime.{' '}
+      </p>
+      <p>
+        I also really enjoy rock climbing, traveling, going to the gym, music,
+        surfing, paddle boarding, hiking, and pretty much anything outdoors. And
+        of course I enjoy taking it easy and hanging out with family and
+        friends.
+      </p>
     </div>
   )
 }

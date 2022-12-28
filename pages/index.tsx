@@ -68,10 +68,6 @@ export default function Home() {
           </div>
         </div>
         <About />
-        <p>
-          Aside from this tech stack, I&apos;m intrigued by Rust and interested
-          to explore learning it sometime.{' '}
-        </p>
         <Features />
         <p>
           For now, if you have any questions or want to get in touch, please
