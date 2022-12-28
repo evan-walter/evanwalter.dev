@@ -1,4 +1,4 @@
-import { useTextLinkContext } from './TextLinkProvider'
+import { useNavLinkContext } from './NavLinkProvider'
 
 interface MobileMenuButtonsProps {
   isMenuOpen: Boolean
@@ -9,13 +9,13 @@ export default function MobileMenuButtons({
   isMenuOpen,
   setIsMenuOpen,
 }: MobileMenuButtonsProps) {
-  const textLinkColors = useTextLinkContext()
+  const navLinkColors = useNavLinkContext()
 
   return (
     <button
       aria-label='Toggle Menu'
       type='button'
-      className={textLinkColors}
+      className={navLinkColors}
       onClick={() => setIsMenuOpen((s) => !s)}
     >
       <svg

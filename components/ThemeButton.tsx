@@ -1,11 +1,11 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
-import { useTextLinkContext } from './TextLinkProvider'
+import { useNavLinkContext } from './NavLinkProvider'
 
 export default function ThemeButton() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
-  const textLinkColors = useTextLinkContext()
+  const navLinkColors = useNavLinkContext()
 
   useEffect(() => setMounted(true), [])
 
@@ -15,7 +15,7 @@ export default function ThemeButton() {
         <button
           aria-label='Toggle Dark Mode'
           type='button'
-          className={textLinkColors}
+          className={navLinkColors}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           <svg

@@ -5,7 +5,7 @@ export default function About() {
 
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='mb-1 sm:text-3xl font-bold text-2xl'>About</h2>
+      <h2 className='mb-1 text-2xl font-bold sm:text-3xl'>About</h2>
       <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
       <p>
         I am a Web Developer at{' '}
@@ -43,7 +43,7 @@ export default function About() {
         >
           Rust
         </a>{' '}
-        intrigues me, and I'd like to explore learning it sometime.{' '}
+        intrigues me, and I&apos;d like to explore learning it sometime.{' '}
       </p>
       <p>
         I also really enjoy rock climbing, traveling, going to the gym, music,

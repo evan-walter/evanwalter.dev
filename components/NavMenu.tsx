@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
 import MobileMenuButtons from './MobileMenuButtons'
 import ThemeButton from './ThemeButton'
-import { useTextLinkContext } from './TextLinkProvider'
+import { useNavLinkContext } from './NavLinkProvider'
 
 export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -116,7 +116,7 @@ function NavItem({
   isPage,
   handleClick,
 }: NavItemProps) {
-  const textLinkColors = useTextLinkContext()
+  const navLinkColors = useNavLinkContext()
   const isActive = router.asPath === href
   const classNames = `
     ${
@@ -124,7 +124,7 @@ function NavItem({
         ? 'w-full border-b border-zinc-700 text-black dark:text-white'
         : isActive
         ? 'text-black dark:text-white'
-        : textLinkColors
+        : navLinkColors
     }
     font-semibold max-sm:py-3 sm:w-fit
   `
