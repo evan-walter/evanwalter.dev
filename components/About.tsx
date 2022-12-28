@@ -8,7 +8,7 @@ export default function About() {
       <h2 className='mb-1 text-4xl font-bold max-sm:text-center'>About</h2>
       <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
       <p>
-        I work as a full-time Web Developer at{' '}
+        I am a Web Developer at{' '}
         <a
           href='https://www.ghostbed.com/'
           className={textLinkColors}
