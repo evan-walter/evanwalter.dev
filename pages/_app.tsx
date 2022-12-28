@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </Head>
 
       <ThemeProvider attribute='class'>
-        <div className='container relative h-screen min-h-[45rem] max-w-2xl sm:min-h-[35rem]'>
+        <div className='container relative min-h-[45rem] max-w-2xl pb-16 sm:min-h-[35rem]'>
           <TextLinkProvider>
             <NavMenu />
             <Component {...pageProps} />
