@@ -20,10 +20,10 @@ export default function About() {
         .
       </p>
       <p>
-        In my spare time, I&apos;ve built a couple full stack social media web
-        apps with Express.js and React. I&apos;m currently building a new one
-        with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
-        couple interesting features and things I&apos;d like to implement.
+        In my spare time, I&apos;ve started to build a couple full stack social
+        media web apps with Express.js and React. I&apos;m currently building
+        one with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are
+        a couple interesting features and things I want to implement.
       </p>
       <ul className='mb-2 list-outside list-disc px-6'>
         <li>
@@ -43,7 +43,7 @@ export default function About() {
         >
           Rust
         </a>{' '}
-        intrigues me, and I&apos;d like to explore learning it sometime.{' '}
+        intrigues me, and I want to explore learning it sometime.{' '}
       </p>
       <p>
         I also really enjoy rock climbing, traveling, going to the gym, music,
