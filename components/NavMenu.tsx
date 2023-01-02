@@ -121,7 +121,7 @@ function NavItem({
   const classNames = `
     ${
       isMobileScreen
-        ? 'w-full border-b border-zinc-700 text-black dark:text-white'
+        ? 'w-full border-b border-zinc-700 font-semibold text-black dark:text-white'
         : isActive
         ? 'text-black dark:text-white'
         : navLinkColors
