@@ -22,8 +22,9 @@ export default function About() {
         primarily use Vue.js with TailwindCSS. We also use Next.js, React,
         TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
         headless tech stack. I focus most of my personal learning and side
-        projects on this stack we&apos;re migrating to. I hope to work with this
-        tech stack or a very similar one as a full stack engineer.
+        projects on Next.js, React, TypeScript, GraphQL, and TailwindCSS. I hope
+        to work with this tech stack or a very similar one as a full stack
+        engineer.
       </p>
       <p>
         In my spare time, I&apos;ve built several complete full stack web
