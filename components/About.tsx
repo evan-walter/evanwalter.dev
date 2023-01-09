@@ -17,18 +17,35 @@ export default function About() {
         >
           GhostBed
         </a>
-        . Most of my work here is front-end focused. We currently use Vue.js
-        with TailwindCSS. We are migrating to a headless stack with Next.js,
-        React, TypeScript, GraphQL, and TailwindCSS. I hope to work with a tech
-        stack such as this one as a full stack engineer. I focus the majority of
-        my personal learning and side projects on this tech stack.
+        . For now, most of my work here is front-end focused. We currently use
+        Vue.js with TailwindCSS. We are migrating to a headless tech stack with
+        Next.js, React, TypeScript, GraphQL, and TailwindCSS. I hope to work
+        with a tech stack such as this one as a full stack engineer. I focus the
+        majority of my personal learning and side projects on this tech stack.
       </p>
       <p>
         In my spare time, I&apos;ve built several complete full stack web
-        applications. I&apos;ve also started to build a couple full stack social
-        media web apps with Express.js and React. I&apos;m currently building
-        one with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are
-        a couple interesting features and things I want to implement.
+        applications. I&apos;ve also started to build a full stack social media
+        web app (
+        <a
+          href='https://github.com/evan-walter/baseline'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          baseline
+        </a>
+        ) with Express.js and React. I&apos;m currently building one (
+        <a
+          href='https://github.com/evan-walter/connector-social-media-app'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          connector-social-media-app
+        </a>
+        ) with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
+        couple interesting features and things I want to implement.
       </p>
       <ul className='px-6 mb-2 list-disc list-outside'>
         <li>
