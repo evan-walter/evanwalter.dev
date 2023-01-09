@@ -17,37 +17,40 @@ export default function About() {
         >
           GhostBed
         </a>
-        . For now, most of my work here is front-end focused. We currently use
-        Vue.js with TailwindCSS. We are migrating to a headless tech stack with
-        Next.js, React, TypeScript, GraphQL, and TailwindCSS. I hope to work
-        with a tech stack such as this one as a full stack engineer. I focus the
-        majority of my personal learning and side projects on this tech stack.
+        . For now, most of my work at GhostBed is front-end-focused. I enjoy
+        working with the front end, the back end, and the full stack. We
+        currently use Vue.js with TailwindCSS. We are migrating to a headless
+        tech stack with Next.js, React, TypeScript, GraphQL, and TailwindCSS. I
+        focus most of my personal learning and side projects on this stack. I
+        hope to work with this tech stack or a very similar one as a full stack
+        engineer.
       </p>
       <p>
         In my spare time, I&apos;ve built several complete full stack web
         applications. I&apos;ve also started to build a full stack social media
-        web app (
+        web app,{' '}
         <a
           href='https://github.com/evan-walter/baseline'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
-          baseline
+          Baseline
         </a>
-        ) with Express.js and React. I&apos;m currently building one (
+        , with Express.js and React. I&apos;m currently building another full
+        stack social media app,{' '}
         <a
           href='https://github.com/evan-walter/connector-social-media-app'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
-          connector-social-media-app
+          Connector
         </a>
-        ) with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
-        couple interesting features and things I want to implement.
+        , with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
+        couple interesting features I want to implement.
       </p>
-      <ul className='px-6 mb-2 list-disc list-outside'>
+      <ul className='mb-2 list-outside list-disc px-6'>
         <li>
           Ability for users to sort their own posts and display other
           users&apos; posts based on number of likes, number of comments, and
@@ -69,8 +72,8 @@ export default function About() {
       </p>
       <p>
         I also really enjoy rock climbing, traveling, fitness, music, surfing,
-        paddle boarding, hiking, and pretty much anything outdoors. And of
-        course I like to take it easy and hang out with family and friends.
+        paddle boarding, hiking, and pretty much anything outdoors. And, of
+        course, I like to take it easy and hang out with family and friends.
       </p>
     </div>
   )
