@@ -6,7 +6,7 @@ export default function About() {
   return (
     <div className='flex flex-col gap-y-2'>
       <h2 className='mb-1 text-2xl font-bold sm:text-3xl'>About</h2>
-      <p>Here&apos;s a little about me and what I&apos;m up to these days.</p>
+      <p>I'd like to share a little about myself and what I am up to.</p>
       <p>
         I am a Web Developer at{' '}
         <a
@@ -30,7 +30,7 @@ export default function About() {
         one with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are
         a couple interesting features and things I want to implement.
       </p>
-      <ul className='mb-2 list-outside list-disc px-6'>
+      <ul className='px-6 mb-2 list-disc list-outside'>
         <li>
           Ability for users to sort their own posts and display other
           users&apos; posts based on number of likes, number of comments, and
