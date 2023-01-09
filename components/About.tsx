@@ -19,11 +19,11 @@ export default function About() {
         </a>
         . For now, most of my work at GhostBed is front-end-focused. I enjoy
         working with the front end, the back end, and the full stack. We
-        currently use Vue.js with TailwindCSS. We are migrating to a headless
-        tech stack with Next.js, React, TypeScript, GraphQL, and TailwindCSS. I
-        focus most of my personal learning and side projects on this stack. I
-        hope to work with this tech stack or a very similar one as a full stack
-        engineer.
+        primarily use Vue.js with TailwindCSS. We also use Next.js, React,
+        TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
+        headless tech stack. I focus most of my personal learning and side
+        projects on this stack we&apos;re migrating to. I hope to work with this
+        tech stack or a very similar one as a full stack engineer.
       </p>
       <p>
         In my spare time, I&apos;ve built several complete full stack web
@@ -37,8 +37,8 @@ export default function About() {
         >
           Baseline
         </a>
-        , with Express.js and React. I&apos;m currently building another full
-        stack social media app,{' '}
+        , with Express.js, React, and GraphQL. I&apos;m currently building
+        another full stack social media app,{' '}
         <a
           href='https://github.com/evan-walter/connector-social-media-app'
           className={textLinkColors}
