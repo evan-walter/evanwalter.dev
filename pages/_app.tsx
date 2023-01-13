@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
       <ThemeProvider attribute='class'>
         <div className='container'>
-          <div className='mx-auto min-h-[45rem] max-w-2xl pb-16 sm:min-h-[35rem]'>
+          <div className='mx-auto h-screen min-h-[45rem] max-w-2xl pb-16 sm:min-h-[35rem]'>
             <NavLinkProvider>
               <NavMenu />
             </NavLinkProvider>
