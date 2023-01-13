@@ -24,9 +24,11 @@ export default function App({ Component, pageProps }: AppProps) {
             <NavLinkProvider>
               <NavMenu />
             </NavLinkProvider>
-            <TextLinkProvider>
-              <Component {...pageProps} />
-            </TextLinkProvider>
+            <div className='pt-32'>
+              <TextLinkProvider>
+                <Component {...pageProps} />
+              </TextLinkProvider>
+            </div>
           </div>
         </div>
 

@@ -4,7 +4,7 @@ export default function Projects() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='flex h-screen w-full flex-col gap-y-16 pt-32'>
+    <div className='flex h-screen w-full flex-col gap-y-16'>
       <p className='text-center text-3xl'>
         My latest projects can be found on{' '}
         <a
