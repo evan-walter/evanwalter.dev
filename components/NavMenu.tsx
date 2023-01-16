@@ -36,11 +36,11 @@ export default function NavMenu() {
   }, [isMobileScreen, isMenuOpen])
 
   return (
-    <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
+    <nav className='absolute inset-x-0 top-0 mx-auto max-w-2xl bg-zinc-100 py-8 text-lg dark:bg-zinc-900'>
       <div
         className={`${
           isMobileScreen && isMenuOpen ? 'pb-3' : ''
-        } flex w-full items-center justify-between`}
+        } flex w-full items-center justify-between px-6`}
       >
         <MobileMenuButtons
           isMenuOpen={isMenuOpen}
@@ -49,49 +49,37 @@ export default function NavMenu() {
         {isMobileScreen ? <ThemeButton /> : null}
       </div>
       {isMenuOpen ? (
-        <div className='flex w-full items-start justify-between gap-y-3 gap-x-8 max-sm:flex-col sm:items-center'>
-          <NavItem
-            href='/'
-            text='Home'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isPage
-          />
-          <NavItem
-            href='/projects'
-            text='Projects'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isPage
-          />
-          <NavItem
-            href='/resume.pdf'
-            text='Resume'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://github.com/evan-walter'
-            text='GitHub'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://linkedin.com/in/-evanwalter'
-            text='LinkedIn'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://twitter.com/_evanwalter_'
-            text='Twitter'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
+        <div className='flex w-full items-start justify-between px-6'>
+          <div className='flex w-full items-start gap-x-8 gap-y-3 max-sm:flex-col sm:items-center'>
+            <NavItem
+              href='/'
+              text='Home'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isPage
+            />
+            <NavItem
+              href='/guestbook'
+              text='Guestbook'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isPage
+            />
+            <NavItem
+              href='/projects'
+              text='Projects'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isPage
+            />
+            <NavItem
+              href='/resume.pdf'
+              text='Resume'
+              router={router}
+              isMobileScreen={isMobileScreen}
+              handleClick={() => setIsMenuOpen(false)}
+            />
+          </div>
           {isMobileScreen ? null : <ThemeButton />}
         </div>
       ) : null}

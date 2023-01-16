@@ -31,12 +31,7 @@ export default function Features() {
         <li>Welcome video</li>
         <li>Showing projects on the Projects page (not just on GitHub)</li>
         <li>Contact form</li>
-        <li>
-          Guestbook{' '}
-          <span className='ml-5 text-zinc-500 dark:text-zinc-400'>
-            ✨ In progress! ✨
-          </span>
-        </li>
+        <li>Guestbook</li>
         <li>Blog with RSS feed (with Markdown)</li>
         <li>Analytics</li>
         <li>Site map</li>

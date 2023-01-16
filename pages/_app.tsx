@@ -5,6 +5,7 @@ import { ThemeProvider } from 'next-themes'
 import NavLinkProvider from 'components/NavLinkProvider'
 import TextLinkProvider from 'components/TextLinkProvider'
 import NavMenu from 'components/NavMenu'
+import Footer from 'components/Footer'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -32,11 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
 
-        <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-100 py-10 dark:bg-zinc-800'>
-          <div className='container flex flex-col items-center justify-center'>
-            <button title='Building software on the web since 2019'>❤️‍🔥</button>
-          </div>
-        </footer>
+        <Footer />
       </ThemeProvider>
     </>
   )
