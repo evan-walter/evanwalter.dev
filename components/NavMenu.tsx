@@ -36,11 +36,11 @@ export default function NavMenu() {
   }, [isMobileScreen, isMenuOpen])
 
   return (
-    <nav className='absolute inset-x-0 top-0 mx-auto max-w-2xl bg-zinc-100 py-8 text-lg dark:bg-zinc-900'>
+    <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
       <div
         className={`${
           isMobileScreen && isMenuOpen ? 'pb-3' : ''
-        } flex w-full items-center justify-between px-6`}
+        } flex w-full items-center justify-between`}
       >
         <MobileMenuButtons
           isMenuOpen={isMenuOpen}
@@ -49,8 +49,8 @@ export default function NavMenu() {
         {isMobileScreen ? <ThemeButton /> : null}
       </div>
       {isMenuOpen ? (
-        <div className='flex w-full items-start justify-between px-6'>
-          <div className='flex w-full items-start gap-x-8 gap-y-3 max-sm:flex-col sm:items-center'>
+        <div className='flex items-center justify-between'>
+          <div className='flex w-full items-start gap-y-3 gap-x-8 max-sm:flex-col'>
             <NavItem
               href='/'
               text='Home'
