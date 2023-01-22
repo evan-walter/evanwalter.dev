@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <main className='flex h-full w-full flex-col gap-y-8 text-lg'>
-        <div className='mb-8 flex flex-col items-center justify-center gap-8 sm:flex-row'>
+        <div className='mb-8 flex flex-col items-center justify-center gap-8 md:flex-row'>
           <Image
             className='rounded-full'
             src='/head-shot.jpg'
@@ -19,17 +19,17 @@ export default function Home() {
             height={200}
             priority
           />
-          <div className='flex flex-col items-center justify-center gap-y-3 text-center sm:items-start sm:text-left'>
-            <h1 className='text-3xl font-bold sm:whitespace-nowrap sm:text-4xl'>
+          <div className='flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left'>
+            <h1 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Evan Walter
             </h1>
-            <h2 className='text-3xl font-bold sm:whitespace-nowrap sm:text-4xl'>
+            <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Full Stack Engineering
             </h2>
-            <h3 className='sm:whitespace-nowrap'>
+            <h3 className='md:whitespace-nowrap'>
               React | Next.js | Node.js | TypeScript | GraphQL
             </h3>
-            <div className='flex gap-x-5 max-sm:flex-wrap max-sm:justify-center'>
+            <div className='flex gap-x-5 max-md:flex-wrap max-md:justify-center'>
               <a
                 href='/resume.pdf'
                 className={textLinkColors}

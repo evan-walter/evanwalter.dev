@@ -18,7 +18,7 @@ export default function About() {
           GhostBed
         </a>
         . For now, most of my work at GhostBed is front-end-focused. I enjoy
-        working with the front end, the back end, and the full stack. We
+        working with the full stack, the front end, and the back end. We
         primarily use Vue.js with TailwindCSS. We also use Next.js, React,
         TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
         headless tech stack. I focus most of my personal learning and side
