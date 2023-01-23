@@ -13,7 +13,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Evan Walter | Full Stack Engineering</title>
         <meta
           name='description'
-          content='React | Next.js | Node.js | TypeScript | GraphQL'
+          content='Full Stack Engineer with 3+ years of experience. Specialize in React, Next.js, Node.js, TypeScript, and GraphQL. Enjoy building scalable web infrastructure with excellent user interfaces. Passionate about open source and developer tooling.'
         />
         <link rel='icon' href='/favicon.svg' />
       </Head>
