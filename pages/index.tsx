@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <main className='flex h-full w-full flex-col gap-y-8 text-lg'>
-        <div className='mb-8 flex flex-col items-center justify-center gap-8 md:flex-row'>
+        <div className='mb-6 flex flex-col items-center justify-center gap-8 md:flex-row'>
           <Image
             className='rounded-full'
             src='/head-shot.jpg'
@@ -73,6 +73,20 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <p className='mx-6 mb-6 italic max-md:text-center'>
+          I created this website with Next.js, React, TypeScript, and
+          TailwindCSS. You can find the source code{' '}
+          <a
+            href='https://github.com/evan-walter/evanwalter.dev/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            here
+          </a>
+          .
+        </p>
+        
         <About />
         <Features />
         <p>
