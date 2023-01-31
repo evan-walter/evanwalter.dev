@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import About from 'components/About'
 import Features from 'components/Features'
+import PodcastAppearance from 'components/PodcastAppearance'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -73,21 +74,25 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <p className='mx-6 mb-6 italic max-md:text-center'>
+
+        <PodcastAppearance />
+
+        <p className='italic max-md:text-center'>
           I created this website with Next.js, React, TypeScript, and
-          TailwindCSS. You can find the source code{' '}
+          TailwindCSS. Feel free to check out the{' '}
           <a
             href='https://github.com/evan-walter/evanwalter.dev/'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >
-            here
+            source code
           </a>
-          .
+          !
         </p>
-        
+
         <About />
+
         <Features />
         <p>
           For now, if you have any questions or want to get in touch, please

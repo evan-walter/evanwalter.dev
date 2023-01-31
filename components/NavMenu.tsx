@@ -58,6 +58,13 @@ export default function NavMenu() {
             isPage
           />
           <NavItem
+            href='/podcast'
+            text='Podcast'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isPage
+          />
+          <NavItem
             href='/projects'
             text='Projects'
             router={router}
