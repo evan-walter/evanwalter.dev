@@ -64,7 +64,7 @@ export default function About() {
         <li>
           Ability for users to sort their own posts and display other
           users&apos; posts based on number of likes, number of comments, and
-          other parameters.
+          other parameters
         </li>
         <li>Full test coverage</li>
       </ul>
