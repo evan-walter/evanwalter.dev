@@ -10,8 +10,8 @@ export default function Home() {
 
   return (
     <>
-      <main className='flex h-full w-full flex-col gap-y-8 text-lg'>
-        <div className='mb-6 flex flex-col items-center justify-center gap-8 md:flex-row'>
+      <main className='flex flex-col gap-y-8'>
+        <div className='flex flex-col items-center justify-center gap-8 md:flex-row'>
           <Image
             className='rounded-full'
             src='/head-shot.jpg'
@@ -79,7 +79,16 @@ export default function Home() {
 
         <p className='italic max-md:text-center'>
           I created this website with Next.js, React, TypeScript, and
-          TailwindCSS. Feel free to check out the{' '}
+          TailwindCSS. I recently added end-to-end test coverage with{' '}
+          <a
+            href='https://www.cypress.io/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Cypress
+          </a>
+          ! Feel free to check out the{' '}
           <a
             href='https://github.com/evan-walter/evanwalter.dev/'
             className={textLinkColors}
@@ -88,7 +97,7 @@ export default function Home() {
           >
             source code
           </a>
-          !
+          .
         </p>
 
         <About />

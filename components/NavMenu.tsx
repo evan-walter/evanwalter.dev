@@ -65,8 +65,8 @@ export default function NavMenu() {
             isPage
           />
           <NavItem
-            href='/projects'
-            text='Projects'
+            href='/features'
+            text='Features'
             router={router}
             isMobileScreen={isMobileScreen}
             isPage

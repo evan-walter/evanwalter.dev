@@ -14,7 +14,7 @@ export default function PodcastAppearance() {
           target='_blank'
           rel='noreferrer noopener'
         >
-          The React Show Podcast
+          The React Show podcast
         </a>
         ! You can listen to the episode{' '}
         <a
