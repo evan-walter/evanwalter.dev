@@ -49,37 +49,63 @@ export default function NavMenu() {
         {isMobileScreen ? <ThemeButton /> : null}
       </div>
       {isMenuOpen ? (
-        <div className='flex items-center justify-between'>
-          <div className='flex w-full items-start gap-y-3 gap-x-8 max-sm:flex-col'>
-            <NavItem
-              href='/'
-              text='Home'
-              router={router}
-              isMobileScreen={isMobileScreen}
-              isPage
-            />
-            <NavItem
-              href='/guestbook'
-              text='Guestbook'
-              router={router}
-              isMobileScreen={isMobileScreen}
-              isPage
-            />
-            <NavItem
-              href='/projects'
-              text='Projects'
-              router={router}
-              isMobileScreen={isMobileScreen}
-              isPage
-            />
-            <NavItem
-              href='/resume.pdf'
-              text='Resume'
-              router={router}
-              isMobileScreen={isMobileScreen}
-              handleClick={() => setIsMenuOpen(false)}
-            />
-          </div>
+        <div className='flex w-full items-start justify-between gap-y-3 max-sm:flex-col sm:items-center'>
+          <NavItem
+            href='/'
+            text='Home'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
+            href='/podcast'
+            text='Podcast'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
+            href='/works'
+            text='Works'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
+            href='/about'
+            text='About'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
+            href='/resume.pdf'
+            text='Resume'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            handleClick={() => setIsMenuOpen(false)}
+          />
+          <NavItem
+            href='https://github.com/evan-walter'
+            text='GitHub'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            handleClick={() => setIsMenuOpen(false)}
+          />
+          <NavItem
+            href='https://linkedin.com/in/-evanwalter'
+            text='LinkedIn'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            handleClick={() => setIsMenuOpen(false)}
+          />
+          <NavItem
+            href='https://twitter.com/_evanwalter_'
+            text='Twitter'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            handleClick={() => setIsMenuOpen(false)}
+          />
           {isMobileScreen ? null : <ThemeButton />}
         </div>
       ) : null}
@@ -92,7 +118,7 @@ interface NavItemProps {
   text: string
   router: any
   isMobileScreen: Boolean
-  isPage?: Boolean
+  isInternal?: Boolean
   handleClick?: () => void
 }
 
@@ -101,7 +127,7 @@ function NavItem({
   text,
   router,
   isMobileScreen,
-  isPage,
+  isInternal,
   handleClick,
 }: NavItemProps) {
   const navLinkColors = useNavLinkContext()
@@ -114,12 +140,12 @@ function NavItem({
         ? 'text-black dark:text-white'
         : navLinkColors
     }
-    max-sm:py-3 sm:w-fit
+    max-sm:py-3 sm:w-fit scroll-smooth
   `
 
   return (
     <>
-      {isPage ? (
+      {isInternal ? (
         <Link className={classNames} href={href}>
           {text}
         </Link>

@@ -3,14 +3,16 @@ import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import About from 'components/About'
 import Features from 'components/Features'
+import Contact from 'components/Contact'
+import PodcastAppearance from 'components/PodcastAppearance'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
 
   return (
     <>
-      <main className='flex h-full w-full flex-col gap-y-8 text-lg'>
-        <div className='mb-8 flex flex-col items-center justify-center gap-8 md:flex-row'>
+      <main className='flex flex-col gap-y-8'>
+        <div className='flex flex-col items-center justify-center gap-8 md:flex-row'>
           <Image
             className='rounded-full'
             src='/head-shot.jpg'
@@ -73,30 +75,39 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <About />
-        <Features />
-        <p>
-          For now, if you have any questions or want to get in touch, please
-          reach out to me on{' '}
+
+        <PodcastAppearance />
+
+        <p className='italic max-md:text-center'>
+          I created this website with Next.js, React, TypeScript, and
+          TailwindCSS. I recently added end-to-end test coverage with{' '}
           <a
-            href='https://linkedin.com/in/-evanwalter/'
+            href='https://www.cypress.io/'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >
-            LinkedIn
-          </a>{' '}
-          or{' '}
-          <a
-            href='https://twitter.com/_evanwalter_/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Twitter
+            Cypress
           </a>
-          !
+          ! Feel free to check out the{' '}
+          <a
+            href='https://github.com/evan-walter/evanwalter.dev/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            source code
+          </a>
+          .
         </p>
+
+        <div className='flex flex-col gap-y-2'>
+          <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
+          <About />
+        </div>
+
+        <Features />
+        <Contact />
       </main>
     </>
   )
