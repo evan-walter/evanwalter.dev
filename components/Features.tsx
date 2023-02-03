@@ -44,6 +44,7 @@ export default function Features() {
         </li>
         <li>Responsive navigation menu (mobile and desktop)</li>
         <li>Highlighted active navigation menu item</li>
+        <li>Footer menu</li>
       </ul>
       <h2 className='mt-8 text-2xl font-bold sm:text-3xl'>Desired Features</h2>
       <p>Here are some features I want to add to this website.</p>
@@ -56,7 +57,6 @@ export default function Features() {
         <li>Welcome video</li>
         <li>Analytics</li>
         <li>Site map</li>
-        <li>Footer links (including site map)</li>
       </ul>
     </div>
   )

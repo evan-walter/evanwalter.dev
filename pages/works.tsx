@@ -11,19 +11,19 @@ export default function Highlights() {
       <div className='flex flex-col gap-y-2'>
         <h1 className='mb-1 text-3xl font-bold md:text-4xl'>Works</h1>
         <p>
-          To check out my works, exploring{' '}
+          To check out my works, exploring this website you&apos;re on,{' '}
           <a
-            href='https://github.com/evan-walter/evanwalter.dev/'
+            href='https://github.com/evan-walter/evanwalter.dev'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >
-            this website you&apos;re on
-          </a>{' '}
-          is a great place to start since I created it from scratch!
+            evanwalter.dev
+          </a>
+          , is a great place to start since I created it from scratch!
         </p>
         <p>
-          I&apos;d also like to highlight some works I&apos;ve contributed to at{' '}
+          I&apos;d also like to highlight some works I&apos;ve contributed at{' '}
           <a
             href='https://www.ghostbed.com/'
             className={textLinkColors}
@@ -33,7 +33,7 @@ export default function Highlights() {
             GhostBed
           </a>{' '}
           along with some of my personal works, such as features here on this
-          website.
+          website and other projects.
         </p>
       </div>
 
