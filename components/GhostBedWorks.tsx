@@ -4,10 +4,7 @@ export default function GhostBedWorks() {
   return (
     <div className='flex flex-col gap-y-2'>
       <h2 className='text-2xl font-bold sm:text-3xl'>GhostBed Highlights</h2>
-      <p>
-        Below are a few of my contributions at my current role as a Web
-        Developer at GhostBed.
-      </p>
+      <p>Below are a few of my contributions at my current role at GhostBed.</p>
       <GhostBedWork
         url='https://www.ghostbed.com/pages/mattress-quiz'
         title='Mattress Quiz with Next.js, React, and TypeScript'
@@ -37,7 +34,7 @@ export function GhostBedWork({ url, title, description }: GhostBedWorkProps) {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='mt-4 flex flex-col gap-y-2 rounded-lg border-2 border-[#5FA405] px-4 py-3'>
+    <div className='mt-4 flex flex-col gap-y-2 rounded-lg border-2 border-[#5FA405] px-5 py-4'>
       <h3>
         <a
           href={url}
