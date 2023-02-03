@@ -27,6 +27,21 @@ export default function Highlights() {
       <GhostBedWorks />
       <Features />
       <Contact />
+      <div className='flex flex-col gap-y-2'>
+        <h2 className='text-2xl font-bold sm:text-3xl'>Other Personal Works</h2>
+        <p>
+          For now, you can check out all my other personal works on{' '}
+          <a
+            href='https://www.github.com/evan-walter/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            GitHub
+          </a>
+          .
+        </p>
+      </div>
     </div>
   )
 }
