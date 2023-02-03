@@ -72,6 +72,13 @@ export default function NavMenu() {
             isInternal
           />
           <NavItem
+            href='/guestbook'
+            text='Guestbook'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
             href='/about'
             text='About'
             router={router}
