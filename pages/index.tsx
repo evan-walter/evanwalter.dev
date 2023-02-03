@@ -100,6 +100,7 @@ export default function Home() {
           .
         </p>
 
+        <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
         <About />
 
         <Features />

@@ -14,9 +14,9 @@ export default function PodcastAppearance() {
           target='_blank'
           rel='noreferrer noopener'
         >
-          The React Show podcast
-        </a>
-        ! You can listen to the episode{' '}
+          The React Show
+        </a>{' '}
+        podcast! You can listen to the episode{' '}
         <a
           href='https://podcast.thereactshow.com/1764837/12142504'
           className={textLinkColors}

@@ -5,7 +5,6 @@ export default function About() {
 
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
       <p>I&apos;d like to share a little about myself and what I am up to.</p>
       <p>
         I am a Web Developer at{' '}

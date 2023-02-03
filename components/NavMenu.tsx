@@ -49,27 +49,34 @@ export default function NavMenu() {
         {isMobileScreen ? <ThemeButton /> : null}
       </div>
       {isMenuOpen ? (
-        <div className='flex w-full items-start justify-between gap-y-3 gap-x-8 max-sm:flex-col sm:items-center'>
+        <div className='flex w-full items-start justify-between gap-y-3 max-sm:flex-col sm:items-center'>
           <NavItem
             href='/'
             text='Home'
             router={router}
             isMobileScreen={isMobileScreen}
-            isPage
+            isInternal
           />
           <NavItem
             href='/podcast'
             text='Podcast'
             router={router}
             isMobileScreen={isMobileScreen}
-            isPage
+            isInternal
           />
           <NavItem
-            href='/features'
-            text='Features'
+            href='/works'
+            text='Works'
             router={router}
             isMobileScreen={isMobileScreen}
-            isPage
+            isInternal
+          />
+          <NavItem
+            href='/about'
+            text='About'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
           />
           <NavItem
             href='/resume.pdf'
@@ -111,7 +118,7 @@ interface NavItemProps {
   text: string
   router: any
   isMobileScreen: Boolean
-  isPage?: Boolean
+  isInternal?: Boolean
   handleClick?: () => void
 }
 
@@ -120,7 +127,7 @@ function NavItem({
   text,
   router,
   isMobileScreen,
-  isPage,
+  isInternal,
   handleClick,
 }: NavItemProps) {
   const navLinkColors = useNavLinkContext()
@@ -133,12 +140,12 @@ function NavItem({
         ? 'text-black dark:text-white'
         : navLinkColors
     }
-    max-sm:py-3 sm:w-fit
+    max-sm:py-3 sm:w-fit scroll-smooth
   `
 
   return (
     <>
-      {isPage ? (
+      {isInternal ? (
         <Link className={classNames} href={href}>
           {text}
         </Link>
