@@ -101,8 +101,11 @@ export default function Home() {
           .
         </p>
 
-        <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
-        <About />
+        <div className='flex flex-col gap-y-2'>
+          <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
+          <About />
+        </div>
+
         <Features />
         <Contact />
       </main>
