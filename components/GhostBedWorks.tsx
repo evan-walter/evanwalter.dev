@@ -20,6 +20,11 @@ export default function GhostBedWorks() {
         title='Blog Article with Advanced Graphics'
         description='On this page, you will find four graphics. I created these graphics with advanced, responsive CSS patterns with TailwindCSS, including advanced conditionals, grid, flex box, and positioning patterns.'
       />
+      <GhostBedWork
+        url='https://www.ghostbed.com/'
+        title='Mobile Navigation Menu and Cart Slider'
+        description='I had the privilege of implementing the mobile version of our navigation menu along with the mobile and desktop versions of the cart slider! I was granted the creative flexibility to add some styling touches, such as the hover states and transitional animations on the buttons on those components.'
+      />
     </div>
   )
 }
@@ -35,16 +40,15 @@ export function GhostBedWork({ url, title, description }: GhostBedWorkProps) {
 
   return (
     <div className='mt-4 flex flex-col gap-y-2 rounded-lg border-2 border-[#5FA405] px-5 py-4'>
-      <h3>
-        <a
-          href={url}
-          className={`${textLinkColors} text-xl font-bold sm:text-2xl`}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          {title}
-        </a>
-      </h3>
+      <h3 className='text-xl font-bold sm:text-2xl'>{title}</h3>
+      <a
+        href={url}
+        className={textLinkColors}
+        target='_blank'
+        rel='noreferrer noopener'
+      >
+        Link to Page
+      </a>
       <p>{description}</p>
     </div>
   )

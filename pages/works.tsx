@@ -24,9 +24,10 @@ export default function Highlights() {
           website.
         </p>
       </div>
+
       <GhostBedWorks />
       <Features />
-      <Contact />
+
       <div className='flex flex-col gap-y-2'>
         <h2 className='text-2xl font-bold sm:text-3xl'>Other Personal Works</h2>
         <p>
@@ -42,6 +43,8 @@ export default function Highlights() {
           .
         </p>
       </div>
+
+      <Contact />
     </div>
   )
 }
