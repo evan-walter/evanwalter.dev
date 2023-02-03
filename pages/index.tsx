@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import About from 'components/About'
 import Features from 'components/Features'
+import Contact from 'components/Contact'
 import PodcastAppearance from 'components/PodcastAppearance'
 
 export default function Home() {
@@ -102,30 +103,8 @@ export default function Home() {
 
         <h2 className='text-2xl font-bold sm:text-3xl'>About</h2>
         <About />
-
         <Features />
-        <p>
-          For now, if you have any questions or want to get in touch, please
-          reach out to me on{' '}
-          <a
-            href='https://linkedin.com/in/-evanwalter/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            LinkedIn
-          </a>{' '}
-          or{' '}
-          <a
-            href='https://twitter.com/_evanwalter_/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Twitter
-          </a>
-          !
-        </p>
+        <Contact />
       </main>
     </>
   )

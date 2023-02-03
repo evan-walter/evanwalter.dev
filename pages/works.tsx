@@ -1,6 +1,7 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import GhostBedWorks from 'components/GhostBedWorks'
 import Features from 'components/Features'
+import Contact from 'components/Contact'
 
 export default function Highlights() {
   const textLinkColors = useTextLinkContext()
@@ -25,6 +26,7 @@ export default function Highlights() {
       </div>
       <GhostBedWorks />
       <Features />
+      <Contact />
     </div>
   )
 }
