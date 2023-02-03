@@ -16,7 +16,15 @@ export default function About() {
         >
           GhostBed
         </a>
-        . For now, most of my work at GhostBed is front-end-focused. I enjoy
+        . I love getting to learn, grow, and build with this amazing team! I am
+        part of a team of three developers, including my boss. We work closely
+        with the marketing team. I enjoy getting to work with other departments
+        in this way&mdash;mainly because they are super cool people&mdash;but
+        also because I enjoy getting a better glimpse of how the magic happens
+        in our business.
+      </p>
+      <p>
+        For now, most of my work at GhostBed is front-end-focused. I enjoy
         working with the full stack, the front end, and the back end. We
         primarily use Vue.js with TailwindCSS. We also use Next.js, React,
         TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
