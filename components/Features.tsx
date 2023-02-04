@@ -6,7 +6,7 @@ export default function Features() {
   return (
     <div className='flex flex-col gap-y-2'>
       <h2 className='text-2xl font-bold sm:text-3xl'>Features</h2>
-      <p>Here are a few features I&apos;ve implemented on this website.</p>
+      <p>Here are a few features I&apos;ve implemented on this web app.</p>
       <ul className='list-outside list-disc px-6'>
         <li>
           End-to-end test coverage with{' '}

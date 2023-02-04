@@ -33,7 +33,7 @@ export default function Highlights() {
             GhostBed
           </a>{' '}
           along with some of my personal works, such as features here on this
-          website and other projects.
+          web app and other projects.
         </p>
       </div>
 

@@ -79,7 +79,7 @@ export default function Home() {
         <PodcastAppearance />
 
         <p className='italic max-md:text-center'>
-          I created this website with Next.js, React, TypeScript, and
+          I created this web app with Next.js, React, TypeScript, and
           TailwindCSS. I recently added end-to-end test coverage with{' '}
           <a
             href='https://www.cypress.io/'

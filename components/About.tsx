@@ -30,7 +30,7 @@ export default function About() {
         TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
         headless tech stack. I focus most of my personal learning and side
         projects on Next.js, React, TypeScript, GraphQL, and TailwindCSS. I
-        created this website you&apos;re on,{' '}
+        created this web app you&apos;re on,{' '}
         <a
           href='https://github.com/evan-walter/evanwalter.dev'
           className={textLinkColors}
