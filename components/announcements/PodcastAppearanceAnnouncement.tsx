@@ -5,7 +5,7 @@ export default function PodcastAppearanceAnnouncement() {
 
   return (
     <div className='rounded-lg bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-0.5'>
-      <div className='flex flex-col gap-y-2 rounded-lg bg-white px-5 py-4 text-xl dark:bg-zinc-900 max-md:text-center'>
+      <div className='flex flex-col gap-y-2 rounded-lg bg-white px-5 py-4 text-xl dark:bg-zinc-900'>
         <p>
           I am excited to announce that I had the privilege of appearing as a
           guest on{' '}
@@ -28,7 +28,7 @@ export default function PodcastAppearanceAnnouncement() {
           </a>
           .
         </p>
-        <p>On the show I share about...</p>
+        <p>On the show, I share about...</p>
         <ul className='list-outside list-disc px-6'>
           <li>My background</li>
           <li>Why I got into web development</li>

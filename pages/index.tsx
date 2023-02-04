@@ -77,11 +77,6 @@ export default function Home() {
           </div>
         </div>
 
-        <div className='flex flex-col items-center justify-center gap-y-6'>
-          <PodcastAppearanceAnnouncement />
-          <DadJokesAnnouncement />
-        </div>
-
         <p className='italic max-md:text-center'>
           I created this web app with Next.js, React, TypeScript, and
           TailwindCSS. I recently added end-to-end test coverage with{' '}
@@ -104,6 +99,11 @@ export default function Home() {
           </a>
           .
         </p>
+
+        <div className='flex flex-col items-center justify-center gap-y-6'>
+          <PodcastAppearanceAnnouncement />
+          <DadJokesAnnouncement />
+        </div>
 
         <Contact />
       </main>
