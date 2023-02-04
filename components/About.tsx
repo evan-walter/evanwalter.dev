@@ -40,7 +40,7 @@ export default function About() {
           evanwalter.dev
         </a>
         , with this tech stack. I hope to work with this tech stack or a very
-        similar one as a full stack engineer.
+        similar one as a front end or full stack engineer.
       </p>
       <p>
         In my spare time, I&apos;ve built several complete full stack web
