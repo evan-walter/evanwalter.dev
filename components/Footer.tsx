@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 
 export default function Footer() {
@@ -6,6 +7,9 @@ export default function Footer() {
   return (
     <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-200 py-10 text-lg dark:bg-zinc-800'>
       <div className='container flex w-full max-w-lg items-center justify-between gap-y-4 max-[375px]:flex-col'>
+        <Link href='/dadjokes' className={textLinkColors}>
+          Dad Jokes
+        </Link>
         <a
           href='/resume.pdf'
           className={textLinkColors}

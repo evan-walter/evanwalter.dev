@@ -2,6 +2,7 @@ import { useTextLinkContext } from 'components/TextLinkProvider'
 import GhostBedWorks from 'components/GhostBedWorks'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
+import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
 
 export default function Highlights() {
   const textLinkColors = useTextLinkContext()
@@ -22,6 +23,9 @@ export default function Highlights() {
           </a>
           , is a great place to start since I created it from scratch!
         </p>
+
+        <DadJokesAnnouncement />
+
         <p>
           I&apos;d also like to highlight some works I&apos;ve contributed at{' '}
           <a

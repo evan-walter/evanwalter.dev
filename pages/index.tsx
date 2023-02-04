@@ -4,7 +4,8 @@ import { useTextLinkContext } from 'components/TextLinkProvider'
 import About from 'components/About'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
-import PodcastAppearance from 'components/PodcastAppearance'
+import PodcastAppearanceAnnouncement from 'components/announcements/PodcastAppearanceAnnouncement'
+import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -76,7 +77,10 @@ export default function Home() {
           </div>
         </div>
 
-        <PodcastAppearance />
+        <div className='flex flex-col items-center justify-center gap-y-6'>
+          <PodcastAppearanceAnnouncement />
+          <DadJokesAnnouncement />
+        </div>
 
         <p className='italic max-md:text-center'>
           I created this web app with Next.js, React, TypeScript, and
