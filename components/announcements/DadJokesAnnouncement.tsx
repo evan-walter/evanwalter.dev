@@ -26,6 +26,7 @@ export default function DadJokesAnnouncement() {
             <li>Fetching from a REST API</li>
             <li>Error handling</li>
             <li>useState hook</li>
+            <li>Advanced responsive styling with CSS and Tailwind</li>
           </ul>
         </div>
       </div>

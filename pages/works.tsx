@@ -24,7 +24,9 @@ export default function Highlights() {
           , is a great place to start since I created it from scratch!
         </p>
 
-        <DadJokesAnnouncement />
+        <div className='my-4'>
+          <DadJokesAnnouncement />
+        </div>
 
         <p>
           I&apos;d also like to highlight some works I&apos;ve contributed at{' '}
