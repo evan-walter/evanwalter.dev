@@ -22,11 +22,19 @@ export default function Footer() {
           </Link>
         </FooterLinksGroup>
         <FooterLinksGroup>
-          <Link href='/dad-jokes' className={textLinkColors}>
-            Dad Jokes
-          </Link>
+          <a
+            href='https://lens-starter-app.vercel.app/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Lens Social App
+          </a>
           <Link href='/synth' className={textLinkColors}>
             Synth
+          </Link>
+          <Link href='/dad-jokes' className={textLinkColors}>
+            Dad Jokes
           </Link>
           <a
             href='/resume.pdf'
@@ -36,6 +44,8 @@ export default function Footer() {
           >
             Resume
           </a>
+        </FooterLinksGroup>
+        <FooterLinksGroup>
           <a
             href='https://github.com/evan-walter'
             className={textLinkColors}
@@ -44,8 +54,6 @@ export default function Footer() {
           >
             GitHub
           </a>
-        </FooterLinksGroup>
-        <FooterLinksGroup>
           <a
             href='https://linkedin.com/in/-evanwalter'
             className={textLinkColors}
@@ -62,7 +70,6 @@ export default function Footer() {
           >
             Twitter
           </a>
-          <div className='invisible max-[374px]:hidden'>Home</div>
           <div className='invisible max-[374px]:hidden'>Home</div>
         </FooterLinksGroup>
       </div>

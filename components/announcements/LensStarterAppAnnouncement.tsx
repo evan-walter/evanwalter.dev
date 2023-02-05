@@ -18,7 +18,7 @@ export default function LensStarterAppAnnouncement() {
             target='_blank'
             rel='noreferrer noopener'
           >
-            Lens Starter App
+            Lens Social App
           </a>{' '}
         </span>
         <span className='ml-6'>
