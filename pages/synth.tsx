@@ -22,16 +22,16 @@ export default function Synth() {
         </button>
         <div className='mx-auto flex flex-wrap justify-center gap-6'>
           <button
-            onClick={() => setSpeed((s) => (s = s + 5))}
-            className='mx-auto rounded-full bg-blue-500 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:ease-in-out'
-          >
-            Faster
-          </button>
-          <button
             onClick={() => setSpeed((s) => (s = s - 5))}
             className='mx-auto rounded-full bg-blue-500 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:ease-in-out'
           >
             Slower
+          </button>
+          <button
+            onClick={() => setSpeed((s) => (s = s + 5))}
+            className='mx-auto rounded-full bg-blue-500 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:ease-in-out'
+          >
+            Faster
           </button>
         </div>
         <div className='flex flex-col items-center gap-y-2'>
