@@ -1,8 +1,5 @@
 import { useState } from 'react'
 import axios from 'axios'
-import Btn from 'components/dadJokes/Btn'
-import Status from 'components/dadJokes/Status'
-import JokeText from 'components/dadJokes/JokeText'
 
 export default function App() {
   const [loading, setLoading] = useState(false)
@@ -83,4 +80,43 @@ export default function App() {
       </div>
     </>
   )
+}
+
+interface BtnProps {
+  addClassNames: string
+  onClick: () => void
+  children: React.ReactNode
+}
+
+export function Btn({ addClassNames, onClick, children }: BtnProps) {
+  return (
+    <button
+      className={`${addClassNames} rounded-full py-4 px-6 text-white transition hover:scale-105 max-sm:text-base`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
+  )
+}
+
+interface StatusProps {
+  addClassNames?: string
+  children: React.ReactNode
+}
+
+export function Status({ addClassNames = '', children }: StatusProps) {
+  return (
+    <p className={`${addClassNames} text-center font-bold uppercase`}>
+      {children}
+    </p>
+  )
+}
+
+interface JokeTextProps {
+  addClassNames: string
+  children: React.ReactNode
+}
+
+export function JokeText({ addClassNames, children }: JokeTextProps) {
+  return <p className={`${addClassNames} text-center text-2xl`}>{children}</p>
 }
