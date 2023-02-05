@@ -4,21 +4,33 @@ import Announcement from './Announcement'
 export default function LensStarterAppAnnouncement() {
   const textLinkColors = useTextLinkContext()
   return (
-    <Announcement addClassNames='from-blue-500 via-purple-500 to-pink-500'>
+    <Announcement addClassNames='from-purple-500 via-pink-500 to-blue-500'>
       <p>
         I recently started building a social media web app with with Next.js,
         React, GraphQL, TailwindCSS, and the Lens Protocol.
       </p>
       <p>
-        Link:{' '}
-        <a
-          href='https://lens-starter-app.vercel.app/'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Lens Starter App
-        </a>{' '}
+        <span>
+          Link:{' '}
+          <a
+            href='https://lens-starter-app.vercel.app/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Lens Starter App
+          </a>{' '}
+        </span>
+        <span className='ml-6'>
+          <a
+            href='https://github.com/evan-walter/lens-starter-app'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            Source Code
+          </a>
+        </span>
       </p>
       <p>
         I plan to add to this app in the near future. Here are a couple

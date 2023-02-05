@@ -6,7 +6,7 @@ export default function SynthAnnouncement() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Announcement addClassNames='from-pink-500 via-blue-500 to-purple-500'>
+    <Announcement addClassNames='from-blue-500 via-purple-500 to-pink-500'>
       <p>I also added a synth app!</p>
       <div>
         Link:{' '}
