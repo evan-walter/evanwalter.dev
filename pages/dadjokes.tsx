@@ -51,9 +51,9 @@ export default function App() {
         {success ? (
           <>
             <div className='relative my-10'>
-              <div className='leading-0 absolute top-0 left-0 -z-10 font-serif text-9xl text-gray-200'>
+              <p className='leading-0 absolute top-0 left-0 -z-10 font-serif text-9xl text-gray-200 max-[374px]:hidden'>
                 “
-              </div>
+              </p>
               <JokeText addClassNames='sm:text-left'>{setup}</JokeText>
             </div>
             <Btn
@@ -66,9 +66,9 @@ export default function App() {
         ) : null}
         {showPunchline ? (
           <div className='relative my-10'>
-            <div className='leading-0 absolute inset-y-0 right-0 -z-10 font-serif text-9xl text-gray-200'>
+            <p className='leading-0 absolute inset-y-0 right-0 -z-10 font-serif text-9xl text-gray-200 max-[374px]:hidden'>
               ”
-            </div>
+            </p>
             <JokeText addClassNames='sm:text-right'>{punchline}</JokeText>
           </div>
         ) : null}
@@ -117,9 +117,7 @@ interface JokeTextProps {
 
 export function JokeText({ addClassNames, children }: JokeTextProps) {
   return (
-    <p
-      className={`${addClassNames} text-center text-2xl max-[485px]:pt-20 min-[485px]:px-20`}
-    >
+    <p className={`${addClassNames} text-center min-[374px]:px-20 sm:text-2xl`}>
       {children}
     </p>
   )
