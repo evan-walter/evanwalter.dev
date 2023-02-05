@@ -54,7 +54,9 @@ export default function App() {
               <p className='absolute -top-[0.85rem] left-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
                 “
               </p>
-              <JokeText addClassNames='min-[374px]:text-left'>{setup}</JokeText>
+              <JokeText addClassNames='min-[374px]:text-left min-[374px]:pl-20'>
+                {setup}
+              </JokeText>
             </div>
             <Btn
               addClassNames='bg-pink-500 mx-auto'
@@ -69,7 +71,7 @@ export default function App() {
             <p className='absolute -top-[0.85rem] right-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
               ”
             </p>
-            <JokeText addClassNames='min-[374px]:text-right'>
+            <JokeText addClassNames='min-[374px]:text-right min-[374px]:pr-20'>
               {punchline}
             </JokeText>
           </div>
@@ -119,9 +121,7 @@ interface JokeTextProps {
 
 export function JokeText({ addClassNames, children }: JokeTextProps) {
   return (
-    <p
-      className={`${addClassNames} text-center text-xl min-[374px]:px-20 min-[374px]:text-2xl`}
-    >
+    <p className={`${addClassNames} text-center text-xl min-[374px]:text-2xl`}>
       {children}
     </p>
   )
