@@ -32,7 +32,7 @@ export default function PodcastAppearanceAnnouncement() {
       <ul className='list-outside list-disc px-6'>
         <li>My background</li>
         <li>Why I got into web development</li>
-        <li>Learning React</li>
+        <li>React</li>
         <li>useEffect hook nuances</li>
         <li>Networking</li>
         <li>Some playful banter</li>
