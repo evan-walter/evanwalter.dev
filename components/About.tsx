@@ -43,31 +43,21 @@ export default function About() {
         similar one as a front end or full stack engineer.
       </p>
       <p>
-        In my spare time, I&apos;ve built several complete full stack web
-        applications. I&apos;ve also started to build a full stack social media
-        web app,{' '}
+        In my spare time, I&apos;ve started to build a{' '}
         <a
-          href='https://github.com/evan-walter/baseline'
+          href='https://lens-starter-app.vercel.app/'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
-          Baseline
-        </a>
-        , with Express.js, React, and GraphQL. I&apos;m currently building
-        another full stack social media app,{' '}
-        <a
-          href='https://github.com/evan-walter/connector-social-media-app'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Connector
-        </a>
-        , with Next.js, React, TypeScript, GraphQL, and TailwindCSS. Here are a
-        couple interesting features I want to implement.
+          social media web app
+        </a>{' '}
+        with Next.js, React, GraphQL, TailwindCSS, and the Lens Protocol. I plan
+        to add to this app in the near future. Here are a couple interesting
+        features I want to implement.
       </p>
       <ul className='mb-2 list-outside list-disc px-6'>
+        <li>Authentication</li>
         <li>
           Ability for users to sort their own posts and display other
           users&apos; posts based on number of likes, number of comments, and

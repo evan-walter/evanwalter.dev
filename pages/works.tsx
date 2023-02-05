@@ -4,6 +4,7 @@ import Features from 'components/Features'
 import Contact from 'components/Contact'
 import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
 import SynthAnnouncement from 'components/announcements/SynthAnnouncement'
+import LensStarterAppAnnouncement from 'components/announcements/LensStarterAppAnnouncement'
 
 export default function Highlights() {
   const textLinkColors = useTextLinkContext()
@@ -24,6 +25,10 @@ export default function Highlights() {
           </a>
           , is a great place to start since I created it from scratch!
         </p>
+
+        <div className='my-4'>
+          <LensStarterAppAnnouncement />
+        </div>
 
         <div className='my-4'>
           <DadJokesAnnouncement />

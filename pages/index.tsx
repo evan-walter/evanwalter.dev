@@ -7,6 +7,7 @@ import Contact from 'components/Contact'
 import PodcastAppearanceAnnouncement from 'components/announcements/PodcastAppearanceAnnouncement'
 import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
 import SynthAnnouncement from 'components/announcements/SynthAnnouncement'
+import LensStarterAppAnnouncement from 'components/announcements/LensStarterAppAnnouncement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -103,6 +104,7 @@ export default function Home() {
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
           <PodcastAppearanceAnnouncement />
+          <LensStarterAppAnnouncement />
           <DadJokesAnnouncement />
           <SynthAnnouncement />
         </div>
