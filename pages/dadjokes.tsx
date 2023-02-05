@@ -91,7 +91,7 @@ interface BtnProps {
 export function Btn({ addClassNames, onClick, children }: BtnProps) {
   return (
     <button
-      className={`${addClassNames} rounded-full py-4 px-6 text-white transition hover:scale-105`}
+      className={`${addClassNames} rounded-full py-4 px-6 text-white transition duration-300 hover:scale-105 hover:ease-in-out`}
       onClick={onClick}
     >
       {children}
