@@ -61,7 +61,12 @@ export default function Footer() {
           </a>
         </FooterLinksGroup>
       </div>
-      <button title='Building software on the web since 2019'>❤️‍🔥</button>
+      <div className='group flex flex-col justify-center gap-y-2'>
+        <button title='Building software on the web since 2019'>❤️‍🔥</button>
+        <p className='mx-6 rounded-full border border-orange-500 px-3 py-2 text-center text-base opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
+          Building software on the web since 2019
+        </p>
+      </div>
     </footer>
   )
 }
