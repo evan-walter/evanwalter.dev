@@ -39,7 +39,7 @@ export default function NavMenu() {
     <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
       <div
         className={`${
-          isMobileScreen && isMenuOpen ? 'pb-3' : ''
+          isMobileScreen && isMenuOpen ? 'pb-4' : ''
         } flex w-full items-center justify-between`}
       >
         <MobileMenuButtons
