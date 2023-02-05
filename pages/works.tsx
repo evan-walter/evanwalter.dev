@@ -3,6 +3,7 @@ import GhostBedWorks from 'components/GhostBedWorks'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
 import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
+import SynthAnnouncement from 'components/announcements/SynthAnnouncement'
 
 export default function Highlights() {
   const textLinkColors = useTextLinkContext()
@@ -26,6 +27,10 @@ export default function Highlights() {
 
         <div className='my-4'>
           <DadJokesAnnouncement />
+        </div>
+
+        <div className='my-4'>
+          <SynthAnnouncement />
         </div>
 
         <p>

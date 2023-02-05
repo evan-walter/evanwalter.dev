@@ -5,7 +5,7 @@ export default function Footer() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-200 py-10 text-lg dark:bg-zinc-800'>
+    <footer className='flex flex-col items-center justify-center gap-y-10 bg-zinc-200 py-10 dark:bg-zinc-800'>
       <div className='container flex w-full max-w-2xl items-center justify-between gap-4 max-[375px]:flex-col'>
         <FooterLinksGroup>
           <Link href='/' className={textLinkColors}>
@@ -62,13 +62,13 @@ export default function Footer() {
           >
             Twitter
           </a>
-          <div className='invisible'>Home</div>
-          <div className='invisible'>Home</div>
+          <div className='invisible max-[374px]:hidden'>Home</div>
+          <div className='invisible max-[374px]:hidden'>Home</div>
         </FooterLinksGroup>
       </div>
       <div className='group flex flex-col justify-center gap-y-2'>
         <button title='Building software on the web since 2019'>❤️‍🔥</button>
-        <p className='mx-6 rounded-full border border-orange-500 px-3 py-2 text-center text-base opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
+        <p className='rounded-full border border-orange-500 px-4 py-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
           Building software on the web since 2019
         </p>
       </div>

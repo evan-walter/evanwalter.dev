@@ -4,7 +4,7 @@ export default function About() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='flex flex-col gap-y-2'>
+    <div className='flex flex-col gap-y-2 text-lg'>
       <p>I&apos;d like to share a little about myself and what I am up to.</p>
       <p>
         I am a Web Developer at{' '}

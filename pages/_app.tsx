@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <NavLinkProvider>
               <NavMenu />
             </NavLinkProvider>
-            <div className='min-h-screen w-full pt-24 text-lg sm:pt-32'>
+            <div className='min-h-screen w-full pt-24 sm:pt-32'>
               <TextLinkProvider>
                 <Component {...pageProps} />
               </TextLinkProvider>

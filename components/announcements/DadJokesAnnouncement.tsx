@@ -1,35 +1,28 @@
 import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
+import Announcement from './Announcement'
 
 export default function DadJokesAnnouncement() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='rounded-lg bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 p-0.5'>
-      <div className='flex flex-col gap-y-2 rounded-lg bg-white px-5 py-4 text-xl dark:bg-zinc-900'>
-        <p>
-          I recently added a new, fun project&mdash;a random{' '}
-          <Link href='/dad-jokes' className={textLinkColors}>
-            dad jokes
-          </Link>{' '}
-          generator! You can check it out{' '}
-          <Link href='/dad-jokes' className={textLinkColors}>
-            here
-          </Link>
-          .
-        </p>
-        <div>
-          <p>
-            Some skills and concepts I demonstrate in this project include...
-          </p>
-          <ul className='list-outside list-disc px-6'>
-            <li>Fetching from a REST API</li>
-            <li>Error handling</li>
-            <li>React hooks</li>
-            <li>Advanced responsive styling with CSS and Tailwind</li>
-          </ul>
-        </div>
+    <Announcement addClassNames='from-purple-500 via-pink-500 to-blue-500'>
+      <p>
+        I recently added a new, fun project&mdash;a random dad jokes generator!
+      </p>
+      <div>
+        Link:{' '}
+        <Link href='/dad-jokes' className={textLinkColors}>
+          Dad Jokes Generator App
+        </Link>
       </div>
-    </div>
+      <p>Some skills and concepts I demonstrate in this project include...</p>
+      <ul className='list-outside list-disc px-6'>
+        <li>Fetching from a REST API</li>
+        <li>Error handling</li>
+        <li>React hooks</li>
+        <li>Advanced responsive styling with CSS and Tailwind</li>
+      </ul>
+    </Announcement>
   )
 }

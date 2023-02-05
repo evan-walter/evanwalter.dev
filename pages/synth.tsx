@@ -5,31 +5,31 @@ import { useTextLinkContext } from 'components/TextLinkProvider'
 export default function Synth() {
   const textLinkColors = useTextLinkContext()
 
-  const [togglePlay, setTogglePlay] = useState(false)
+  const [togglePlay, setTogglePlay] = useState(true)
   const [speed, setSpeed] = useState(90)
   const [noteDisplayed, setNoteDisplayed] = useState('')
 
   return (
     <>
       <div className='flex flex-col items-center gap-y-8'>
-        <div className='mx-auto flex w-2/3 flex-wrap justify-between'>
+        <button
+          onClick={() => setTogglePlay((s) => !s)}
+          className={`${
+            togglePlay ? 'bg-red-500' : 'bg-green-700'
+          } mx-auto rounded-full px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out`}
+        >
+          {togglePlay ? 'Stop' : 'Play'}
+        </button>
+        <div className='mx-auto flex flex-wrap justify-center gap-6'>
           <button
             onClick={() => setSpeed((s) => (s = s + 5))}
-            className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
+            className='mx-auto rounded-full bg-blue-500 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:ease-in-out'
           >
             Faster
           </button>
           <button
-            onClick={() => setTogglePlay((s) => !s)}
-            className={`${
-              togglePlay ? 'bg-red-500' : 'bg-green-700'
-            } mx-auto rounded-full px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out`}
-          >
-            {togglePlay ? 'Stop' : 'Play'}
-          </button>
-          <button
             onClick={() => setSpeed((s) => (s = s - 5))}
-            className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
+            className='mx-auto rounded-full bg-blue-500 px-4 py-2 text-sm text-white transition duration-300 hover:scale-105 hover:ease-in-out'
           >
             Slower
           </button>
