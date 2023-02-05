@@ -60,7 +60,7 @@ export default function App() {
             </div>
             <Btn
               addClassNames='bg-pink-500 mx-auto'
-              onClick={() => setShowPunchline(!showPunchline)}
+              onClick={() => setShowPunchline((s) => !s)}
             >
               {showPunchline ? 'Hide Punchline' : 'Show Punchline'}
             </Btn>
