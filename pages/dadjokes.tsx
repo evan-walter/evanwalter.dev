@@ -29,7 +29,7 @@ export default function App() {
 
   return (
     <>
-      <div className='mx-auto flex max-w-2xl flex-col items-center justify-between border-b border-gray-300 pb-10 sm:flex-row'>
+      <div className='mx-auto flex max-w-2xl flex-wrap items-center justify-between gap-5 border-b border-gray-300 pb-10 max-[429px]:flex-col'>
         <Btn addClassNames='bg-indigo-500' onClick={fetchData}>
           Get a New Random Joke
         </Btn>
@@ -37,7 +37,7 @@ export default function App() {
           href='https://karljoke.herokuapp.com/'
           target='_blank'
           rel='noreferrer noopener'
-          className='mt-5 text-blue-500 underline hover:text-blue-600 sm:mt-0'
+          className='text-blue-500 underline hover:text-blue-600'
         >
           View API Docs
         </a>
@@ -51,10 +51,10 @@ export default function App() {
         {success ? (
           <>
             <div className='relative my-10'>
-              <p className='leading-0 absolute top-0 left-0 -z-10 font-serif text-9xl text-gray-200 max-[374px]:hidden'>
+              <p className='absolute -top-[0.85rem] left-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
                 “
               </p>
-              <JokeText addClassNames='sm:text-left'>{setup}</JokeText>
+              <JokeText addClassNames='min-[374px]:text-left'>{setup}</JokeText>
             </div>
             <Btn
               addClassNames='bg-pink-500 mx-auto'
@@ -66,10 +66,12 @@ export default function App() {
         ) : null}
         {showPunchline ? (
           <div className='relative my-10'>
-            <p className='leading-0 absolute inset-y-0 right-0 -z-10 font-serif text-9xl text-gray-200 max-[374px]:hidden'>
+            <p className='absolute -top-[0.85rem] right-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
               ”
             </p>
-            <JokeText addClassNames='sm:text-right'>{punchline}</JokeText>
+            <JokeText addClassNames='min-[374px]:text-right'>
+              {punchline}
+            </JokeText>
           </div>
         ) : null}
         {failure ? (
@@ -89,7 +91,7 @@ interface BtnProps {
 export function Btn({ addClassNames, onClick, children }: BtnProps) {
   return (
     <button
-      className={`${addClassNames} rounded-full py-4 px-6 text-white transition hover:scale-105 max-sm:text-base`}
+      className={`${addClassNames} rounded-full py-4 px-6 text-white transition hover:scale-105`}
       onClick={onClick}
     >
       {children}
@@ -117,7 +119,9 @@ interface JokeTextProps {
 
 export function JokeText({ addClassNames, children }: JokeTextProps) {
   return (
-    <p className={`${addClassNames} text-center min-[374px]:px-20 sm:text-2xl`}>
+    <p
+      className={`${addClassNames} text-center text-xl min-[374px]:px-20 min-[374px]:text-2xl`}
+    >
       {children}
     </p>
   )
