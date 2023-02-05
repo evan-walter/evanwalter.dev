@@ -34,7 +34,7 @@ export default function Home() {
             <h3 className='md:whitespace-nowrap'>
               React | Next.js | Node.js | TypeScript | GraphQL
             </h3>
-            <div className='flex gap-x-5 max-md:flex-wrap max-md:justify-center'>
+            <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
               <a
                 href='/resume.pdf'
                 className={textLinkColors}
