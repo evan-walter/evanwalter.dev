@@ -25,7 +25,7 @@ export default function DadJokesAnnouncement() {
           <ul className='list-outside list-disc px-6'>
             <li>Fetching from a REST API</li>
             <li>Error handling</li>
-            <li>useState hook</li>
+            <li>React hooks</li>
             <li>Advanced responsive styling with CSS and Tailwind</li>
           </ul>
         </div>
