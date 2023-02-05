@@ -9,11 +9,11 @@ export default function DadJokesAnnouncement() {
       <div className='flex flex-col gap-y-2 rounded-lg bg-white px-5 py-4 text-xl dark:bg-zinc-900'>
         <p>
           I recently added a new, fun project&mdash;a random{' '}
-          <Link href='/dadjokes' className={textLinkColors}>
+          <Link href='/dad-jokes' className={textLinkColors}>
             dad jokes
           </Link>{' '}
           generator! You can check it out{' '}
-          <Link href='/dadjokes' className={textLinkColors}>
+          <Link href='/dad-jokes' className={textLinkColors}>
             here
           </Link>
           .

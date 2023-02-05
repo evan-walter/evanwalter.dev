@@ -17,13 +17,16 @@ export default function Footer() {
           <Link href='/works' className={textLinkColors}>
             Works
           </Link>
-        </FooterLinksGroup>
-        <FooterLinksGroup>
-          <Link href='/dadjokes' className={textLinkColors}>
-            Dad Jokes
-          </Link>
           <Link href='/about' className={textLinkColors}>
             About
+          </Link>
+        </FooterLinksGroup>
+        <FooterLinksGroup>
+          <Link href='/dad-jokes' className={textLinkColors}>
+            Dad Jokes
+          </Link>
+          <Link href='/synth' className={textLinkColors}>
+            Synth
           </Link>
           <a
             href='/resume.pdf'
@@ -33,8 +36,6 @@ export default function Footer() {
           >
             Resume
           </a>
-        </FooterLinksGroup>
-        <FooterLinksGroup>
           <a
             href='https://github.com/evan-walter'
             className={textLinkColors}
@@ -43,6 +44,8 @@ export default function Footer() {
           >
             GitHub
           </a>
+        </FooterLinksGroup>
+        <FooterLinksGroup>
           <a
             href='https://linkedin.com/in/-evanwalter'
             className={textLinkColors}
@@ -59,6 +62,8 @@ export default function Footer() {
           >
             Twitter
           </a>
+          <div className='invisible'>Home</div>
+          <div className='invisible'>Home</div>
         </FooterLinksGroup>
       </div>
       <div className='group flex flex-col justify-center gap-y-2'>
@@ -77,7 +82,7 @@ interface FooterLinksGroupProps {
 
 export function FooterLinksGroup({ children }: FooterLinksGroupProps) {
   return (
-    <div className='flex flex-col items-center gap-y-4 max-sm:items-center'>
+    <div className='flex flex-col items-center justify-start gap-y-4'>
       {children}
     </div>
   )
