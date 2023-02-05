@@ -1,49 +1,66 @@
 import { useState } from 'react'
 import { Song, Track, Instrument, Effect } from 'reactronica'
+import { useTextLinkContext } from 'components/TextLinkProvider'
 
 export default function Synth() {
+  const textLinkColors = useTextLinkContext()
+
   const [togglePlay, setTogglePlay] = useState(false)
   const [speed, setSpeed] = useState(90)
   const [noteDisplayed, setNoteDisplayed] = useState('')
 
   return (
-    <div className='flex flex-col items-center gap-y-8'>
-      <div className='flex flex-wrap gap-4'>
-        <button
-          onClick={() => setSpeed((s) => (s = s + 5))}
-          className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
-        >
-          Faster
-        </button>
-        <button
-          onClick={() => setTogglePlay((s) => !s)}
-          className={`${
-            togglePlay ? 'bg-red-500' : 'bg-green-700'
-          } mx-auto rounded-full px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out`}
-        >
-          {togglePlay ? 'Stop' : 'Play'}
-        </button>
-        <button
-          onClick={() => setSpeed((s) => (s = s - 5))}
-          className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
-        >
-          Slower
-        </button>
+    <>
+      <div className='flex flex-col items-center gap-y-8'>
+        <div className='mx-auto flex w-2/3 flex-wrap justify-between'>
+          <button
+            onClick={() => setSpeed((s) => (s = s + 5))}
+            className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
+          >
+            Faster
+          </button>
+          <button
+            onClick={() => setTogglePlay((s) => !s)}
+            className={`${
+              togglePlay ? 'bg-red-500' : 'bg-green-700'
+            } mx-auto rounded-full px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out`}
+          >
+            {togglePlay ? 'Stop' : 'Play'}
+          </button>
+          <button
+            onClick={() => setSpeed((s) => (s = s - 5))}
+            className='mx-auto rounded-full bg-blue-500 px-6 py-2 text-white transition duration-300 hover:scale-105 hover:ease-in-out'
+          >
+            Slower
+          </button>
+        </div>
+        <div className='flex flex-col items-center gap-y-2'>
+          <p>Speed:</p>
+          <p className='text-2xl text-blue-500'>{speed} bpm</p>
+        </div>
+        <div className='flex flex-col items-center gap-y-2'>
+          <p className='text-2xl'>Current Note: </p>
+          <p className='text-8xl text-pink-500'>{noteDisplayed}</p>
+        </div>
+        <Sounds
+          togglePlay={togglePlay}
+          setNoteDisplayed={setNoteDisplayed}
+          speed={speed}
+        />
       </div>
-      <div className='flex flex-col items-center gap-y-2'>
-        <p>Speed:</p>
-        <p className='text-2xl text-blue-500'>{speed}bpm</p>
-      </div>
-      <div className='flex flex-col items-center gap-y-2'>
-        <p className='text-2xl'>Current Note: </p>
-        <p className='text-8xl text-pink-500'>{noteDisplayed}</p>
-      </div>
-      <Sounds
-        togglePlay={togglePlay}
-        setNoteDisplayed={setNoteDisplayed}
-        speed={speed}
-      />
-    </div>
+      <p className='mt-40 text-center text-sm opacity-75'>
+        Special thanks to{' '}
+        <a
+          href='https://reactronica.com/'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          Reactronica
+        </a>{' '}
+        for the tools used in this project!
+      </p>
+    </>
   )
 }
 
@@ -77,7 +94,7 @@ export function Sounds({ togglePlay, setNoteDisplayed, speed }: SoundsProps) {
             release: 0.5,
           }}
         />
-        {/* <Effect type='freeverb' wet={0} /> */}
+        <Effect type='distortion' wet={0.9} />
       </Track>
     </Song>
   )
