@@ -35,7 +35,7 @@ export default function PodcastAppearanceAnnouncement() {
         <li>React</li>
         <li>useEffect hook nuances</li>
         <li>Networking</li>
-        <li>Some playful banter</li>
+        <li>Banter</li>
       </ul>
     </Announcement>
   )
