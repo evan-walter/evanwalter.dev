@@ -1,9 +1,7 @@
 import Link from 'next/link'
-import { useTextLinkContext } from 'components/TextLinkProvider'
 import { useNavLinkContext } from './NavLinkProvider'
 
 export default function Footer() {
-  const textLinkColors = useTextLinkContext()
   const navLinkColors = useNavLinkContext()
 
   return (
