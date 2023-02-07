@@ -4,7 +4,7 @@ export default function Contact() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <p>
+    <p className='text-lg'>
       For now, if you have any questions or want to get in touch, please reach
       out to me on{' '}
       <a

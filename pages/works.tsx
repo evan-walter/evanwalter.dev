@@ -10,7 +10,7 @@ export default function Highlights() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='flex flex-col gap-y-8'>
+    <div className='flex flex-col gap-y-8 text-lg'>
       <div className='flex flex-col gap-y-2'>
         <h1 className='mb-1 text-3xl font-bold md:text-4xl'>Works</h1>
         <p>

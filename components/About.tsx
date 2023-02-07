@@ -39,11 +39,24 @@ export default function About() {
         >
           evanwalter.dev
         </a>
-        , with this tech stack. I hope to work with this tech stack or a very
-        similar one as a front end or full stack engineer.
+        , with this tech stack. I hope to work with this tech stack or a similar
+        one as a front end or full stack engineer.
       </p>
       <p>
-        In my spare time, I&apos;ve started to build a{' '}
+        I recently had the privilege of appearing as a guest on{' '}
+        <a
+          href='https://podcast.thereactshow.com/1764837/12142504'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          The React Show
+        </a>
+        ! On the show, I share about my journey into web development, React
+        nuances, and networking, and banter.
+      </p>
+      <p>
+        In my spare time, I&apos;ve also started to build a{' '}
         <a
           href='https://lens-starter-app.vercel.app/'
           className={textLinkColors}
