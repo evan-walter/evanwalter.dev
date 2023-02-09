@@ -36,7 +36,7 @@ export default function NavMenu() {
   }, [isMobileScreen, isMenuOpen])
 
   return (
-    <nav className='container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
+    <nav className='z-50 container absolute inset-x-0 top-0 max-w-2xl bg-white py-8 text-lg dark:bg-zinc-900'>
       <div
         className={`${
           isMobileScreen && isMenuOpen ? 'pb-4' : ''

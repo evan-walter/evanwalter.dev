@@ -51,7 +51,7 @@ export default function App() {
         {success ? (
           <>
             <div className='relative my-10'>
-              <p className='absolute -top-[0.85rem] left-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
+              <p className='absolute -top-[0.85rem] left-0 font-serif text-9xl opacity-25 max-[374px]:hidden'>
                 “
               </p>
               <JokeText addClassNames='min-[374px]:text-left min-[374px]:pl-20'>
@@ -68,7 +68,7 @@ export default function App() {
         ) : null}
         {showPunchline ? (
           <div className='relative my-10'>
-            <p className='absolute -top-[0.85rem] right-0 -z-10 font-serif text-9xl opacity-25 max-[374px]:hidden'>
+            <p className='absolute -top-[0.85rem] right-0 font-serif text-9xl opacity-25 max-[374px]:hidden'>
               ”
             </p>
             <JokeText addClassNames='min-[374px]:text-right min-[374px]:pr-20'>
