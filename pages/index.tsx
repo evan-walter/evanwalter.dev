@@ -4,10 +4,10 @@ import { useTextLinkContext } from 'components/TextLinkProvider'
 import About from 'components/About'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
-import PodcastAppearanceAnnouncement from 'components/announcements/PodcastAppearanceAnnouncement'
-import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
-import SynthAnnouncement from 'components/announcements/SynthAnnouncement'
-import LensStarterAppAnnouncement from 'components/announcements/LensStarterAppAnnouncement'
+import PodcastAppearanceAnnouncement from 'components/works/PodcastAppearanceAnnouncement'
+import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
+import SynthAnnouncement from 'components/works/SynthAnnouncement'
+import LensStarterAppAnnouncement from 'components/works/LensStarterAppAnnouncement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -24,7 +24,7 @@ export default function Home() {
             height={200}
             priority
           />
-          <div className='flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left'>
+          <div className='flex flex-col items-center justify-center text-center gap-y-3 md:items-start md:text-left'>
             <h1 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Evan Walter
             </h1>

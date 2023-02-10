@@ -1,4 +1,4 @@
-import { useTextLinkContext } from './TextLinkProvider'
+import { useTextLinkContext } from 'components/TextLinkProvider'
 
 export default function Features() {
   const textLinkColors = useTextLinkContext()

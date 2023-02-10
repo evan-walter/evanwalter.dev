@@ -2,9 +2,9 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
 import { useMediaQuery } from 'react-responsive'
-import MobileMenuButtons from './MobileMenuButtons'
-import ThemeButton from './ThemeButton'
-import { useNavLinkContext } from './NavLinkProvider'
+import MobileMenuButtons from 'components/MobileMenuButtons'
+import ThemeButton from 'components/ThemeButton'
+import { useNavLinkContext } from 'components/NavLinkProvider'
 
 export default function NavMenu() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

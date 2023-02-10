@@ -1,10 +1,10 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import Announcement from './Announcement'
+import Work from 'components/works/Work'
 
 export default function LensStarterAppAnnouncement() {
   const textLinkColors = useTextLinkContext()
   return (
-    <Announcement addClassNames='from-purple-500 via-pink-500 to-blue-500'>
+    <Work addClassNames='from-purple-500 via-pink-500 to-blue-500'>
       <p>
         I recently started building a social media web app with with Next.js,
         React, GraphQL, TailwindCSS, and the Lens Protocol.
@@ -45,6 +45,6 @@ export default function LensStarterAppAnnouncement() {
         </li>
         <li>Full test coverage</li>
       </ul>
-    </Announcement>
+    </Work>
   )
 }

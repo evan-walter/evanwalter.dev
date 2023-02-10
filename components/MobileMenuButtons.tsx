@@ -1,4 +1,4 @@
-import { useNavLinkContext } from './NavLinkProvider'
+import { useNavLinkContext } from 'components/NavLinkProvider'
 
 interface MobileMenuButtonsProps {
   isMenuOpen: Boolean

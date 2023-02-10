@@ -1,16 +1,16 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import GhostBedWorks from 'components/GhostBedWorks'
+import GhostBedWorks from '@/components/works/GhostBedWorks'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
-import DadJokesAnnouncement from 'components/announcements/DadJokesAnnouncement'
-import SynthAnnouncement from 'components/announcements/SynthAnnouncement'
-import LensStarterAppAnnouncement from 'components/announcements/LensStarterAppAnnouncement'
+import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
+import SynthAnnouncement from 'components/works/SynthAnnouncement'
+import LensStarterAppAnnouncement from 'components/works/LensStarterAppAnnouncement'
 
 export default function Highlights() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='flex flex-col gap-y-8 text-lg'>
+    <div className='flex flex-col text-lg gap-y-8'>
       <div className='flex flex-col gap-y-2'>
         <h1 className='mb-1 text-3xl font-bold md:text-4xl'>Works</h1>
         <p>

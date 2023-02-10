@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
-import { useNavLinkContext } from './NavLinkProvider'
+import { useNavLinkContext } from 'components/NavLinkProvider'
 
 export default function ThemeButton() {
   const [mounted, setMounted] = useState(false)
