@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    --scroll-behavior: smooth !important;
+    scroll-behavior: smooth !important;
+  }
   body {
     @apply text-black dark:bg-zinc-900 dark:text-white;
   }
