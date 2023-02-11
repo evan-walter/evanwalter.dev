@@ -17,17 +17,16 @@ export default function GhostBedWorks() {
           TypeScript. I wrote the full implementation with completely new code
           along with some updates to the business logic. We hope to go live with
           the new code I wrote after we complete our migration efforts to a
-          headless web application. You can find the current live version with
-          Vue.js{' '}
+          headless web application. Feel free to check out the{' '}
           <a
             href='https://www.ghostbed.com/pages/mattress-quiz'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >
-            here
-          </a>
-          .
+            live version
+          </a>{' '}
+          built with Vue.js.
         </p>
       </GhostBedWork>
       <GhostBedWork
