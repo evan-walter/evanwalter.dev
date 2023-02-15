@@ -2,7 +2,7 @@
 
 ## About
 
-evanwalter.dev is my personal web application to share about myself with a focus on my professional experience in Full Stack Engineering and Web Development.
+evanwalter.dev is my personal web application to share about myself with a focus on my professional experience in Front End Engineering, Full Stack Engineering, and Web Development.
 
 ## Learn More
 

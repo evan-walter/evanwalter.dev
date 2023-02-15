@@ -17,20 +17,20 @@ export default function About() {
           GhostBed
         </a>
         . I love getting to learn, grow, and build with this amazing team! I am
-        part of a team of three developers, including my boss. We work closely
-        with the marketing team. I enjoy getting to work with other departments
-        in this way&mdash;mainly because they are super cool people&mdash;but
-        also because I enjoy getting a better glimpse of how the magic happens
-        in our business.
+        part of a team of three developers, including my manager. We work
+        closely with the marketing team. I enjoy getting to work with other
+        departments in this way&mdash;mainly because they are super cool
+        people&mdash;but also because I enjoy getting a better glimpse of how
+        the magic happens in our business.
       </p>
       <p>
         For now, most of my work at GhostBed is front-end-focused. I enjoy
-        working with the full stack, the front end, and the back end. We
-        primarily use Vue.js with TailwindCSS. We also use Next.js, React,
-        TypeScript, GraphQL, CraftCMS, and TailwindCSS as we migrate to this
-        headless tech stack. I focus most of my personal learning and side
-        projects on Next.js, React, TypeScript, GraphQL, and TailwindCSS. I
-        created this web app you&apos;re on,{' '}
+        working with the front end, and the back end. We primarily use Vue.js
+        with TailwindCSS. We also use Next.js, React, TypeScript, GraphQL,
+        CraftCMS, and TailwindCSS as we migrate to this headless tech stack. I
+        focus most of my personal learning and side projects on Next.js, React,
+        TypeScript, GraphQL, and TailwindCSS. I created this web app you&apos;re
+        on,{' '}
         <a
           href='https://github.com/evan-walter/evanwalter.dev'
           className={textLinkColors}
@@ -53,7 +53,7 @@ export default function About() {
           The React Show
         </a>
         ! On the show, I share about my journey into web development, React
-        nuances, and networking, and banter.
+        nuances, networking, and banter.
       </p>
       <p>
         In my spare time, I&apos;ve also started to build a{' '}

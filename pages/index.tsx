@@ -19,7 +19,7 @@ export default function Home() {
           <Image
             className='rounded-full'
             src='/head-shot.jpg'
-            alt='Evan Walter | Full Stack Engineering'
+            alt='Evan Walter | Front End Engineering'
             width={200}
             height={200}
             priority
@@ -29,7 +29,7 @@ export default function Home() {
               Evan Walter
             </h1>
             <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
-              Full Stack Engineering
+              Front End Engineering
             </h2>
             <h3 className='md:whitespace-nowrap'>
               React | Next.js | Node.js | TypeScript | GraphQL
