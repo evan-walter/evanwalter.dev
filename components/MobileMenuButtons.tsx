@@ -15,7 +15,7 @@ export default function MobileMenuButtons({
     <button
       aria-label='Toggle Menu'
       type='button'
-      className={navLinkColors}
+      className={`${navLinkColors} py-1 pr-1`}
       onClick={() => setIsMenuOpen((s) => !s)}
     >
       <svg

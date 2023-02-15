@@ -15,7 +15,7 @@ export default function ThemeButton() {
         <button
           aria-label='Toggle Dark Mode'
           type='button'
-          className={navLinkColors}
+          className={`${navLinkColors} py-1 pl-1`}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           <svg
