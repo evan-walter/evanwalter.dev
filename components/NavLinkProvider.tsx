@@ -13,10 +13,10 @@ interface NavLinkProviderProps {
 }
 
 export default function NavLinkProvider({ children }: NavLinkProviderProps) {
-  const navLinkColors = useNavLinkContext()
+  const navLinkStyles = useNavLinkContext()
 
   return (
-    <NavLinkContext.Provider value={navLinkColors}>
+    <NavLinkContext.Provider value={navLinkStyles}>
       {children}
     </NavLinkContext.Provider>
   )

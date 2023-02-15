@@ -5,7 +5,7 @@ import { useNavLinkContext } from 'components/NavLinkProvider'
 export default function ThemeButton() {
   const [mounted, setMounted] = useState(false)
   const { resolvedTheme, setTheme } = useTheme()
-  const navLinkColors = useNavLinkContext()
+  const navLinkStyles = useNavLinkContext()
 
   useEffect(() => setMounted(true), [])
 
@@ -15,7 +15,7 @@ export default function ThemeButton() {
         <button
           aria-label='Toggle Dark Mode'
           type='button'
-          className={`${navLinkColors} py-1 pl-1`}
+          className={`${navLinkStyles} py-1 pl-1`}
           onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
         >
           <svg

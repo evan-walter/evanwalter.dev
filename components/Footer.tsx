@@ -2,12 +2,12 @@ import Link from 'next/link'
 import { useNavLinkContext } from 'components/NavLinkProvider'
 
 export default function Footer() {
-  const navLinkColors = useNavLinkContext()
+  const navLinkStyles = useNavLinkContext()
 
   return (
     <footer className='bg-zinc-200 py-10 dark:bg-zinc-800'>
       <div className='container flex w-full max-w-2xl flex-col gap-y-8'>
-        <Link href='#' className={`${navLinkColors} mx-auto p-1`}>
+        <Link href='#' className={`${navLinkStyles} mx-auto p-1`}>
           <svg
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -26,23 +26,23 @@ export default function Footer() {
 
         <div className='flex items-center justify-between gap-4 max-[375px]:flex-col'>
           <FooterLinksGroup>
-            <Link href='/' className={navLinkColors}>
+            <Link href='/' className={navLinkStyles}>
               Home
             </Link>
-            <Link href='/podcast' className={navLinkColors}>
+            <Link href='/podcast' className={navLinkStyles}>
               Podcast
             </Link>
-            <Link href='/works' className={navLinkColors}>
+            <Link href='/works' className={navLinkStyles}>
               Works
             </Link>
-            <Link href='/about' className={navLinkColors}>
+            <Link href='/about' className={navLinkStyles}>
               About
             </Link>
           </FooterLinksGroup>
           <FooterLinksGroup>
             <a
               href='https://quiz-preview.vercel.app/'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -50,18 +50,18 @@ export default function Footer() {
             </a>
             <a
               href='https://lens-starter-app.vercel.app/'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >
               Lens Social App
             </a>
-            <Link href='/dad-jokes' className={navLinkColors}>
+            <Link href='/dad-jokes' className={navLinkStyles}>
               Dad Jokes
             </Link>
             <a
               href='/resume.pdf'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -71,7 +71,7 @@ export default function Footer() {
           <FooterLinksGroup>
             <a
               href='https://github.com/evan-walter'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -79,7 +79,7 @@ export default function Footer() {
             </a>
             <a
               href='https://linkedin.com/in/-evanwalter'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >
@@ -87,7 +87,7 @@ export default function Footer() {
             </a>
             <a
               href='https://twitter.com/_evanwalter_'
-              className={navLinkColors}
+              className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
             >

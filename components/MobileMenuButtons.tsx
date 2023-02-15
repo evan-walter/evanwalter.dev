@@ -9,13 +9,13 @@ export default function MobileMenuButtons({
   isMenuOpen,
   setIsMenuOpen,
 }: MobileMenuButtonsProps) {
-  const navLinkColors = useNavLinkContext()
+  const navLinkStyles = useNavLinkContext()
 
   return (
     <button
       aria-label='Toggle Menu'
       type='button'
-      className={`${navLinkColors} py-1 pr-1`}
+      className={`${navLinkStyles} py-1 pr-1`}
       onClick={() => setIsMenuOpen((s) => !s)}
     >
       <svg

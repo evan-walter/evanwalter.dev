@@ -130,7 +130,7 @@ function NavItem({
   isInternal,
   handleClick,
 }: NavItemProps) {
-  const navLinkColors = useNavLinkContext()
+  const navLinkStyles = useNavLinkContext()
   const isActive = router.asPath === href
   const classNames = `
     ${
@@ -138,7 +138,7 @@ function NavItem({
         ? 'w-full border-b border-zinc-700 p-1 font-semibold text-black dark:text-white'
         : isActive
         ? 'p-1 text-black dark:text-white'
-        : navLinkColors
+        : navLinkStyles
     }
     max-sm:py-3 sm:w-fit scroll-smooth
   `
