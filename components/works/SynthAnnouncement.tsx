@@ -21,7 +21,7 @@ export default function SynthAnnouncement() {
       <p>Some skills and concepts I demonstrate in this project include...</p>
       <ul className='list-outside list-disc px-6'>
         <li>Relatively complex, user-interactive state management</li>
-        <li>Integrate an external components library</li>
+        <li>Third-party components library integration</li>
       </ul>
     </Work>
   )
