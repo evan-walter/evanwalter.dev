@@ -5,7 +5,9 @@ export default function GhostBedWorks() {
 
   return (
     <div className='flex flex-col gap-y-2'>
-      <h2 className='text-2xl font-bold sm:text-3xl'>GhostBed Highlights</h2>
+      <h2 id='ghostbed' className='text-2xl font-bold sm:text-3xl'>
+        GhostBed Highlights
+      </h2>
       <p>Below are a few of my contributions at my current role at GhostBed.</p>
       <GhostBedWork
         url='https://quiz-preview.vercel.app/'

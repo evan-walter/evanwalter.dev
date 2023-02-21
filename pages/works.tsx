@@ -10,7 +10,7 @@ export default function Highlights() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <div className='flex flex-col text-lg gap-y-8'>
+    <div className='flex flex-col gap-y-8 text-lg'>
       <div className='flex flex-col gap-y-2'>
         <h1 className='mb-1 text-3xl font-bold md:text-4xl'>Works</h1>
         <p>
@@ -25,6 +25,14 @@ export default function Highlights() {
           </a>
           , is a great place to start since I created it from scratch!
         </p>
+
+        <div className='my-4'>
+          <GhostBedWorks />
+        </div>
+
+        <h2 id='personal-works' className='text-2xl font-bold sm:text-3xl'>
+          Personal Works
+        </h2>
 
         <div className='my-4'>
           <LensStarterAppAnnouncement />
@@ -53,7 +61,6 @@ export default function Highlights() {
         </p>
       </div>
 
-      <GhostBedWorks />
       <Features />
 
       <div className='flex flex-col gap-y-2'>
