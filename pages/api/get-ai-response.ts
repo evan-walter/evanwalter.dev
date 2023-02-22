@@ -10,7 +10,7 @@ export default async function handler(req: any, res: any) {
     model: 'text-davinci-003',
     prompt: `${req.query.prompt}`,
     temperature: 0.7,
-    max_tokens: 100,
+    max_tokens: 500,
   })
 
   res.status(200).json(response.data)
