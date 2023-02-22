@@ -5,7 +5,7 @@ export default function PodcastAppearanceAnnouncement() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
+    <Work addClassNames='from-purple-500 via-pink-500 to-blue-500'>
       <p>
         I am excited to announce that I had the privilege of appearing as a
         guest on{' '}

@@ -6,7 +6,7 @@ export default function DadJokesAnnouncement() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Work addClassNames='from-pink-500 via-blue-500 to-purple-500'>
+    <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
       <p>
         I recently added a new, fun project&mdash;a random dad jokes generator!
       </p>
@@ -17,7 +17,7 @@ export default function DadJokesAnnouncement() {
         </Link>
       </div>
       <p>Some skills and concepts I demonstrate in this project include...</p>
-      <ul className='px-6 list-disc list-outside'>
+      <ul className='list-outside list-disc px-6'>
         <li>Fetching from a REST API</li>
         <li>Error handling</li>
         <li>React hooks</li>

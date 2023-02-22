@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Configuration, OpenAIApi } from 'openai'
 import { useTextLinkContext } from 'components/TextLinkProvider'
+import WorksPageReference from 'components/WorksPageReference'
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -53,7 +54,7 @@ export default function TextGenerator() {
           onChange={(e) => setTempPrompt(e.target.value)}
         />
         <button
-          className='mx-auto w-fit rounded-full border border-zinc-300 bg-zinc-200 px-5 py-2 transition duration-300 hover:scale-105 dark:border-none dark:bg-zinc-600'
+          className='mx-auto w-fit rounded-full border border-zinc-300 bg-zinc-200 px-5 py-2 transition duration-300 hover:scale-105 focus:outline-zinc-400 dark:border-none dark:bg-zinc-600'
           type='submit'
         >
           Generate
@@ -78,6 +79,10 @@ export default function TextGenerator() {
       ) : null}
 
       {data.length > 0 && !loading ? <p>{data}</p> : null}
+
+      <div className='mt-40 text-center opacity-75'>
+        <WorksPageReference />
+      </div>
     </div>
   )
 }

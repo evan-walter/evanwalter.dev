@@ -1,9 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import About from 'components/About'
-import Features from 'components/Features'
+import WorksPageReference from 'components/WorksPageReference'
 import Contact from 'components/Contact'
+import TextGeneratorAnnouncement from 'components/works/TextGeneratorAnnouncement'
 import PodcastAppearanceAnnouncement from 'components/works/PodcastAppearanceAnnouncement'
 import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
 import SynthAnnouncement from 'components/works/SynthAnnouncement'
@@ -24,7 +24,7 @@ export default function Home() {
             height={200}
             priority
           />
-          <div className='flex flex-col items-center justify-center text-center gap-y-3 md:items-start md:text-left'>
+          <div className='flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left'>
             <h1 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Evan Walter
             </h1>
@@ -103,11 +103,14 @@ export default function Home() {
         </p>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
+          <TextGeneratorAnnouncement />
           <PodcastAppearanceAnnouncement />
           <LensStarterAppAnnouncement />
           <DadJokesAnnouncement />
           <SynthAnnouncement />
         </div>
+
+        <WorksPageReference />
 
         <Contact />
       </main>

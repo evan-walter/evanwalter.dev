@@ -1,4 +1,5 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
+import WorksPageReference from 'components/WorksPageReference'
 
 export default function About() {
   const textLinkColors = useTextLinkContext()
@@ -95,6 +96,9 @@ export default function About() {
         paddle boarding, hiking, and pretty much anything outdoors. And, of
         course, I like to take it easy and hang out with family and friends.
       </p>
+      <div className='mt-8'>
+        <WorksPageReference />
+      </div>
     </div>
   )
 }

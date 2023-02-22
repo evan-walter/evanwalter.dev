@@ -4,7 +4,7 @@ import Work from 'components/works/Work'
 export default function LensStarterAppAnnouncement() {
   const textLinkColors = useTextLinkContext()
   return (
-    <Work addClassNames='from-purple-500 via-pink-500 to-blue-500'>
+    <Work addClassNames='from-pink-500 via-blue-500 to-purple-500'>
       <p>
         I recently started building a social media web app with with Next.js,
         React, GraphQL, TailwindCSS, and the Lens Protocol.

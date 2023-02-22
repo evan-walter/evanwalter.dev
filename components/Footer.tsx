@@ -40,6 +40,9 @@ export default function Footer() {
             </Link>
           </FooterLinksGroup>
           <FooterLinksGroup>
+            <Link href='/text-generator' className={navLinkStyles}>
+              Text Generator
+            </Link>
             <a
               href='https://quiz-preview.vercel.app/'
               className={navLinkStyles}
@@ -59,6 +62,8 @@ export default function Footer() {
             <Link href='/dad-jokes' className={navLinkStyles}>
               Dad Jokes
             </Link>
+          </FooterLinksGroup>
+          <FooterLinksGroup>
             <a
               href='/resume.pdf'
               className={navLinkStyles}
@@ -67,8 +72,6 @@ export default function Footer() {
             >
               Resume
             </a>
-          </FooterLinksGroup>
-          <FooterLinksGroup>
             <a
               href='https://github.com/evan-walter'
               className={navLinkStyles}
@@ -93,7 +96,6 @@ export default function Footer() {
             >
               Twitter
             </a>
-            <div className='invisible max-[374px]:hidden'>Home</div>
           </FooterLinksGroup>
         </div>
 

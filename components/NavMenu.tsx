@@ -65,6 +65,13 @@ export default function NavMenu() {
             isInternal
           />
           <NavItem
+            href='/text-generator'
+            text='GPT-3'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
             href='/works'
             text='Works'
             router={router}
@@ -77,34 +84,6 @@ export default function NavMenu() {
             router={router}
             isMobileScreen={isMobileScreen}
             isInternal
-          />
-          <NavItem
-            href='/resume.pdf'
-            text='Resume'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://github.com/evan-walter'
-            text='GitHub'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://linkedin.com/in/-evanwalter'
-            text='LinkedIn'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='https://twitter.com/_evanwalter_'
-            text='Twitter'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            handleClick={() => setIsMenuOpen(false)}
           />
           {isMobileScreen ? null : <ThemeButton />}
         </div>
