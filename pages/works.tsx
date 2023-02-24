@@ -1,5 +1,5 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import GhostBedWorks from '@/components/works/GhostBedWorks'
+import GhostBedWorks from 'components/works/GhostBedWorks'
 import Features from 'components/Features'
 import Contact from 'components/Contact'
 import TextGeneratorAnnouncement from 'components/works/TextGeneratorAnnouncement'
