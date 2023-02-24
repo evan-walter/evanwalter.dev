@@ -50,7 +50,7 @@ export default function TextGenerator() {
           className='mx-auto w-full border border-zinc-400 bg-zinc-200 p-2 focus:outline-zinc-400 dark:bg-zinc-600'
           rows={5}
           name='prompt'
-          placeholder={tempPrompt}
+          value={tempPrompt}
           onChange={(e) => setTempPrompt(e.target.value)}
         />
         <button
