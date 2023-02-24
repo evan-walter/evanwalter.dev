@@ -6,8 +6,8 @@ export default function LensStarterAppAnnouncement() {
   return (
     <Work addClassNames='from-pink-500 via-blue-500 to-purple-500'>
       <p>
-        I recently started building a social media web app with with Next.js,
-        React, GraphQL, TailwindCSS, and the Lens Protocol.
+        I recently started building a social media web app with Next.js, React,
+        GraphQL, TailwindCSS, and the Lens Protocol.
       </p>
       <p>
         <span>
