@@ -27,10 +27,10 @@ export default function About() {
       <p>
         For now, most of my work at GhostBed is front-end-focused. I enjoy
         working with the front end, and the back end. We primarily use Vue.js
-        with TailwindCSS. We also use Next.js, React, TypeScript, GraphQL,
-        CraftCMS, and TailwindCSS as we migrate to this headless tech stack. I
+        with Tailwind CSS. We also use Next.js, React, TypeScript, GraphQL,
+        CraftCMS, and Tailwind CSS as we migrate to this headless tech stack. I
         focus most of my personal learning and side projects on Next.js, React,
-        TypeScript, GraphQL, and TailwindCSS. I created this web app you&apos;re
+        TypeScript, GraphQL, and Tailwind CSS. I created this web app you&apos;re
         on,{' '}
         <a
           href='https://github.com/evan-walter/evanwalter.dev'
@@ -66,7 +66,7 @@ export default function About() {
         >
           social media web app
         </a>{' '}
-        with Next.js, React, GraphQL, TailwindCSS, and the Lens Protocol. I plan
+        with Next.js, React, GraphQL, Tailwind CSS, and the Lens Protocol. I plan
         to add to this app in the near future. Here are a couple interesting
         features I want to implement.
       </p>

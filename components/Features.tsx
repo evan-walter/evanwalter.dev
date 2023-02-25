@@ -28,7 +28,7 @@ export default function Features() {
             target='_blank'
             rel='noreferrer noopener'
           >
-            TailwindCSS
+            Tailwind CSS
           </a>
         </li>
         <li>

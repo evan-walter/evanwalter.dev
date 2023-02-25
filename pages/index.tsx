@@ -81,7 +81,7 @@ export default function Home() {
 
         <p className='italic max-md:text-center'>
           I created this web app with Next.js, React, TypeScript, and
-          TailwindCSS. I recently added end-to-end test coverage with{' '}
+          Tailwind CSS. I recently added end-to-end test coverage with{' '}
           <a
             href='https://www.cypress.io/'
             className={textLinkColors}
