@@ -4,6 +4,8 @@
 
 evanwalter.dev is my personal web application to share about myself with a focus on my professional experience in Front End Engineering, Full Stack Engineering, and Web Development.
 
+In this web app, you&apos;ll find some projects that I &ldquo;embedded&rdquo; in evanwalter.dev as well as referenced projects that I created outside evanwalter.dev.
+
 ## Learn More
 
 I keep evanwalter.dev alive with the following tech stack. To learn more about these tools, navigate to the documentation at the links below.
