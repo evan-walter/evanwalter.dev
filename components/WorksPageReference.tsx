@@ -6,8 +6,7 @@ export default function WorksPageReference() {
 
   return (
     <p className='text-lg'>
-      If you&apos;re interested in checking out more of my works, please visit
-      my{' '}
+      If you&apos;re curious about more of my works, please visit my{' '}
       <Link href='/works' className={textLinkColors}>
         works
       </Link>{' '}

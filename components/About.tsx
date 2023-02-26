@@ -30,8 +30,8 @@ export default function About() {
         with Tailwind CSS. We also use Next.js, React, TypeScript, GraphQL,
         CraftCMS, and Tailwind CSS as we migrate to this headless tech stack. I
         focus most of my personal learning and side projects on Next.js, React,
-        TypeScript, GraphQL, and Tailwind CSS. I created this web app you&apos;re
-        on,{' '}
+        TypeScript, GraphQL, and Tailwind CSS. I created this web app
+        you&apos;re on,{' '}
         <a
           href='https://github.com/evan-walter/evanwalter.dev'
           className={textLinkColors}
@@ -66,9 +66,9 @@ export default function About() {
         >
           social media web app
         </a>{' '}
-        with Next.js, React, GraphQL, Tailwind CSS, and the Lens Protocol. I plan
-        to add to this app in the near future. Here are a couple interesting
-        features I want to implement.
+        with Next.js, React, GraphQL, Tailwind CSS, and the Lens Protocol. I
+        plan to add to this app in the near future. Here are a couple
+        interesting features I want to implement.
       </p>
       <ul className='mb-2 list-outside list-disc px-6'>
         <li>Authentication</li>
@@ -80,7 +80,7 @@ export default function About() {
         <li>Full test coverage</li>
       </ul>
       <p>
-        Aside from this tech stack,{' '}
+        Aside from this tech stack, I&apos;m interested in{' '}
         <a
           href='https://www.rust-lang.org/'
           className={textLinkColors}
@@ -88,8 +88,8 @@ export default function About() {
           rel='noreferrer noopener'
         >
           Rust
-        </a>{' '}
-        intrigues me, and I want to explore learning it sometime.{' '}
+        </a>
+        , and I recently started learning it!{' '}
       </p>
       <p>
         I also really enjoy rock climbing, traveling, fitness, music, surfing,
