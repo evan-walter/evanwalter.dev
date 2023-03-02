@@ -26,12 +26,12 @@ export default function About() {
       </p>
       <p>
         For now, most of my work at GhostBed is front-end-focused. I enjoy
-        working with the front end, and the back end. We primarily use Vue.js
-        with Tailwind CSS. We also use Next.js, React, TypeScript, GraphQL,
-        CraftCMS, and Tailwind CSS as we migrate to this headless tech stack. I
-        focus most of my personal learning and side projects on Next.js, React,
-        TypeScript, GraphQL, and Tailwind CSS. I created this web app
-        you&apos;re on,{' '}
+        working with the front end, the back end, and the full stack. We
+        primarily use Vue.js with Tailwind CSS. We also use Next.js, React,
+        TypeScript, GraphQL, CraftCMS, and Tailwind CSS as we migrate to this
+        headless tech stack. I focus most of my personal learning and side
+        projects on Next.js, React, TypeScript, GraphQL, and Tailwind CSS. I
+        created this web app you&apos;re on,{' '}
         <a
           href='https://github.com/evan-walter/evanwalter.dev'
           className={textLinkColors}

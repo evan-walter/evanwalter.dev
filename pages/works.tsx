@@ -27,6 +27,20 @@ export default function Highlights() {
           , is a great place to start since I created it from scratch!
         </p>
 
+        <p>
+          I&apos;d also like to highlight some works I&apos;ve contributed at{' '}
+          <a
+            href='https://www.ghostbed.com/'
+            className={textLinkColors}
+            target='_blank'
+            rel='noreferrer noopener'
+          >
+            GhostBed
+          </a>{' '}
+          along with some of my personal works, such as features here on this
+          web app and other projects.
+        </p>
+
         <div className='my-4'>
           <GhostBedWorks />
         </div>
@@ -50,20 +64,6 @@ export default function Highlights() {
         <div className='my-4'>
           <SynthAnnouncement />
         </div>
-
-        <p>
-          I&apos;d also like to highlight some works I&apos;ve contributed at{' '}
-          <a
-            href='https://www.ghostbed.com/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            GhostBed
-          </a>{' '}
-          along with some of my personal works, such as features here on this
-          web app and other projects.
-        </p>
       </div>
 
       <Features />
