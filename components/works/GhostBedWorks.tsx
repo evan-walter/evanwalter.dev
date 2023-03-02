@@ -55,15 +55,13 @@ export default function GhostBedWorks() {
       </GhostBedWork>
       <GhostBedWork
         url='https://www.ghostbed.com/'
-        title='Mobile Navigation Menu and Cart Slider'
+        title='Cart Slider'
         linkText='GhostBed Homepage'
       >
         <p>
-          I had the privilege of implementing the mobile version of our
-          navigation menu along with the mobile and desktop versions of the cart
-          slider! I was granted the creative flexibility to add some styling
-          touches, such as the hover states and transitional animations on the
-          buttons on those components.
+          I had the privilege of implementing the cart slider! I added some
+          styling touches, such as the hover states and transitional animations
+          on the buttons on those components.
         </p>
       </GhostBedWork>
     </div>
