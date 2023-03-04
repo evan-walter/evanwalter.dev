@@ -100,7 +100,12 @@ export default function Footer() {
         </div>
         <Contact />
         <div className='group mx-auto flex w-fit flex-col justify-center gap-y-2'>
-          <button title='Building software on the web since 2019'>❤️‍🔥</button>
+          <button
+            className='text-2xl'
+            title='Building software on the web since 2019'
+          >
+            ❤️‍🔥
+          </button>
           <p className='rounded-full border border-orange-500 px-4 py-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
             Building software on the web since 2019
           </p>
