@@ -2,11 +2,17 @@ import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Work from 'components/works/Work'
 
-export default function DadJokesAnnouncement() {
+interface AnnouncementProps {
+  addClassNames: string
+}
+
+export default function DadJokesAnnouncement({
+  addClassNames,
+}: AnnouncementProps) {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
+    <Work addClassNames={addClassNames}>
       <p>
         I recently added a new, fun project&mdash;a random dad jokes generator!
       </p>

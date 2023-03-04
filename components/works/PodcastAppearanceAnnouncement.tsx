@@ -1,11 +1,17 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Work from 'components/works/Work'
 
-export default function PodcastAppearanceAnnouncement() {
+interface AnnouncementProps {
+  addClassNames: string
+}
+
+export default function PodcastAppearanceAnnouncement({
+  addClassNames,
+}: AnnouncementProps) {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Work addClassNames='from-purple-500 via-pink-500 to-blue-500'>
+    <Work addClassNames={addClassNames}>
       <p>
         I am excited to announce that I had the privilege of appearing as a
         guest on{' '}

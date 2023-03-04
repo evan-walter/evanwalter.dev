@@ -90,7 +90,7 @@ export default function Home() {
         </p>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
-          <Gpt3Announcement />
+          <Gpt3Announcement addClassNames={'from-blue-500 via-purple-500 to-pink-500'} />
         </div>
 
         <PageReference page={'works'} />

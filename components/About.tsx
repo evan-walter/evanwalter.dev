@@ -7,7 +7,7 @@ export default function About() {
 
   return (
     <div className='flex flex-col gap-y-2 text-lg'>
-      <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-wider'>
+      <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
         I am a Front End Engineer and a Web Developer at{' '}
         <a
           href='https://www.ghostbed.com/'

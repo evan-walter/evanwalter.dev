@@ -2,11 +2,17 @@ import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Work from 'components/works/Work'
 
-export default function SynthAnnouncement() {
+interface AnnouncementProps {
+  addClassNames: string
+}
+
+export default function SynthAnnouncement({
+  addClassNames,
+}: AnnouncementProps) {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <Work addClassNames='from-purple-500 via-pink-500 to-blue-500'>
+    <Work addClassNames={addClassNames}>
       <p>I also added a synth app!</p>
       <div>
         Link:{' '}
