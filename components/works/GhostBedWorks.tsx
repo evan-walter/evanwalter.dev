@@ -49,8 +49,9 @@ export default function GhostBedWorks() {
       >
         <p>
           On this page, you will find four graphics. I created these graphics
-          with advanced, responsive CSS patterns with Tailwind CSS, including
-          advanced conditionals, grid, flex box, and positioning patterns.
+          with advanced, responsive styling patterns with Tailwind CSS,
+          including advanced conditionals, grid, flex box, and positioning
+          patterns.
         </p>
       </GhostBedWork>
       <GhostBedWork

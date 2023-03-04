@@ -58,6 +58,13 @@ export default function NavMenu() {
             isInternal
           />
           <NavItem
+            href='/about'
+            text='About'
+            router={router}
+            isMobileScreen={isMobileScreen}
+            isInternal
+          />
+          <NavItem
             href='/podcast'
             text='Podcast'
             router={router}
@@ -65,7 +72,7 @@ export default function NavMenu() {
             isInternal
           />
           <NavItem
-            href='/text-generator'
+            href='/gpt-3'
             text='GPT-3'
             router={router}
             isMobileScreen={isMobileScreen}
@@ -74,13 +81,6 @@ export default function NavMenu() {
           <NavItem
             href='/works'
             text='Works'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isInternal
-          />
-          <NavItem
-            href='/about'
-            text='About'
             router={router}
             isMobileScreen={isMobileScreen}
             isInternal

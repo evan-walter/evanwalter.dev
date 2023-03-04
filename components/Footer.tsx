@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useNavLinkContext } from 'components/NavLinkProvider'
+import Contact from 'components/Contact'
 
 export default function Footer() {
   const navLinkStyles = useNavLinkContext()
@@ -23,9 +24,8 @@ export default function Footer() {
             />
           </svg>
         </Link>
-
-        <div className='flex items-center justify-between gap-4 max-[375px]:flex-col'>
-          <FooterLinksGroup>
+        <div className='flex items-center justify-between gap-4 max-[379px]:flex-col'>
+          <FooterLinksGroup addClassNames='max-[379px]:hidden'>
             <Link href='/' className={navLinkStyles}>
               Home
             </Link>
@@ -39,9 +39,9 @@ export default function Footer() {
               About
             </Link>
           </FooterLinksGroup>
-          <FooterLinksGroup>
-            <Link href='/text-generator' className={navLinkStyles}>
-              Text Generator
+          <FooterLinksGroup addClassNames='max-[379px]:hidden'>
+            <Link href='/gpt-3' className={navLinkStyles}>
+              GPT-3
             </Link>
             <a
               href='https://quiz-preview.vercel.app/'
@@ -98,7 +98,7 @@ export default function Footer() {
             </a>
           </FooterLinksGroup>
         </div>
-
+        <Contact />
         <div className='group mx-auto flex w-fit flex-col justify-center gap-y-2'>
           <button title='Building software on the web since 2019'>❤️‍🔥</button>
           <p className='rounded-full border border-orange-500 px-4 py-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
@@ -111,12 +111,18 @@ export default function Footer() {
 }
 
 interface FooterLinksGroupProps {
+  addClassNames?: string
   children: React.ReactNode
 }
 
-export function FooterLinksGroup({ children }: FooterLinksGroupProps) {
+export function FooterLinksGroup({
+  addClassNames,
+  children,
+}: FooterLinksGroupProps) {
   return (
-    <div className='flex flex-col items-center justify-start gap-y-4'>
+    <div
+      className={`${addClassNames} flex flex-col items-center justify-start gap-y-4`}
+    >
       {children}
     </div>
   )

@@ -20,17 +20,7 @@ export default function Features() {
           </a>{' '}
           <Announcement text='New!' />
         </li>
-        <li>
-          Dark mode with{' '}
-          <a
-            href='https://tailwindcss.com/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Tailwind CSS
-          </a>
-        </li>
+        <li>Dark mode</li>
         <li>
           Ability to subscribe to link styles{' '}
           <a

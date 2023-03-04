@@ -4,9 +4,8 @@ export default function Contact() {
   const textLinkColors = useTextLinkContext()
 
   return (
-    <p className='text-lg'>
-      For now, if you have any questions or want to get in touch, please reach
-      out to me on{' '}
+    <p className='w-full px-10 pt-4 text-center leading-loose opacity-80'>
+      To get in touch, please reach out on{' '}
       <a
         href='https://linkedin.com/in/-evanwalter/'
         className={textLinkColors}

@@ -1,14 +1,14 @@
+import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import WorksPageReference from 'components/WorksPageReference'
+import PageReference from 'components/PageReference'
 
 export default function About() {
   const textLinkColors = useTextLinkContext()
 
   return (
     <div className='flex flex-col gap-y-2 text-lg'>
-      <p>I&apos;d like to share a little about myself and what I am up to.</p>
-      <p>
-        I am a Web Developer at{' '}
+      <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold first-line:uppercase first-line:tracking-wider'>
+        I am a Front End Engineer and a Web Developer at{' '}
         <a
           href='https://www.ghostbed.com/'
           className={textLinkColors}
@@ -17,34 +17,12 @@ export default function About() {
         >
           GhostBed
         </a>
-        . I love getting to learn, grow, and build with this amazing team! I am
-        part of a team of three developers, including my manager. We work
-        closely with the marketing team. I enjoy getting to work with other
-        departments in this way&mdash;mainly because they are super cool
-        people&mdash;but also because I enjoy getting a better glimpse of how
-        the magic happens in our business.
+        . I love being part of our engineering team! We work closely with the
+        marketing team, which I also love. They&apos;re fun, and I enjoy
+        learning how our business works.
       </p>
       <p>
-        For now, most of my work at GhostBed is front-end-focused. I enjoy
-        working with the front end, the back end, and the full stack. We
-        primarily use Vue.js with Tailwind CSS. We also use Next.js, React,
-        TypeScript, GraphQL, CraftCMS, and Tailwind CSS as we migrate to this
-        headless tech stack. I focus most of my personal learning and side
-        projects on Next.js, React, TypeScript, GraphQL, and Tailwind CSS. I
-        created this web app you&apos;re on,{' '}
-        <a
-          href='https://github.com/evan-walter/evanwalter.dev'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          evanwalter.dev
-        </a>
-        , with this tech stack. I hope to work with this tech stack or a similar
-        one as a front end or full stack engineer.
-      </p>
-      <p>
-        I recently had the privilege of appearing as a guest on{' '}
+        Recently, I had the privilege of appearing as a guest on{' '}
         <a
           href='https://podcast.thereactshow.com/1764837/12142504'
           className={textLinkColors}
@@ -52,35 +30,15 @@ export default function About() {
           rel='noreferrer noopener'
         >
           The React Show
-        </a>
-        ! On the show, I share about my journey into web development, React
-        nuances, networking, and banter.
-      </p>
-      <p>
-        In my spare time, I&apos;ve also started to build a{' '}
-        <a
-          href='https://lens-starter-app.vercel.app/'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          social media web app
         </a>{' '}
-        with Next.js, React, GraphQL, Tailwind CSS, and the Lens Protocol. I
-        plan to add to this app in the near future. Here are a couple
-        interesting features I want to implement.
+        <Link href='/podcast' className={textLinkColors}>
+          podcast
+        </Link>
+        !
       </p>
-      <ul className='mb-2 list-outside list-disc px-6'>
-        <li>Authentication</li>
-        <li>
-          Ability for users to sort their own posts and display other
-          users&apos; posts based on number of likes, number of comments, and
-          other parameters
-        </li>
-        <li>Full test coverage</li>
-      </ul>
       <p>
-        Aside from this tech stack, I&apos;m interested in{' '}
+        I also enjoy programming languages. To grow my skills and satisfy my
+        curiosity, I started learning{' '}
         <a
           href='https://www.rust-lang.org/'
           className={textLinkColors}
@@ -89,15 +47,15 @@ export default function About() {
         >
           Rust
         </a>
-        , and I recently started learning it!{' '}
+        .
       </p>
       <p>
-        I also really enjoy rock climbing, traveling, fitness, music, surfing,
-        paddle boarding, hiking, and pretty much anything outdoors. And, of
-        course, I like to take it easy and hang out with family and friends.
+        Other than coding, I really enjoy rock climbing, fitness, traveling, and
+        pretty much anything outdoors. And I love spending time with family and
+        friends.
       </p>
       <div className='mt-8'>
-        <WorksPageReference />
+        <PageReference page={'works'} />
       </div>
     </div>
   )

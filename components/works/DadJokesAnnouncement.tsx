@@ -21,7 +21,7 @@ export default function DadJokesAnnouncement() {
         <li>Fetching from a REST API</li>
         <li>Error handling</li>
         <li>React hooks</li>
-        <li>Advanced responsive styling with CSS and Tailwind</li>
+        <li>Advanced responsive styling with Tailwind CSS</li>
       </ul>
     </Work>
   )

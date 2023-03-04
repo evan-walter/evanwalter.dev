@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Configuration, OpenAIApi } from 'openai'
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import WorksPageReference from 'components/WorksPageReference'
+import PageReference from 'components/PageReference'
 
 const configuration = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
@@ -39,8 +39,7 @@ export default function TextGenerator() {
         >
           GPT-3
         </a>{' '}
-        text generator with from Open AI! Type anything below to generate a
-        response.
+        text generator app! Type anything below to generate a response.
       </p>
       <form
         className='flex w-full flex-col gap-y-8'
@@ -80,8 +79,8 @@ export default function TextGenerator() {
 
       {data.length > 0 && !loading ? <p>{data}</p> : null}
 
-      <div className='mt-40 text-center opacity-75'>
-        <WorksPageReference />
+      <div className='mt-40 opacity-75'>
+        <PageReference page={'works'} />
       </div>
     </div>
   )

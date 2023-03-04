@@ -1,13 +1,9 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
-import WorksPageReference from 'components/WorksPageReference'
-import Contact from 'components/Contact'
-import TextGeneratorAnnouncement from 'components/works/TextGeneratorAnnouncement'
-import PodcastAppearanceAnnouncement from 'components/works/PodcastAppearanceAnnouncement'
-import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
-import SynthAnnouncement from 'components/works/SynthAnnouncement'
-import LensStarterAppAnnouncement from 'components/works/LensStarterAppAnnouncement'
+import PageReference from 'components/PageReference'
+import About from 'components/About'
+import Gpt3Announcement from 'components/works/Gpt3Announcement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -80,39 +76,26 @@ export default function Home() {
         </div>
 
         <p className='italic max-md:text-center'>
-          I created this web app with Next.js, React, TypeScript, and
-          Tailwind CSS. I recently added end-to-end test coverage with{' '}
-          <a
-            href='https://www.cypress.io/'
-            className={textLinkColors}
-            target='_blank'
-            rel='noreferrer noopener'
-          >
-            Cypress
-          </a>
-          ! Feel free to check out the{' '}
+          I created this{' '}
           <a
             href='https://github.com/evan-walter/evanwalter.dev/'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
           >
-            source code
-          </a>
-          .
+            open-source
+          </a>{' '}
+          web app, evanwalter.dev, with the tech stack above. I recently added
+          test coverage with Cypress!
         </p>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
-          <TextGeneratorAnnouncement />
-          <PodcastAppearanceAnnouncement />
-          <LensStarterAppAnnouncement />
-          <DadJokesAnnouncement />
-          <SynthAnnouncement />
+          <Gpt3Announcement />
         </div>
 
-        <WorksPageReference />
+        <PageReference page={'works'} />
 
-        <Contact />
+        <PageReference page={'about'} />
       </main>
     </>
   )

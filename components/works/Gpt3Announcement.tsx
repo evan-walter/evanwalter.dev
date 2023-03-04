@@ -2,17 +2,17 @@ import Link from 'next/link'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Work from 'components/works/Work'
 
-export default function TextGeneratorAnnouncement() {
+export default function Gpt3Announcement() {
   const textLinkColors = useTextLinkContext()
 
   return (
     <Work addClassNames='from-blue-500 via-purple-500 to-pink-500'>
       <p>
-        I recently created a{' '}
-        <Link href='/text-generator' className={textLinkColors}>
+        Check out my{' '}
+        <Link href='/gpt-3' className={textLinkColors}>
           GPT-3
         </Link>{' '}
-        text generator with from Open AI!
+        text generator app!
       </p>
       <p>In this project, I incorporate the following skills.</p>
       <ul className='list-outside list-disc px-6'>
