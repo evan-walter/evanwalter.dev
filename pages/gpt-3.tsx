@@ -46,14 +46,14 @@ export default function TextGenerator() {
         onSubmit={(e) => fetchData(e)}
       >
         <textarea
-          className='mx-auto w-full border border-zinc-400 bg-zinc-200 p-2 focus:outline-zinc-400 dark:bg-zinc-600'
+          className='mx-auto w-full border border-neutral-400 bg-neutral-200 p-2 focus:outline-neutral-400 dark:bg-neutral-600'
           rows={5}
           name='prompt'
           value={tempPrompt}
           onChange={(e) => setTempPrompt(e.target.value)}
         />
         <button
-          className='mx-auto w-fit rounded-full border border-zinc-300 bg-zinc-200 px-5 py-2 transition duration-300 hover:scale-105 focus:outline-zinc-400 dark:border-none dark:bg-zinc-600'
+          className='mx-auto w-fit rounded-full border border-neutral-300 bg-neutral-200 px-5 py-2 transition duration-300 hover:scale-105 focus:outline-neutral-400 dark:border-none dark:bg-neutral-600'
           type='submit'
         >
           Generate

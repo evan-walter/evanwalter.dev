@@ -55,7 +55,7 @@ interface AnnouncementProps {
 
 export function Announcement({ text }: AnnouncementProps) {
   return (
-    <span className='ml-3 whitespace-nowrap text-zinc-500 dark:text-zinc-400'>
+    <span className='ml-3 whitespace-nowrap text-neutral-500 dark:text-neutral-400'>
       ✨ {text} ✨
     </span>
   )

@@ -6,7 +6,7 @@ export default function Footer() {
   const navLinkStyles = useNavLinkContext()
 
   return (
-    <footer className='bg-zinc-200 py-10 dark:bg-zinc-800'>
+    <footer className='bg-neutral-200 py-10 dark:bg-neutral-800'>
       <div className='container flex w-full max-w-2xl flex-col gap-y-8'>
         <Link href='#' className={`${navLinkStyles} mx-auto p-1`}>
           <svg

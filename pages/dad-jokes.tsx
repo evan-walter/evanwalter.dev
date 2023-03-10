@@ -32,7 +32,7 @@ export default function App() {
       <Btn addClassNames='bg-indigo-500 mx-auto' onClick={fetchData}>
         Get a New Random Joke
       </Btn>
-      <hr className='border-t-[2.5px] border-dotted border-zinc-500 dark:border-zinc-400' />
+      <hr className='border-t-[2.5px] border-dotted border-neutral-500 dark:border-neutral-400' />
       {loading ? (
         <Status addClassNames='text-gray-500'>Loading your joke...</Status>
       ) : null}
