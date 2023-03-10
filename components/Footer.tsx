@@ -106,7 +106,7 @@ export default function Footer() {
           >
             ❤️‍🔥
           </button>
-          <p className='rounded-full border border-orange-500 px-4 py-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-yellow-500'>
+          <p className='rounded-full border border-[#CC5500] px-4 py-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out dark:border-[#F28C28]'>
             Building software on the web since 2019
           </p>
         </div>
