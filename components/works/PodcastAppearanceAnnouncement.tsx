@@ -23,16 +23,7 @@ export default function PodcastAppearanceAnnouncement({
         >
           The React Show
         </a>{' '}
-        podcast! You can listen to the episode{' '}
-        <a
-          href='https://podcast.thereactshow.com/1764837/12142504'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          here
-        </a>
-        .
+        podcast!
       </p>
       <p>On the show, I share about...</p>
       <ul className='list-outside list-disc px-6'>
