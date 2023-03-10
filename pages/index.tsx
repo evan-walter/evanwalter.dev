@@ -12,14 +12,17 @@ export default function Home() {
     <>
       <main className='flex flex-col gap-y-8'>
         <div className='flex flex-col items-center justify-center gap-8 md:flex-row'>
-          <Image
-            className='rounded-full'
-            src='/head-shot.jpg'
-            alt='Evan Walter | Front End Engineering'
-            width={200}
-            height={200}
-            priority
-          />
+          <Link href='/about' className='group relative'>
+            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] rounded-full bg-orange-400 blur transition duration-300 group-hover:bg-orange-600 dark:bg-orange-400 dark:group-hover:bg-orange-600 max-[248px]:hidden'></div>
+            <Image
+              className='relative rounded-full transition'
+              src='/head-shot.jpg'
+              alt='Evan Walter | Front End Engineering'
+              width={200}
+              height={200}
+              priority
+            />
+          </Link>
           <div className='flex flex-col items-center justify-center gap-y-3 text-center md:items-start md:text-left'>
             <h1 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
               Evan Walter
@@ -90,7 +93,9 @@ export default function Home() {
         </p>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
-          <Gpt3Announcement addClassNames={'from-blue-500 via-purple-500 to-pink-500'} />
+          <Gpt3Announcement
+            addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
+          />
         </div>
 
         <PageReference page={'works'} />
