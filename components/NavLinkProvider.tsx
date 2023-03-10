@@ -1,7 +1,7 @@
 import { createContext, useContext } from 'react'
 
 const NavLinkContext = createContext<string>(
-  'p-1 text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
+  'p-1 font-semibold text-neutral-500 hover:text-black dark:text-neutral-400 dark:hover:text-white'
 )
 
 export function useNavLinkContext() {

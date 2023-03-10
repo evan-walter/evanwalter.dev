@@ -114,12 +114,12 @@ function NavItem({
   const classNames = `
     ${
       isMobileScreen
-        ? 'w-full border-b border-neutral-700 p-1 font-semibold text-black dark:text-white'
+        ? 'w-full border-b border-neutral-700 p-1 text-black dark:text-white'
         : isActive
         ? 'p-1 text-black dark:text-white'
         : navLinkStyles
     }
-    max-sm:py-3 sm:w-fit scroll-smooth
+    scroll-smooth font-semibold max-sm:py-3 sm:w-fit'
   `
 
   return (
