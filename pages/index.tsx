@@ -97,7 +97,7 @@ export default function Home() {
         </h2>
         <About />
 
-        <h2 className='text-3xl font-bold sm:text-4xl'>Announcements</h2>
+        <h2 className='text-3xl font-bold sm:text-4xl'>Announcement</h2>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
           <Gpt3Announcement
