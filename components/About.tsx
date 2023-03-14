@@ -17,9 +17,10 @@ export default function About() {
         >
           GhostBed
         </a>
-        . I love being part of our engineering team! We work closely with the
-        marketing team, which I also love. They&apos;re fun, and I enjoy
-        learning how our business works.
+        . We primarily work with Next.js, React, TypeScript, GraphQL, Vue.js,
+        Tailwind, and Shopify. I love being part of our engineering team! We
+        work closely with the marketing team, which I also love. They&apos;re
+        fun, and I enjoy learning how our business works.
       </p>
       <p>
         Recently, I had the privilege of appearing as a guest on{' '}
