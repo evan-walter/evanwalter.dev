@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Evan Walter | Front End Engineering</title>
         <meta
           name='description'
-          content='Front End Engineer with 2+ years of experience. Specialize in React, Next.js, Node.js, TypeScript, and GraphQL. Enjoy building scalable web infrastructure with excellent user interfaces. Passionate about open source and developer tooling.'
+          content='Front End Engineer specializing in React, Next.js, Node.js, TypeScript, and GraphQL. Enjoy building scalable web infrastructure with excellent user interfaces. Passionate about open source and developer tooling.'
         />
         <link rel='icon' href='/favicon.svg' />
       </Head>
