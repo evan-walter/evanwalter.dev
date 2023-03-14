@@ -1,23 +1,11 @@
-import { useState } from 'react'
 import Link from 'next/link'
 import { useNavLinkContext } from 'components/NavLinkProvider'
+import { useRandomQuote } from 'hooks/useRandomQuote'
 import Contact from 'components/Contact'
-import { quotes } from 'data/programmingQuotes'
 
 export default function Footer() {
-  const [quote, setQuote] = useState<any>({})
-
   const navLinkStyles = useNavLinkContext()
-
-  function handleQuote() {
-    const keys = Object.keys(quotes)
-
-    const randIndex = Math.floor(Math.random() * keys.length)
-
-    const randKey = parseInt(keys[randIndex])
-
-    setQuote(quotes[randKey])
-  }
+  const [randomQuote, getRandomQuote] = useRandomQuote()
 
   return (
     <footer className='bg-neutral-200 py-10 dark:bg-neutral-800'>
@@ -49,7 +37,7 @@ export default function Footer() {
             <Link href='/works' className={navLinkStyles}>
               Works
             </Link>
-            <Link href='/about' className={navLinkStyles}>
+            <Link href='/#about' className={navLinkStyles}>
               About
             </Link>
           </FooterLinksGroup>
@@ -114,12 +102,12 @@ export default function Footer() {
         </div>
         <Contact />
         <div className='group mx-auto flex w-fit flex-col justify-center gap-y-2'>
-          <button onMouseEnter={handleQuote} className='text-2xl'>
+          <button onMouseEnter={() => getRandomQuote()} className='text-2xl'>
             ❤️‍🔥
           </button>
           <div className='flex flex-col gap-y-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out'>
-            <i>&quot;{quote.body}&quot;</i>
-            <i>- {quote.author}</i>
+            <i>&quot;{randomQuote.body}&quot;</i>
+            <i>- {randomQuote.author}</i>
           </div>
         </div>
       </div>
