@@ -56,13 +56,15 @@ export default function NavMenu() {
             router={router}
             isMobileScreen={isMobileScreen}
             isInternal
+            handleClick={() => setIsMenuOpen(false)}
           />
           <NavItem
-            href='/about'
+            href='/#about'
             text='About'
             router={router}
             isMobileScreen={isMobileScreen}
             isInternal
+            handleClick={() => setIsMenuOpen(false)}
           />
           <NavItem
             href='/works'
@@ -125,7 +127,7 @@ function NavItem({
   return (
     <>
       {isInternal ? (
-        <Link className={classNames} href={href}>
+        <Link className={classNames} href={href} onClick={handleClick}>
           {text}
         </Link>
       ) : (

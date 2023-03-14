@@ -92,6 +92,13 @@ export default function Home() {
           test coverage with Cypress!
         </p>
 
+        <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
+          About
+        </h2>
+        <About />
+
+        <h2 className='text-3xl font-bold sm:text-4xl'>Announcements</h2>
+
         <div className='flex flex-col items-center justify-center gap-y-6'>
           <Gpt3Announcement
             addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
@@ -99,8 +106,6 @@ export default function Home() {
         </div>
 
         <PageReference page={'works'} />
-
-        <PageReference page={'about'} />
       </main>
     </>
   )
