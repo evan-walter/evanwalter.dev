@@ -17,8 +17,8 @@ export default function About() {
         >
           GhostBed
         </a>
-        . We primarily work with Next.js, React, TypeScript, GraphQL, Vue.js,
-        Tailwind, and Shopify. I love being part of our engineering team! We
+        . We primarily work with the tech stack above along with Vue.js,
+        Shopify, and Craft CMS. I love being part of our engineering team! We
         work closely with the marketing team, which I also love. They&apos;re
         fun, and I enjoy learning how our business works.
       </p>
