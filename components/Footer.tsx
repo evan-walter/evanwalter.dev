@@ -103,7 +103,7 @@ export default function Footer() {
         <Contact />
         <div className='group mx-auto flex w-fit flex-col justify-center gap-y-2'>
           <button onMouseEnter={() => getRandomQuote()} className='text-2xl'>
-            ❤️‍🔥
+            💻
           </button>
           <div className='flex flex-col gap-y-2 text-center opacity-0 transition duration-700 group-hover:opacity-100 group-hover:ease-in-out'>
             <i>&quot;{randomQuote.body}&quot;</i>
