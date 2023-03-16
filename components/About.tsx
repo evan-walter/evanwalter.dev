@@ -55,9 +55,6 @@ export default function About() {
         pretty much anything outdoors. And I love spending time with family and
         friends.
       </p>
-      <div className='mt-8'>
-        <PageReference page={'works'} />
-      </div>
     </div>
   )
 }
