@@ -31,14 +31,14 @@ export default function Footer() {
             <Link href='/' className={navLinkStyles}>
               Home
             </Link>
+            <Link href='/#about' className={navLinkStyles}>
+              About
+            </Link>
             <Link href='/podcast' className={navLinkStyles}>
               Podcast
             </Link>
             <Link href='/works' className={navLinkStyles}>
               Works
-            </Link>
-            <Link href='/#about' className={navLinkStyles}>
-              About
             </Link>
           </FooterLinksGroup>
           <FooterLinksGroup addClassNames='max-[379px]:hidden'>
