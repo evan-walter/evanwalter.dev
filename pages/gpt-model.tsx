@@ -32,12 +32,12 @@ export default function TextGenerator() {
       <p>
         Welcome to my{' '}
         <a
-          href='https://platform.openai.com/docs/models/gpt-3'
+          href='https://platform.openai.com/docs/models/overview'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
-          GPT-3
+          GPT
         </a>{' '}
         text generator app! Type anything below to generate a response.
       </p>

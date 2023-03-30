@@ -1,7 +1,7 @@
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import GhostBedWorks from 'components/works/GhostBedWorks'
 import Features from 'components/Features'
-import Gpt3Announcement from 'components/works/Gpt3Announcement'
+import GptAnnouncement from 'components/works/GptAnnouncement'
 import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
 import SynthAnnouncement from 'components/works/SynthAnnouncement'
 import LensStarterAppAnnouncement from 'components/works/LensStarterAppAnnouncement'
@@ -35,7 +35,7 @@ export default function Highlights() {
         </div>
 
         <div className='my-4'>
-          <Gpt3Announcement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
+          <GptAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
         </div>
       </div>
 

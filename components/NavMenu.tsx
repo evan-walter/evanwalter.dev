@@ -81,8 +81,8 @@ export default function NavMenu() {
             isInternal
           />
           <NavItem
-            href='/gpt-3'
-            text='GPT-3'
+            href='/gpt-model'
+            text='GPT'
             router={router}
             isMobileScreen={isMobileScreen}
             isInternal

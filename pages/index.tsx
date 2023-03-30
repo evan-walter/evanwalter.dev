@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import PageReference from 'components/PageReference'
 import About from 'components/About'
-import Gpt3Announcement from 'components/works/Gpt3Announcement'
+import GptAnnouncement from 'components/works/GptAnnouncement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -100,7 +100,7 @@ export default function Home() {
         <h2 className='text-3xl font-bold sm:text-4xl'>Announcement</h2>
 
         <div className='flex flex-col items-center justify-center gap-y-6'>
-          <Gpt3Announcement
+          <GptAnnouncement
             addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
           />
         </div>

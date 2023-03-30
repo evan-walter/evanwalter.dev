@@ -42,8 +42,8 @@ export default function Footer() {
             </Link>
           </FooterLinksGroup>
           <FooterLinksGroup addClassNames='max-[379px]:hidden'>
-            <Link href='/gpt-3' className={navLinkStyles}>
-              GPT-3
+            <Link href='/gpt-model' className={navLinkStyles}>
+              GPT
             </Link>
             <a
               href='https://quiz-preview.vercel.app/'

@@ -6,15 +6,15 @@ interface AnnouncementProps {
   addClassNames: string
 }
 
-export default function Gpt3Announcement({ addClassNames }: AnnouncementProps) {
+export default function GptAnnouncement({ addClassNames }: AnnouncementProps) {
   const textLinkColors = useTextLinkContext()
 
   return (
     <Work addClassNames={addClassNames}>
       <p>
         Check out my{' '}
-        <Link href='/gpt-3' className={textLinkColors}>
-          GPT-3
+        <Link href='/gpt-model' className={textLinkColors}>
+          GPT
         </Link>{' '}
         text generator app!
       </p>
