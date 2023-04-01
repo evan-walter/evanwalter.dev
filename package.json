@@ -30,7 +30,7 @@
     "reactronica": "^0.8.1-canary.0",
     "sharp": "^0.32.0",
     "tone": "^14.7.77",
-    "typescript": "^5.0.2"
+    "typescript": "^5.0.3"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
@@ -38,6 +38,6 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.7",
     "prettier-plugin-tailwindcss": "^0.2.6",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^3.3.1"
   }
 }
