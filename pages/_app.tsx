@@ -11,10 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Evan Walter | Front End Engineering</title>
+        <title>Evan Walter | Software Engineering</title>
         <meta
           name='description'
-          content='Front End Engineer specializing in React, Next.js, Node.js, TypeScript, and GraphQL. Enjoy building scalable web infrastructure with excellent user interfaces. Passionate about open source and developer tooling.'
+          content='Software Engineer proficient with React and Node.js. Enjoy building scalable web infrastructure with excellent user interfaces. Passionate about open source and developer tooling.'
         />
         <link rel='icon' href='/favicon.svg' />
       </Head>

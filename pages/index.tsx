@@ -17,7 +17,7 @@ export default function Home() {
             <Image
               className='relative rounded-full transition'
               src='/head-shot.jpg'
-              alt='Evan Walter | Front End Engineering'
+              alt='Evan Walter | Software Engineering'
               width={200}
               height={200}
               priority
@@ -28,7 +28,7 @@ export default function Home() {
               Evan Walter
             </h1>
             <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
-              Front End Engineering
+              Software Engineering
             </h2>
             <h3 className='md:whitespace-nowrap'>
               React | Next.js | Node.js | TypeScript | GraphQL
