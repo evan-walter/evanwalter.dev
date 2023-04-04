@@ -39,7 +39,8 @@ export default function Features() {
       <h2 className='mt-8 text-2xl font-bold sm:text-3xl'>Desired Features</h2>
       <p>Here are some features I want to add to this web app.</p>
       <ul className='list-outside list-disc px-6'>
-        <li>Blog with RSS feed (with Markdown)</li>
+        <li>Public blog (with Markdown)</li>
+        <li>Login</li>
         <li>Contact form</li>
         <li>Welcome video</li>
         <li>Analytics</li>
