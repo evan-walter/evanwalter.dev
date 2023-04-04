@@ -13,7 +13,8 @@ export default function Home() {
       <main className='flex flex-col gap-y-8'>
         <div className='flex flex-col items-center justify-center gap-8 md:flex-row'>
           <div className='group relative'>
-            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] rounded-full bg-orange-400 blur transition duration-300 group-hover:bg-orange-600 dark:bg-orange-400 dark:group-hover:bg-orange-600 max-[248px]:hidden'></div>
+            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-400 blur transition duration-300 group-hover:bg-orange-600 max-[248px]:hidden'></div>
+            <div className='absolute -inset-[0.25rem] h-[13rem] w-[13rem] animate-pulse rounded-full bg-orange-600 blur max-[248px]:hidden'></div>
             <Image
               className='relative rounded-full transition'
               src='/head-shot.jpg'
