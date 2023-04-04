@@ -6,6 +6,8 @@ evanwalter.dev is my personal web application to share about myself with a focus
 
 In this web app, you&apos;ll find some projects that I embedded in evanwalter.dev as well as referenced projects that I created outside evanwalter.dev.
 
+I like [Rust](https://www.rust-lang.org/) 🦀.
+
 ## Learn More
 
 I keep evanwalter.dev alive with the following tech stack. To learn more about these tools, navigate to the documentation at the links below.

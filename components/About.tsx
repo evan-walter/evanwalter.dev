@@ -16,10 +16,10 @@ export default function About() {
         >
           GhostBed
         </a>
-        . We primarily work with the tech stack above along with Vue.js,
-        Shopify, and Craft CMS. I love being part of our engineering team! We
-        work closely with the marketing team, which I also love. They&apos;re
-        fun, and I enjoy learning how our business works.
+        . We primarily work with the tech stack above, except for Rust. We also
+        use Vue.js, Shopify, and Craft CMS. I love being part of our engineering
+        team! We work closely with the marketing team, which I also love.
+        They&apos;re fun, and I enjoy learning how our business works.
       </p>
       <p>
         Recently, I had the privilege of appearing as a guest on{' '}
@@ -37,8 +37,7 @@ export default function About() {
         !
       </p>
       <p>
-        I also enjoy programming languages. To grow my skills and satisfy my
-        curiosity, I started learning{' '}
+        I also enjoy programming languages, such as{' '}
         <a
           href='https://www.rust-lang.org/'
           className={textLinkColors}
@@ -47,11 +46,11 @@ export default function About() {
         >
           Rust
         </a>
-        .
+        . I&apos;m really enjoying going deeper with Rust.
       </p>
       <p>
         Other than coding, I really enjoy rock climbing, fitness, traveling, and
-        pretty much anything outdoors. And I love spending time with family and
+        pretty much anything outdoors. I love spending time with family and
         friends.
       </p>
     </div>
