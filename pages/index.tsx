@@ -1,9 +1,9 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import PageReference from 'components/PageReference'
 import About from 'components/About'
 import GptAnnouncement from 'components/works/GptAnnouncement'
+import Box from 'components/Box'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -91,6 +91,8 @@ export default function Home() {
           web app, evanwalter.dev, with the tech stack above. I recently added
           test coverage with Cypress!
         </p>
+
+        <Box />
 
         <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
           About

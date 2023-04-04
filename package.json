@@ -15,6 +15,8 @@
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
+    "@react-three/drei": "^9.62.2",
+    "@react-three/fiber": "^8.12.0",
     "@types/node": "^18.15.11",
     "@types/react": "^18.0.33",
     "@types/react-dom": "^18.0.11",
@@ -29,6 +31,7 @@
     "react-responsive": "^9.0.2",
     "reactronica": "^0.8.1-canary.0",
     "sharp": "^0.32.0",
+    "three": "^0.151.3",
     "tone": "^14.7.77",
     "typescript": "^5.0.3"
   },
