@@ -12,30 +12,26 @@ export default function Highlights() {
   return (
     <div className='flex flex-col gap-y-8 text-lg'>
       <div className='flex flex-col gap-y-2'>
-        <h1 className='mb-1 text-3xl font-bold md:text-4xl'>Works</h1>
+        <h1 className='mb-2 text-3xl font-bold md:text-4xl'>Works</h1>
 
-        <div className='my-4'>
-          <GhostBedWorks />
-        </div>
+        <GhostBedWorks />
 
-        <h2 id='personal-works' className='text-2xl font-bold sm:text-3xl'>
+        <h2 id='personal-works' className='mt-4 text-2xl font-bold sm:text-3xl'>
           Personal Works
         </h2>
-
-        <div className='my-4'>
-          <LensStarterAppAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
-        </div>
-
-        <div className='my-4'>
-          <DadJokesAnnouncement addClassNames='from-purple-500 via-pink-500 to-blue-500' />
-        </div>
-
-        <div className='my-4'>
-          <SynthAnnouncement addClassNames='from-pink-500 via-blue-500 to-purple-500' />
-        </div>
-
-        <div className='my-4'>
-          <GptAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
+        <div className='flex flex-col gap-y-2'>
+          <div className='my-4'>
+            <LensStarterAppAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
+          </div>
+          <div className='my-4'>
+            <DadJokesAnnouncement addClassNames='from-purple-500 via-pink-500 to-blue-500' />
+          </div>
+          <div className='my-4'>
+            <SynthAnnouncement addClassNames='from-pink-500 via-blue-500 to-purple-500' />
+          </div>
+          <div className='my-4'>
+            <GptAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />
+          </div>
         </div>
       </div>
 

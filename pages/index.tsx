@@ -93,17 +93,20 @@ export default function Home() {
           Rust&mdash;coming soon. I recently added test coverage with Cypress!
         </p>
 
-        <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
-          About
-        </h2>
-        <About />
+        <div className='flex flex-col gap-y-3'>
+          <h2 id='about' className='text-3xl font-bold sm:text-4xl'>
+            About
+          </h2>
+          <About />
+        </div>
 
-        <h2 className='text-3xl font-bold sm:text-4xl'>Announcement</h2>
-
-        <div className='flex flex-col items-center justify-center gap-y-6'>
-          <GptAnnouncement
-            addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
-          />
+        <div className='flex flex-col gap-y-3'>
+          <h2 className='text-3xl font-bold sm:text-4xl'>Announcement</h2>
+          <div className='flex flex-col items-center justify-center gap-y-6'>
+            <GptAnnouncement
+              addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
+            />
+          </div>
         </div>
 
         <PageReference page={'works'} />
