@@ -10,11 +10,11 @@ export default function GhostBedWorks() {
       </h2>
       <GhostBedWork
         url='https://quiz-preview.vercel.app/'
-        title='Mattress Quiz with Next.js, React, and TypeScript'
-        linkText='Quiz App (Preview)'
+        title='Sales Funnel with Next.js, React, and TypeScript'
+        linkText='Sales Funnel (Preview)'
       >
         <p>
-          I created the mattress quiz from scratch with Next.js, React, and
+          I created the sales funnel from scratch with Next.js, React, and
           TypeScript. I wrote the full implementation with completely new code
           along with some updates to the business logic. We hope to go live with
           the new code I wrote after we complete our migration efforts to a

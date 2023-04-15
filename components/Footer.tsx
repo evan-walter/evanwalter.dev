@@ -51,7 +51,7 @@ export default function Footer() {
               target='_blank'
               rel='noreferrer noopener'
             >
-              Quiz App
+              Sales Funnel
             </a>
             <a
               href='https://lens-starter-app.vercel.app/'
