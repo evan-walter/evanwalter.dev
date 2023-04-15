@@ -2,6 +2,7 @@ import Head from 'next/head'
 import 'styles/globals.css'
 import type { AppProps } from 'next/app'
 import { ThemeProvider } from 'next-themes'
+import { Analytics } from '@vercel/analytics/react'
 import NavLinkProvider from 'components/NavLinkProvider'
 import TextLinkProvider from 'components/TextLinkProvider'
 import NavMenu from 'components/NavMenu'
@@ -28,6 +29,7 @@ export default function App({ Component, pageProps }: AppProps) {
             <div className='min-h-screen w-full pt-24 sm:pt-32'>
               <TextLinkProvider>
                 <Component {...pageProps} />
+                <Analytics />
               </TextLinkProvider>
             </div>
           </div>
