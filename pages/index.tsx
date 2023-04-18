@@ -32,7 +32,7 @@ export default function Home() {
               Software Engineering
             </h2>
             <h3 className='md:whitespace-nowrap'>
-              React | Next.js | Node.js | TypeScript | GraphQL | Rust 🦀
+              Full Stack | Front End | Back End | Interested in Rust 🦀
             </h3>
             <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
               <a
@@ -89,8 +89,8 @@ export default function Home() {
           >
             open-source
           </a>{' '}
-          web app, evanwalter.dev, with the tech stack above, except for
-          Rust&mdash;coming soon. I recently added test coverage with Cypress!
+          web app with Next.js, React and TypeScript. I recently started to add
+          test coverage with Cypress!
         </p>
 
         <div className='flex flex-col gap-y-3'>

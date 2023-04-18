@@ -16,10 +16,11 @@ export default function About() {
         >
           GhostBed
         </a>
-        . We primarily work with the tech stack above, except for Rust. We also
-        use Vue.js, Shopify, and Craft CMS. I love being part of our engineering
-        team! We work closely with the marketing team, which I also love.
-        They&apos;re fun, and I enjoy learning how our business works.
+        . I have a high value for learning and offering valuable contribution to
+        our team. We work with React, Next.js, TypeScript, GraphQL, Craft CMS,
+        Vue.js, and Shopify Liquid. I love being part of our engineering team!
+        We work closely with the marketing team, which I also love. They&apos;re
+        fun, and I enjoy seeing glimpses into that side of our business.
       </p>
       <p>
         Recently, I had the privilege of appearing as a guest on{' '}
