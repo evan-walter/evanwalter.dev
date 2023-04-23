@@ -67,7 +67,7 @@ export default function Footer() {
           </FooterLinksGroup>
           <FooterLinksGroup>
             <a
-              href='/resume.pdf'
+              href='/resume-evan-walter.pdf'
               className={navLinkStyles}
               target='_blank'
               rel='noreferrer noopener'
