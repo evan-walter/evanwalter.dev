@@ -36,7 +36,7 @@ export default function Home() {
             </h3>
             <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
               <a
-                href='/resume.pdf'
+                href='/resume-evan-walter.pdf'
                 className={textLinkColors}
                 target='_blank'
                 rel='noreferrer noopener'
