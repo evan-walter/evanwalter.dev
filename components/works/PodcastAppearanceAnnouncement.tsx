@@ -25,14 +25,11 @@ export default function PodcastAppearanceAnnouncement({
         </a>{' '}
         podcast!
       </p>
-      <p>On the show, I share about...</p>
+      <p>On the show, I...</p>
       <ul className='list-outside list-disc px-6'>
-        <li>My background</li>
-        <li>Why I got into web development</li>
-        <li>React</li>
-        <li>useEffect hook nuances</li>
-        <li>Networking</li>
-        <li>Banter</li>
+        <li>Share my journey into software engineering</li>
+        <li>Encourage new engineers</li>
+        <li>Discuss topics related to React</li>
       </ul>
     </Work>
   )
