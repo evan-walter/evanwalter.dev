@@ -1,7 +1,6 @@
 import { v4 as uuidv4 } from 'uuid'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Features from 'components/Features'
-import GptAnnouncement from 'components/works/GptAnnouncement'
 import DadJokesAnnouncement from 'components/works/DadJokesAnnouncement'
 import SynthAnnouncement from 'components/works/SynthAnnouncement'
 import LensStarterAppAnnouncement from 'components/works/LensStarterAppAnnouncement'
@@ -100,10 +99,6 @@ export default function Highlights() {
             <SynthAnnouncement
               key={uuidv4()}
               addClassNames='from-pink-500 via-blue-500 to-purple-500'
-            />,
-            <GptAnnouncement
-              key={uuidv4()}
-              addClassNames='from-blue-500 via-purple-500 to-pink-500'
             />,
           ].map((announcement) => (
             <div key={uuidv4()} className='my-4'>
