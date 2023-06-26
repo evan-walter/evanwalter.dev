@@ -19,8 +19,8 @@ export default function About() {
         . I have a high value for learning and offering valuable contribution as
         a team member. We worked with React, Next.js, TypeScript, GraphQL, Craft
         CMS, Vue.js, and Shopify Liquid. During my time at GhostBed, I loved
-        being part of the Engineering Team. We worked closely with the Marketing
-        Team, which I also enjoyed.
+        being part of the Engineering Team and working closely with the
+        Marketing Team.
       </p>
       <p>
         I had the privilege of appearing as a guest on{' '}
@@ -38,7 +38,7 @@ export default function About() {
         !
       </p>
       <p>
-        I also enjoy programming languages, such as{' '}
+        I also enjoy programming languages like{' '}
         <a
           href='https://www.rust-lang.org/'
           className={textLinkColors}
@@ -46,8 +46,17 @@ export default function About() {
           rel='noreferrer noopener'
         >
           Rust
+        </a>{' '}
+        and{' '}
+        <a
+          href='https://go.dev/'
+          className={textLinkColors}
+          target='_blank'
+          rel='noreferrer noopener'
+        >
+          Go
         </a>
-        . I&apos;m really enjoying going deeper with Rust.
+        .
       </p>
       <p>
         Other than coding, I enjoy rock climbing, fitness, traveling, and pretty

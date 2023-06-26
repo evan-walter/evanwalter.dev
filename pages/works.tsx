@@ -22,44 +22,75 @@ export default function Highlights() {
               url: 'https://quiz-preview.vercel.app/',
               title: 'Sales Funnel with Next.js, React, and TypeScript',
               linkText: 'Sales Funnel (Preview)',
-              body: `I created the sales funnel from scratch with Next.js, React, and
-              TypeScript. I wrote the full implementation with completely new
-              code along with some updates to the business logic. We hope to go
-              live with the new code I wrote after we complete our migration
-              efforts to a headless web application. Feel free to check out the ${(
-                <a
-                  href='https://www.ghostbed.com/pages/mattress-quiz'
-                  className={textLinkColors}
-                  target='_blank'
-                  rel='noreferrer noopener'
-                >
-                  live version
-                </a>
-              )} built with Vue.js.`,
+              body: (
+                <p>
+                  I created this Sales Funnel App with Next.js, React, and
+                  TypeScript. I wrote the full implementation with completely
+                  new code along with some updates to the business logic. We
+                  hope to go live with the new code I wrote after we complete
+                  our migration efforts to a headless web application. Feel free
+                  to check out the{' '}
+                  <a
+                    href='https://www.ghostbed.com/pages/mattress-quiz'
+                    className={textLinkColors}
+                    target='_blank'
+                    rel='noreferrer noopener'
+                  >
+                    live version
+                  </a>{' '}
+                  built with Vue.js.
+                </p>
+              ),
             },
             {
               url: 'https://ghostbed.com/products/ghostbed-massage-mattress',
               title: 'GhostBed Massage Mattress Product Page',
               linkText: 'GhostBed Massage Mattress',
-              body: 'I created this entire new product page using Vue.js, above-the-fold and below-the-fold, including the interactive dynamic components and mobile-responsive graphics. I worked closely with the Design Team and Marketing Teams to meet the requirements and deliver on time.',
+              body: (
+                <p>
+                  I created this entire new product page using Vue.js,
+                  above-the-fold and below-the-fold, including the interactive
+                  dynamic components and mobile-responsive graphics. I worked
+                  closely with the Design Team and Marketing Teams to meet the
+                  requirements and deliver on time.
+                </p>
+              ),
             },
             {
               url: 'https://www.ghostbed.com/products/ghostbed-3d-matrix#pdp-layers',
               title: 'Product Page with Vue.js Layers Component',
               linkText: 'GhostBed 3D Matrix® Layers Component',
-              body: 'I implemented the design portion of this page shown below the fold, including the mattress layers component with Vue.js',
+              body: (
+                <p>
+                  I implemented the design portion of this page shown below the
+                  fold, including the mattress layers component with Vue.js
+                </p>
+              ),
             },
             {
               url: 'https://www.ghostbed.com/pages/mattress-firmness-guide-and-scale',
               title: 'Blog Article with Advanced Graphics',
               linkText: 'The Ultimate Guide to Mattress Firmness',
-              body: 'On this page, you will find four graphics. I created these graphics with advanced, responsive styling patterns with Tailwind CSS, including advanced conditionals, grid, flex box, and positioning patterns.',
+              body: (
+                <p>
+                  On this page, you will find four graphics. I created these
+                  graphics with advanced, responsive styling patterns with
+                  Tailwind CSS, including advanced conditionals, grid, flex box,
+                  and positioning patterns.
+                </p>
+              ),
             },
             {
               url: 'https://www.ghostbed.com/',
               title: 'Cart Slider',
               linkText: 'GhostBed Homepage',
-              body: 'I had the privilege of implementing the cart slider! I added some styling touches, such as the hover states and transitional animations on the buttons on those components.',
+              body: (
+                <p>
+                  I had the privilege of implementing the cart slider! I added
+                  some styling touches, such as the hover states and
+                  transitional animations on the buttons on those components.
+                </p>
+              ),
             },
           ].map(({ url, title, linkText, body }) => (
             <div
