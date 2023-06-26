@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import Features from 'components/Features'
 import GptAnnouncement from 'components/works/GptAnnouncement'
@@ -63,7 +64,7 @@ export default function Highlights() {
             },
           ].map(({ url, title, linkText, body }) => (
             <div
-              key={title}
+              key={uuidv4()}
               className='mt-4 flex flex-col gap-y-2 rounded-lg border-2 border-[#5FA405] px-5 py-4'
             >
               <h3 className='text-xl font-bold sm:text-2xl'>{title}</h3>
@@ -88,12 +89,24 @@ export default function Highlights() {
         </h2>
         <div className='flex flex-col gap-y-2'>
           {[
-            <LensStarterAppAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />,
-            <DadJokesAnnouncement addClassNames='from-purple-500 via-pink-500 to-blue-500' />,
-            <SynthAnnouncement addClassNames='from-pink-500 via-blue-500 to-purple-500' />,
-            <GptAnnouncement addClassNames='from-blue-500 via-purple-500 to-pink-500' />,
-          ].map((announcement, index) => (
-            <div key={index} className='my-4'>
+            <LensStarterAppAnnouncement
+              key={uuidv4()}
+              addClassNames='from-blue-500 via-purple-500 to-pink-500'
+            />,
+            <DadJokesAnnouncement
+              key={uuidv4()}
+              addClassNames='from-purple-500 via-pink-500 to-blue-500'
+            />,
+            <SynthAnnouncement
+              key={uuidv4()}
+              addClassNames='from-pink-500 via-blue-500 to-purple-500'
+            />,
+            <GptAnnouncement
+              key={uuidv4()}
+              addClassNames='from-blue-500 via-purple-500 to-pink-500'
+            />,
+          ].map((announcement) => (
+            <div key={uuidv4()} className='my-4'>
               {announcement}
             </div>
           ))}

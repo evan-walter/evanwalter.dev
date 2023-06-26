@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { useState, useEffect } from 'react'
@@ -57,7 +58,7 @@ export default function NavMenu() {
             { href: '/podcast', title: 'Podcast', hasClickHandler: false },
           ].map(({ href, title, hasClickHandler }) => (
             <NavItem
-              key={title}
+              key={uuidv4()}
               href={href}
               text={title}
               router={router}

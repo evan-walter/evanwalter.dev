@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from 'uuid'
 import Link from 'next/link'
 import { useNavLinkContext } from 'components/NavLinkProvider'
 import { useRandomQuote } from 'hooks/useRandomQuote'
@@ -55,7 +56,7 @@ export default function Footer() {
               },
             ].map(({ href, title }) => (
               <a
-                key={title}
+                key={uuidv4()}
                 href={href}
                 className={navLinkStyles}
                 target='_blank'
@@ -88,7 +89,7 @@ export default function Footer() {
               },
             ].map(({ href, title }) => (
               <a
-                key={title}
+                key={uuidv4()}
                 href={href}
                 className={navLinkStyles}
                 target='_blank'
