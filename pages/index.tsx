@@ -1,9 +1,7 @@
-import Link from 'next/link'
 import Image from 'next/image'
 import { useTextLinkContext } from 'components/TextLinkProvider'
 import PageReference from 'components/PageReference'
 import About from 'components/About'
-import GptAnnouncement from 'components/works/GptAnnouncement'
 
 export default function Home() {
   const textLinkColors = useTextLinkContext()
@@ -35,46 +33,38 @@ export default function Home() {
               Full Stack | Front End | Back End | Interested in Rust 🦀
             </h3>
             <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
-              <a
-                href='/resume-evan-walter.pdf'
-                className={textLinkColors}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                Resume
-              </a>
-              <a
-                href='https://github.com/evan-walter/'
-                className={textLinkColors}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                GitHub
-              </a>
-              <a
-                href='https://linkedin.com/in/-evanwalter/'
-                className={textLinkColors}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                LinkedIn
-              </a>
-              <a
-                href='https://twitter.com/_evanwalter_/'
-                className={textLinkColors}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                Twitter
-              </a>
-              <a
-                href='https://github.com/evan-walter/evanwalter.dev/'
-                className={textLinkColors}
-                target='_blank'
-                rel='noreferrer noopener'
-              >
-                Source
-              </a>
+              {[
+                {
+                  href: '/resume-evan-walter.pdf',
+                  title: 'Resume',
+                },
+                {
+                  href: 'https://github.com/evan-walter/',
+                  title: 'Github',
+                },
+                {
+                  href: 'https://linkedin.com/in/-evanwalter',
+                  title: 'LinkedIn',
+                },
+                {
+                  href: 'https://twitter.com/_evanwalter_/',
+                  title: 'Twitter',
+                },
+                {
+                  href: 'https://github.com/evan-walter/evanwalter.dev/',
+                  title: 'Source',
+                },
+              ].map(({ href, title }) => (
+                <a
+                  key={title}
+                  href={href}
+                  className={textLinkColors}
+                  target='_blank'
+                  rel='noreferrer noopener'
+                >
+                  {title}
+                </a>
+              ))}
             </div>
           </div>
         </div>
@@ -98,15 +88,6 @@ export default function Home() {
             About
           </h2>
           <About />
-        </div>
-
-        <div className='flex flex-col gap-y-3'>
-          <h2 className='text-3xl font-bold sm:text-4xl'>Announcement</h2>
-          <div className='flex flex-col items-center justify-center gap-y-6'>
-            <GptAnnouncement
-              addClassNames={'from-blue-500 via-purple-500 to-pink-500'}
-            />
-          </div>
         </div>
 
         <PageReference page={'works'} />

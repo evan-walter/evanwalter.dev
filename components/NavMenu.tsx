@@ -50,42 +50,30 @@ export default function NavMenu() {
       </div>
       {isMenuOpen ? (
         <div className='flex w-full items-start justify-between gap-y-3 max-sm:flex-col sm:items-center'>
+          {[
+            { href: '/', title: 'Home', hasClickHandler: true },
+            { href: '/#about', title: 'About', hasClickHandler: true },
+            { href: '/works', title: 'Works', hasClickHandler: false },
+            { href: '/podcast', title: 'Podcast', hasClickHandler: false },
+          ].map(({ href, title, hasClickHandler }) => (
+            <NavItem
+              key={title}
+              href={href}
+              text={title}
+              router={router}
+              isMobileScreen={isMobileScreen}
+              isNextLink
+              handleClick={() => {
+                hasClickHandler ? setIsMenuOpen(false) : null
+              }}
+            />
+          ))}
           <NavItem
-            href='/'
-            text='Home'
+            href='/resume-evan-walter.pdf'
+            text='Resume'
             router={router}
             isMobileScreen={isMobileScreen}
-            isInternal
             handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='/#about'
-            text='About'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isInternal
-            handleClick={() => setIsMenuOpen(false)}
-          />
-          <NavItem
-            href='/works'
-            text='Works'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isInternal
-          />
-          <NavItem
-            href='/podcast'
-            text='Podcast'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isInternal
-          />
-          <NavItem
-            href='/gpt-model'
-            text='GPT'
-            router={router}
-            isMobileScreen={isMobileScreen}
-            isInternal
           />
           {isMobileScreen ? null : <ThemeButton />}
         </div>
@@ -99,7 +87,7 @@ interface NavItemProps {
   text: string
   router: any
   isMobileScreen: Boolean
-  isInternal?: Boolean
+  isNextLink?: Boolean
   handleClick?: () => void
 }
 
@@ -108,7 +96,7 @@ function NavItem({
   text,
   router,
   isMobileScreen,
-  isInternal,
+  isNextLink,
   handleClick,
 }: NavItemProps) {
   const navLinkStyles = useNavLinkContext()
@@ -126,7 +114,7 @@ function NavItem({
 
   return (
     <>
-      {isInternal ? (
+      {isNextLink ? (
         <Link className={classNames} href={href} onClick={handleClick}>
           {text}
         </Link>

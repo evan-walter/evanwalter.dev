@@ -28,76 +28,75 @@ export default function Footer() {
         </Link>
         <div className='flex items-center justify-between gap-4 max-[379px]:flex-col'>
           <FooterLinksGroup addClassNames='max-[379px]:hidden'>
-            <Link href='/' className={navLinkStyles}>
-              Home
-            </Link>
-            <Link href='/#about' className={navLinkStyles}>
-              About
-            </Link>
-            <Link href='/podcast' className={navLinkStyles}>
-              Podcast
-            </Link>
-            <Link href='/works' className={navLinkStyles}>
-              Works
-            </Link>
+            {[
+              { href: '/', title: 'Home' },
+              { href: '/#about', title: 'About' },
+              { href: '/works', title: 'Works' },
+              { href: '/podcast', title: 'Podcast' },
+            ].map(({ href, title }) => (
+              <Link key={title} href={href} className={navLinkStyles}>
+                {title}
+              </Link>
+            ))}
           </FooterLinksGroup>
           <FooterLinksGroup addClassNames='max-[379px]:hidden'>
-            <Link href='/gpt-model' className={navLinkStyles}>
-              GPT
-            </Link>
-            <a
-              href='https://quiz-preview.vercel.app/'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Sales Funnel
-            </a>
-            <a
-              href='https://lens-starter-app.vercel.app/'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Lens Social App
-            </a>
+            {[
+              {
+                href: 'https://ghostbed.com/products/ghostbed-massage-mattress',
+                title: 'Product Page',
+              },
+              {
+                href: 'https://quiz-preview.vercel.app/',
+                title: 'Sales Funnel',
+              },
+              {
+                href: 'https://lens-starter-app.vercel.app/',
+                title: 'Lens Social App',
+              },
+            ].map(({ href, title }) => (
+              <a
+                key={title}
+                href={href}
+                className={navLinkStyles}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                {title}
+              </a>
+            ))}
             <Link href='/dad-jokes' className={navLinkStyles}>
               Dad Jokes
             </Link>
           </FooterLinksGroup>
           <FooterLinksGroup>
-            <a
-              href='/resume-evan-walter.pdf'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Resume
-            </a>
-            <a
-              href='https://github.com/evan-walter'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              GitHub
-            </a>
-            <a
-              href='https://linkedin.com/in/-evanwalter'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              LinkedIn
-            </a>
-            <a
-              href='https://twitter.com/_evanwalter_'
-              className={navLinkStyles}
-              target='_blank'
-              rel='noreferrer noopener'
-            >
-              Twitter
-            </a>
+            {[
+              {
+                href: '/resume-evan-walter.pdf',
+                title: 'Resume',
+              },
+              {
+                href: 'https://github.com/evan-walter/',
+                title: 'Github',
+              },
+              {
+                href: 'https://linkedin.com/in/-evanwalter',
+                title: 'LinkedIn',
+              },
+              {
+                href: 'https://twitter.com/_evanwalter_/',
+                title: 'Twitter',
+              },
+            ].map(({ href, title }) => (
+              <a
+                key={title}
+                href={href}
+                className={navLinkStyles}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                {title}
+              </a>
+            ))}
           </FooterLinksGroup>
         </div>
         <Contact />
