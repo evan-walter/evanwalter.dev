@@ -11,8 +11,8 @@ export default function PageReference({ page }: PageReferenceProps) {
   return (
     <p className='text-lg'>
       If you&apos;d like to{' '}
-      {page === 'works' ? 'see more works' : 'learn more about me'}, check out
-      the{' '}
+      {page === 'works' ? 'see some of my projects' : 'learn more about me'},
+      check out the{' '}
       <Link href={`/${page}`} className={textLinkColors}>
         {page}
       </Link>{' '}
