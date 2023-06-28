@@ -47,24 +47,50 @@ export default function Highlights() {
               title: 'GhostBed Massage Mattress Product Page',
               linkText: 'GhostBed Massage Mattress',
               body: (
-                <p>
-                  I created this entire new product page using Vue.js,
-                  above-the-fold and below-the-fold, including the interactive
-                  dynamic components and mobile-responsive graphics. I worked
-                  closely with the Design Team and Marketing Teams to meet the
-                  requirements and deliver on time.
-                </p>
-              ),
-            },
-            {
-              url: 'https://www.ghostbed.com/products/ghostbed-3d-matrix#pdp-layers',
-              title: 'Product Page with Vue.js Layers Component',
-              linkText: 'GhostBed 3D Matrix® Layers Component',
-              body: (
-                <p>
-                  I implemented the design portion of this page shown below the
-                  fold, including the mattress layers component with Vue.js
-                </p>
+                <>
+                  <p>
+                    I created several product pages like this one with Vue.js
+                    and Liquid. These pages include complex logic to handle
+                    various pricing, sizing, and variant options. They also
+                    feature interactive, dynamic components and
+                    mobile-responsive graphics. I worked closely with the Design
+                    and Marketing Teams to meet the requirements and deliver on
+                    time.
+                  </p>
+                  <p>Here are a few similar product pages and features.</p>
+                  <ul className='list-outside list-disc px-6'>
+                    <li>
+                      <a
+                        href='https://www.ghostbed.com/products/ghostsheets-split-king'
+                        className={textLinkColors}
+                        target='_blank'
+                        rel='noreferrer noopener'
+                      >
+                        GhostSheets - Split King Product Page
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href='https://www.ghostbed.com/products/ghostbed-3d-matrix#pdp-layers'
+                        className={textLinkColors}
+                        target='_blank'
+                        rel='noreferrer noopener'
+                      >
+                        GhostBed 3D Matrix® Layers Component
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href='https://www.ghostbed.com/products/foundation'
+                        className={textLinkColors}
+                        target='_blank'
+                        rel='noreferrer noopener'
+                      >
+                        GhostBed All-in-One Foundation™ Product Page Features
+                      </a>
+                    </li>
+                  </ul>
+                </>
               ),
             },
             {
