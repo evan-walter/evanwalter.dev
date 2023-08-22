@@ -80,7 +80,7 @@ export default function Home() {
           >
             open-source
           </a>{' '}
-          web app with Next.js, React and TypeScript. I recently started to add
+          web app with Next.js, React, and TypeScript. I recently started to add
           test coverage with Cypress!
         </p>
 
