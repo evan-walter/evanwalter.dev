@@ -15,8 +15,8 @@
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
-    "@types/node": "^20.5.1",
-    "@types/react": "^18.2.20",
+    "@types/node": "^20.5.3",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
     "@vercel/analytics": "^1.0.2",
     "axios": "^1.4.0",
@@ -24,7 +24,7 @@
     "eslint-config-next": "^13.4.19",
     "next": "^13.4.19",
     "next-themes": "^0.2.1",
-    "openai": "^4.0.1",
+    "openai": "^4.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
