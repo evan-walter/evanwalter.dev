@@ -15,32 +15,32 @@
     "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
-    "@types/node": "^20.5.9",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "@vercel/analytics": "^1.0.2",
-    "axios": "^1.5.0",
-    "eslint": "^8.48.0",
-    "eslint-config-next": "^13.4.19",
-    "next": "^13.4.19",
+    "@types/node": "^20.9.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@vercel/analytics": "^1.1.1",
+    "axios": "^1.6.1",
+    "eslint": "^8.47.0",
+    "eslint-config-next": "^14.0.1",
+    "next": "^14.0.1",
     "next-themes": "^0.2.1",
-    "openai": "^4.3.1",
+    "openai": "^4.17.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-responsive": "^9.0.2",
     "reactronica": "^0.8.1-canary.0",
-    "sharp": "^0.32.5",
+    "sharp": "^0.32.6",
     "tone": "^14.7.77",
     "typescript": "^5.1.6",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.1"
   },
   "devDependencies": {
-    "@types/uuid": "^9.0.2",
-    "autoprefixer": "^10.4.15",
-    "cypress": "^13.0.0",
-    "postcss": "^8.4.29",
+    "@types/uuid": "^9.0.7",
+    "autoprefixer": "^10.4.16",
+    "cypress": "^13.5.0",
+    "postcss": "^8.4.31",
     "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.4",
-    "tailwindcss": "^3.3.3"
+    "prettier-plugin-tailwindcss": "^0.5.7",
+    "tailwindcss": "^3.3.5"
   }
 }
