@@ -77,7 +77,7 @@ export default function Footer() {
               },
               {
                 href: 'https://github.com/evan-walter/',
-                title: 'Github',
+                title: 'GitHub',
               },
               {
                 href: 'https://linkedin.com/in/-evanwalter',

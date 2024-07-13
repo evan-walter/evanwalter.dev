@@ -31,7 +31,7 @@ export default function Home() {
               Software Engineering
             </h2>
             <h3 className='md:whitespace-nowrap'>
-              Full Stack | Front End | Back End | Interested in Rust 🦀
+              Full Stack | Front End | Back End
             </h3>
             <div className='flex gap-x-5 gap-y-3 max-md:flex-wrap max-md:justify-center'>
               {[
@@ -41,7 +41,7 @@ export default function Home() {
                 },
                 {
                   href: 'https://github.com/evan-walter/',
-                  title: 'Github',
+                  title: 'GitHub',
                 },
                 {
                   href: 'https://linkedin.com/in/-evanwalter',

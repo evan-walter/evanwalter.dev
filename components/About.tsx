@@ -7,20 +7,19 @@ export default function About() {
   return (
     <div className='flex flex-col gap-y-2 text-lg'>
       <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
-        I am a Software Engineer and former Web Developer at{' '}
+        I am a Full-Stack Development Consultant at{' '}
         <a
           href='https://www.ghostbed.com/'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
         >
-          GhostBed
+          Deloitte
         </a>
         . I have a high value for learning and offering valuable contribution as
-        a team member. We worked with React, Next.js, TypeScript, GraphQL, Craft
-        CMS, Vue.js, and Shopify Liquid. During my time at GhostBed, I loved
-        being part of the Engineering Team and working closely with the
-        Marketing Team.
+        a team member. I specialize in TypeScript, React, and Node.js. With a
+        background in Electrical Engineering, I offer a unique attention to
+        detail and creativity in problem solving.
       </p>
       <p>
         I had the privilege of appearing as a guest on{' '}
@@ -59,8 +58,8 @@ export default function About() {
         .
       </p>
       <p>
-        Other than coding, I enjoy rock climbing, fitness, traveling, and pretty
-        much anything outdoors. I love spending time with family and friends.
+        Other than coding, I enjoy rock fitness, traveling, outdoor activities,
+        and spending time with family and friends.
       </p>
     </div>
   )

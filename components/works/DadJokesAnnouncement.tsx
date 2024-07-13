@@ -13,9 +13,7 @@ export default function DadJokesAnnouncement({
 
   return (
     <Work addClassNames={addClassNames}>
-      <p>
-        I recently added a new, fun project&mdash;a random dad jokes generator!
-      </p>
+      <p>I added a new, fun project&mdash;a random dad jokes generator!</p>
       <div>
         Link:{' '}
         <Link href='/dad-jokes' className={textLinkColors}>
