@@ -23,24 +23,24 @@
     "eslint": "^8.47.0",
     "eslint-config-next": "^14.0.2",
     "next": "^14.0.2",
-    "next-themes": "^0.2.1",
+    "next-themes": "^0.3.0",
     "openai": "^4.17.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-responsive": "^9.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-responsive": "^10.0.0",
     "reactronica": "^0.8.1-canary.0",
-    "sharp": "^0.32.6",
-    "tone": "^14.7.77",
+    "sharp": "^0.33.4",
+    "tone": "^15.0.4",
     "typescript": "^5.1.6",
-    "uuid": "^9.0.1"
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
-    "@types/uuid": "^9.0.7",
+    "@types/uuid": "^10.0.0",
     "autoprefixer": "^10.4.16",
     "cypress": "^13.5.0",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",
-    "prettier-plugin-tailwindcss": "^0.5.7",
+    "prettier-plugin-tailwindcss": "^0.6.5",
     "tailwindcss": "^3.3.5"
   }
 }
