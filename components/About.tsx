@@ -9,7 +9,7 @@ export default function About() {
       <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
         I am a Full-Stack Development Consultant at{' '}
         <a
-          href='https://www.ghostbed.com/'
+          href='https://www.deloitte.com/global/en.html'
           className={textLinkColors}
           target='_blank'
           rel='noreferrer noopener'
