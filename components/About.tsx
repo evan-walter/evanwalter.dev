@@ -58,8 +58,8 @@ export default function About() {
         .
       </p>
       <p>
-        Other than coding, I enjoy rock fitness, traveling, outdoor activities,
-        and spending time with family and friends.
+        Other than coding, I enjoy fitness, traveling, outdoor activities, and
+        spending time with family and friends.
       </p>
     </div>
   )
