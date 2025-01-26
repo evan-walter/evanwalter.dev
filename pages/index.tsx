@@ -28,7 +28,7 @@ export default function Home() {
               Evan Walter
             </h1>
             <h2 className='text-3xl font-bold md:whitespace-nowrap md:text-4xl'>
-              Software Engineering
+              Software Engineer
             </h2>
             <h3 className='md:whitespace-nowrap'>
               Full Stack | Front End | Back End

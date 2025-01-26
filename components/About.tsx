@@ -7,19 +7,11 @@ export default function About() {
   return (
     <div className='flex flex-col gap-y-2 text-lg'>
       <p className='first-letter:float-left first-letter:mr-3 first-letter:font-serif first-letter:text-7xl first-letter:font-bold'>
-        I am a Full-Stack Development Consultant at{' '}
-        <a
-          href='https://www.deloitte.com/global/en.html'
-          className={textLinkColors}
-          target='_blank'
-          rel='noreferrer noopener'
-        >
-          Deloitte
-        </a>
-        . I have a high value for learning and offering valuable contribution as
-        a team member. I specialize in TypeScript, React, and Node.js. With a
-        background in Electrical Engineering, I offer a unique attention to
-        detail and creativity in problem solving.
+        I am a Full-Stack Software Engineer. I have a high value for learning
+        and offering valuable contribution as a team member. I specialize in
+        TypeScript, React, and Tailwind CSS. With a background in Electrical
+        Engineering, I offer a unique attention to detail and creativity in
+        problem solving.
       </p>
       <p>
         I had the privilege of appearing as a guest on{' '}
@@ -37,7 +29,7 @@ export default function About() {
         !
       </p>
       <p>
-        I also enjoy programming languages like{' '}
+        I also enjoy exploring programming languages like{' '}
         <a
           href='https://www.rust-lang.org/'
           className={textLinkColors}
