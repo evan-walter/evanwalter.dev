@@ -22,7 +22,7 @@ I keep evanwalter.dev alive with the following tech stack. To learn more about t
 This application requires Node.js.
 
 ```bash
-git clone git@github.com:evan-walter/evanwalter.dev.git
+git clone git@github.com:evwalt/evanwalter.dev.git
 cd ./evanwalter.dev
 npm install
 npm run dev
