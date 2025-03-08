@@ -40,7 +40,7 @@ export default function Home() {
                   title: 'Resume',
                 },
                 {
-                  href: 'https://github.com/evan-walter/',
+                  href: 'https://github.com/evwalt/',
                   title: 'GitHub',
                 },
                 {
@@ -52,7 +52,7 @@ export default function Home() {
                   title: 'Twitter',
                 },
                 {
-                  href: 'https://github.com/evan-walter/evanwalter.dev/',
+                  href: 'https://github.com/evwalt/evanwalter.dev/',
                   title: 'Source',
                 },
               ].map(({ href, title }) => (
@@ -73,7 +73,7 @@ export default function Home() {
         <p className='italic max-md:text-center'>
           I created this{' '}
           <a
-            href='https://github.com/evan-walter/evanwalter.dev/'
+            href='https://github.com/evwalt/evanwalter.dev/'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'

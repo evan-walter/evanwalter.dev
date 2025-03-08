@@ -76,7 +76,7 @@ export default function Footer() {
                 title: 'Resume',
               },
               {
-                href: 'https://github.com/evan-walter/',
+                href: 'https://github.com/evwalt/',
                 title: 'GitHub',
               },
               {

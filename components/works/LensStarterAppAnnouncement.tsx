@@ -29,7 +29,7 @@ export default function LensStarterAppAnnouncement({
         </span>
         <span className='ml-6'>
           <a
-            href='https://github.com/evan-walter/lens-starter-app'
+            href='https://github.com/evwalt/lens-starter-app'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'

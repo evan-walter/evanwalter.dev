@@ -30,4 +30,4 @@ npm run dev
 
 ## License
 
-evanwalter.dev is licensed under the [MIT License](https://github.com/evan-walter/evanwalter.dev/blob/main/LICENSE). Please remove my personal information (resume, social links, etc.). Attribution is appreciated.
+evanwalter.dev is licensed under the [MIT License](https://github.com/evwalt/evanwalter.dev/blob/main/LICENSE). Please remove my personal information (resume, social links, etc.). Attribution is appreciated.

@@ -172,7 +172,7 @@ export default function Highlights() {
         <p>
           Check out more of my open-source projects on{' '}
           <a
-            href='https://www.github.com/evan-walter/'
+            href='https://www.github.com/evwalt/'
             className={textLinkColors}
             target='_blank'
             rel='noreferrer noopener'
